@@ -1,0 +1,260 @@
+
+
+
+// =============================================================================
+// Clearfix
+// =============================================================================
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  //Usage -->.cf {@include clearfix;}
+
+// =============================================================================
+// Opacity
+// =============================================================================
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity = $opacity-ie); //IE8
+  }
+
+
+  //Usage .fade {@include opacity(.4);}
+
+// =============================================================================
+// Positioning
+// =============================================================================
+
+@mixin position($position, $args) {
+    @each $o in top right bottom left {
+      $i: index($args, $o);
+      @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+        #{$o}: nth($args, $i + 1);
+      }
+    }
+    position: $position;
+  }
+  
+  // Positioning helpers
+  @mixin absolute($args: '') {
+    @include position(absolute, $args);
+  }
+  
+  @mixin fixed($args: '') {
+    @include position(fixed, $args);
+  }
+  
+  @mixin relative($args: '') {
+    @include position(relative, $args);
+  }
+//USAGE 
+//   .menu li {
+//     @include relative;
+//   }
+  
+//   .sub-menu {
+//     @include absolute(top 100% left 0);
+//   }
+  
+//   .sticky-bar {
+//     @include fixed(top 0 left 0);
+//   } 
+
+
+// =============================================================================
+// Rem unit font size
+// =============================================================================
+
+@mixin font-size($size, $base: 16) {
+    font-size: $size; // fallback for old browsers
+    font-size: ($size / $base) * 1rem;
+  }
+
+// =============================================================================
+// Retina Images
+// =============================================================================
+  @mixin retina($image, $width, $height) {
+    @media (min--moz-device-pixel-ratio: 1.3),
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
+      /* Serving 2x image on Retina display */
+      background-image: url($image);
+      background-size: $width $height;
+    }
+  }
+
+//   USAGE
+//   .logo {
+//     background-image: url("img/logo.png");
+//       @include retina("img/logo@2x.png", 100px, 21px);
+//     }
+
+
+// =============================================================================
+// Animation Keyframes
+// =============================================================================
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+//   USAGE
+//   @include keyframes(animate) {
+//     50% {
+//       transform: rotate(90deg);
+//     }
+//     100% {
+//       transform: rotate(-90deg);
+//     }
+//   }
+
+
+// =============================================================================
+// Center Block
+// =============================================================================
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+// =============================================================================
+// Vertical centering
+// =============================================================================
+
+@mixin center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+  }
+
+// =============================================================================
+// Gradient 
+// =============================================================================
+  
+@mixin x-multiple-colored-gradient ($args...) {
+
+	$gradient: ();
+	$pos: nth($args, 1);
+	$pos_newsyntax: ();
+
+	@if not is-valid-keyword-direction($pos) {
+		$pos: 'top';
+	}
+
+	// New Syntax
+	@if $pos == 'top' {
+		$pos_newsyntax: 'to bottom';
+	} @else if $pos == 'right' {
+		$pos_newsyntax: 'to left';
+	} @else if $pos == 'bottom' {
+		$pos_newsyntax: 'to top';
+	} @else if $pos == 'left' {
+		$pos_newsyntax: 'to right';
+	}
+
+	@each $g in $args {
+		@if not is-valid-keyword-direction($g) {
+			$gradient: append($gradient, $g, comma);
+		}
+	}
+
+	background-image: -webkit-linear-gradient(unquote($pos), $gradient);
+	background-image:         linear-gradient(unquote($pos_newsyntax), $gradient);
+}
+
+
+///
+/// Returns whether a value is a valid keyword direction.
+///
+/// @param {String} $value
+///
+/// @returns {Bool}
+///
+@function is-valid-keyword-direction($value) {
+  @return not not index(
+    'top' 'right' 'bottom' 'left'
+    'to top' 'to right' 'to bottom' 'to left'
+    'to top right' 'to right top'
+    'to bottom right' 'to right bottom'
+    'to top left' 'to left top'
+    'to bottom left' 'to left bottom', $value);
+}
+
+
+// =============================================================================
+//Push auto
+// =============================================================================
+
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+
+// =============================================================================
+//Responsive ratio
+// =============================================================================
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+// =============================================================================
+//Fluid font
+// =============================================================================
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+        }
+      }
+    }
+  }

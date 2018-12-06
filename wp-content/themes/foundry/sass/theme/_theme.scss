@@ -1,1 +1,109 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// GENERAL SETTING 
+body{
+    line-height: 24px; 
+}
+
+h1{
+    color: $h-black;
+    @include font-size(34px,16px);
+    font-weight: bold;
+    line-height: 70px;
+    @include media-breakpoint-up(md){
+        @include font-size(48px, 16px);
+    }
+    @include media-breakpoint-up(lg){
+        line-height: 70px;
+        @include font-size(68px,16px);
+    }
+}
+
+h2,h3{
+    color: $p-black;
+}
+
+h2{
+    @include font-size(26px,16px);
+    line-height: 35px;
+}
+
+h3{
+    @include font-size(16px,16px);
+}
+
+p,a{
+    color: $p-black;
+    @include font-size(16px,16px);
+    @include media-breakpoint-up(md){
+        @include font-size(15px,16px);
+    }
+    
+}
+
+a{
+    color: $primary;
+    &:hover{
+        color: $primary;
+        text-decoration: none;
+        transition: .3s;
+    }
+    &.see-more{
+        @include font-size(15px,16px);
+        font-weight: bold;
+       i{
+           transition: .5s;
+           padding-left: 4px;
+       }
+       &:hover{
+           i{
+              padding-left: 9px;
+              transition: .5s;
+           }
+       }
+       
+    }
+}
+
+
+a.btn{
+    background-color: $primary;
+    border-radius: 21px;
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    padding: 8px 8px 8px;
+    width: 170px;
+    border: 2px solid $primary;
+    &:hover{
+        box-shadow: 0px 4px 10px 0 rgba($grey, 0.5);
+    } 
+    &.btn-second{
+        color: $primary;
+        background-color: $white;
+        &:hover{
+            background-color: $primary;
+            color:$white;
+        }
+    }
+}
+
+.line-gradient{
+    width: 100%;
+    height:1px;
+     /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+     background: url(../../img/large.svg);
+    @include x-multiple-colored-gradient(
+        'left',
+        $line-gradient 
+    )
+}
+
+.container{
+    @include media-breakpoint-only(xxl){
+        max-width: 1350px;
+    }
+}
