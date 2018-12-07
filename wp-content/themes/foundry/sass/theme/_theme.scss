@@ -1,6 +1,6 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-// GENERAL SETTING 
+// ============ GENERAL SETTING ================ 
 body{
     line-height: 24px; 
 }
@@ -99,7 +99,7 @@ a.btn{
     @include x-multiple-colored-gradient(
         'left',
         $line-gradient 
-    )
+    );
 }
 
 .container{
@@ -107,3 +107,20 @@ a.btn{
         max-width: 1350px;
     }
 }
+
+// Dropdown menu :hover
+
+.dropdown:hover .dropdown-menu {
+    @include fadeIn(
+        $duration:.5s
+    );
+    display: block;
+}
+
+@media(min-width: 768px){
+    .dropdown:hover .dropdown-menu {
+          display: block;
+    }
+}
+
+
