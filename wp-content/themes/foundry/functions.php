@@ -33,3 +33,4 @@ foreach ( $understrap_includes as $file ) {
 	}
 	require_once $filepath;
 }
+

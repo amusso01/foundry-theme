@@ -123,4 +123,100 @@ a.btn{
     }
 }
 
+// =========Hamburger icon=========
 
+.burger{
+    margin: 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease; 
+    border: none;
+    background: transparent;
+    &:focus{
+        outline: none;
+    }
+    .cta {
+      height: 50px;
+      width: 50px;
+      cursor: pointer; 
+      border: none;
+    }
+
+  }
+  .toggle-btn {
+    height: 2px;
+    width: 25px;
+    background-color: $h-black;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out; 
+}
+    
+    .toggle-btn:before {
+      content: "";
+      height: 2px;
+      width: 25px;
+      box-shadow: 0 -10px 0 0 $h-black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+    .toggle-btn:after {
+      content: "";
+      height: 2px;
+      width: 25px;
+      box-shadow: 0 10px 0 0 $h-black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+  
+  .active .toggle-btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out; }
+    .active .toggle-btn:before {
+      top: 0;
+      transition: all 0.3s ease-in-out; }
+    .active .toggle-btn:after {
+      top: 0;
+      transition: all 0.3s ease-in-out; }
+  .active .type11 {
+    transform: rotate(90deg);
+    transition: all 0.4s ease-in-out; }
+    .active .type11:before {
+      transform: translateY(0) rotate(40deg); }
+    .active .type11:after {
+      transform: translateY(0) rotate(-40deg); }
+
+// =========== Header ==========
+
+
+  #wrapper-navbar{
+      background: transparent;
+      .navbar.bg-primary{
+          background: transparent!important;
+          .container{
+              #main-menu{
+                  .menu-item{
+                      .nav-link{
+                          color: $grey;
+                          font-weight: 500;
+                      }
+                  }
+                  .active{
+                      .nav-link{
+                          font-weight: 500;
+                          color: $h-black;
+                      }
+                  }
+              }
+              a{
+                  color: $grey;
+              }
+          }
+      }
+  }

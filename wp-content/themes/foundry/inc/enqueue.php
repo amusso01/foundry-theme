@@ -22,6 +22,8 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_style( 'understrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $css_version );
 
 		wp_enqueue_script( 'jquery');
+		wp_deregister_script('jquery');
+		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 		
 		$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/js/theme.min.js');
 		wp_enqueue_script( 'understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true );

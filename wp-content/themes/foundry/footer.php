@@ -27,23 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-						<h1>H1 title</h1>
-						<h2>H2 title</h2>
-						<h3>H3 title</h3>
-
-						<a href="#">LINK link</a>
 						
-						<p>TEST test paragraph </p>	
-
-						<a href="#" class="btn btn-first">JUST LINK</a>
-						<br>
-						<a href="#" class="btn btn-second">JUST LINK</a>
-						<br>
-						<a href="#" class="see-more">DISCOVER MORE <i class="fa fa-lg fa-angle-right"></i></a>
-						
-
-						<div class="line-gradient"></div>
-
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
