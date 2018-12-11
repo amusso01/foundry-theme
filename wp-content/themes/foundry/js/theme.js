@@ -6509,3 +6509,14 @@
       }
     });
 });
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop()) {
+        $('.navbar').addClass('navwhite');
+  }
+  else {
+        $('.navbar').removeClass('navwhite');
+  }
+});
