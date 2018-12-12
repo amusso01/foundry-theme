@@ -366,3 +366,22 @@ a.btn{
         }
     }
 }
+
+// Parent page template
+#main{
+    .parent-title{
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    .line-gradient{
+        margin-bottom: 30px;
+    }
+    h4{
+        color:$h-black;
+        font-size: 30px;
+        width: 80%;
+        margin-bottom: 52px;
+    }
+
+}

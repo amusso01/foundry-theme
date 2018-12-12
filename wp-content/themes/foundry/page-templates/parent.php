@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Right Sidebar Layout
+ * Template Name: Parent-pages
  *
- * This template can be used to override the default template and sidebar setup
+ * This template shows the all the parent pages of the site the highest in hierarchy
  *
  * @package understrap
  */
@@ -24,13 +24,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<main class="site-main" id="main" role="main">
-
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+						<?php get_template_part( 'loop-templates/page', 'work' ); ?>
 
+						<!-- todo make the if is_page loop here -->
 
 					<?php endwhile; // end of the loop. ?>
+				
 
 				</main><!-- #main -->
 
