@@ -209,23 +209,22 @@ a.btn{
             height: 100vh;
             background: url(https://cdn.stocksnap.io/img-thumbs/960w/KCWTO8OFWF.jpg) no-repeat 50% 50%;
             background-size: cover;
+            #main-logo{
+                .cls-1{
+                    fill: $white;
+                }
+            }
             .navbar.bg-primary{
                 border-bottom: 2px solid transparent;
-                .container{
-                    #main-menu{
-                        li.menu-item{
-                            .nav-link{
-                                // color: $white;
-                            }
-                        }
-                    }
-                }
             }
         }
       #main-logo{
         height: 62px;
         width: 150px;
         transition: .8s;
+        .cls-1{
+            fill: $black;
+            }
         }
       .navbar.bg-primary{
             background: transparent!important;
@@ -261,8 +260,8 @@ a.btn{
           }
       }
       .navbar.navwhite{
-        line-height: 45px;
-        background: white!important;
+        max-height: 50px;
+        background: $white!important;
         transition: .5s;
         padding-top: 0px;
         padding-bottom: 0px;

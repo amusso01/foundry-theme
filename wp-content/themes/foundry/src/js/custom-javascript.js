@@ -28,6 +28,7 @@ $(function() {
   //caches a jQuery object containing the header element
   var header = $(".navbar");
   var logo = $("#main-logo .cls-1");
+  var navbar = $("#wrapper-navbar");
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
 
@@ -42,9 +43,13 @@ $(function() {
           header.removeClass('navwhite');
           header.css({position:"relative"});
           logo.css({
-            fill:"#fff",
             transition:"1s"
           });
+          if(navbar.hasClass("navbar-home")){
+            logo.css({
+              fill:"#fff"
+            })
+          }
       }
   });
 });
