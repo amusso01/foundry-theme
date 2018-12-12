@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row footer-info">
 
-			<div class="col-md-4 contact">
+			<div class="col-md-4 text-center text-md-left contact">
 				<div class="social social-footer">
 					<ul>
 						<li>
@@ -78,20 +78,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 				</div>
 				<h2>NEW BUSINESS</h2>
+				<p><a href="mailto:studio@foundrydigital.co.uk">studio@foundrydigital.co.uk</a></p>
+				<p><a href="tel:+44 (0)20 7736 7959">+44 (0)20 7736 7959</a></p>
 			</div><!-- contact -->
-
-			<div class="col-md-2">
+			
+			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>CREATE</h2>
-			</div>
-			<div class="col-md-2">
+				<a href="#">Brand Identity</a>
+				<a href="#">Creative Design</a>
+				<a href="#">Promote Artwork</a>
+				<a href="#">UX Design</a>
+			</div><!-- col-md-2 footer-push-down -->
+
+			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>BUILD</h2>
-			</div>
-			<div class="col-md-2">
+				<a href="#">Website Design & Build</a>
+				<a href="#">Ecommerce Website</a>
+				<a href="#">Mobile App Development</a>
+				<a href="#">SAAS & CRM </a>
+			</div><!-- col-md-2 footer-push-down -->
+
+			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>PROMOTE</h2>
-			</div>
-			<div class="col-md-2">
+				<a href="#">Strategy & Planning</a>
+				<a href="#">Marketing Activation</a>
+				<a href="#">Data Analytics</a>
+				<a href="#">Marketing Packages </a>
+			</div><!-- col-md-2  footer-push-down -->
+
+			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>COMPANY</h2>
-			</div>
+				<a href="#">Home</a>
+				<a href="#">Work</a>
+				<a href="#">Services</a>
+				<a href="#">About</a>
+				<a href="#">Insights</a>
+				<a href="#">Contact</a>
+			</div><!-- col-md-2 footer-push-down -->
 			
 
 		</div><!-- row end footer-info -->
@@ -104,7 +127,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row copyright">
+		<div class="row copyright ">
 
 			<div class="col-6 my-auto">
 
