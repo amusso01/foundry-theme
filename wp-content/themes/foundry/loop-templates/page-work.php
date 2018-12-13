@@ -14,16 +14,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header>
 
-		<?php the_title( '<h1 class="parent-title">', '</h1>' ); ?>
+		
 
 	</header><!-- .entry-header -->
-    <div class="line-gradient"></div>
+   
 
 	<div class="parent-content">
 
-		<?php the_content(); ?>
 
-	</div><!-- .entry-content -->
+	</div><!-- .parent-content -->
 
 	<footer class="entry-footer">
 
