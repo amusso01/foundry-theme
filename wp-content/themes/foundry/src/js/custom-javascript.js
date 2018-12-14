@@ -16,19 +16,12 @@
 
 // Scrolling Effect
 
-// $(window).on("scroll", function() {
-//   if($(window).scrollTop()) {
-//         $('.navbar').addClass('navwhite');
-//   }
-//   else {
-//         $('.navbar').removeClass('navwhite');
-//   }
-// });
 $(function() {
   //caches a jQuery object containing the header element
   var header = $(".navbar");
   var logo = $("#main-logo .cls-1");
   var navbar = $("#wrapper-navbar");
+  var dropdown = $(".bg-primary .container");
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
 

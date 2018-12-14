@@ -218,6 +218,7 @@ a.btn{
                 border-bottom: 2px solid transparent;
             }
         }
+        // --------- dropdown ---------
       #main-logo{
         height: 62px;
         width: 150px;
@@ -260,7 +261,6 @@ a.btn{
           }
       }
       .navbar.navwhite{
-        max-height: 50px;
         background: $white!important;
         transition: .5s;
         padding-top: 0px;
