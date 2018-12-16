@@ -120,13 +120,21 @@ a.btn{
     top: 97%;
     border-radius: 0px;
     display: block;
+    li{
+        &:hover{
+            a.dropdown-item{
+                color: $dark-blue!important;
+                background-color: $white;
+            }
+        }
+    }
     @include fadeIn(
         $duration:.5s
     );
     @include media-breakpoint-up(md){
        display: flex;
        flex-wrap: nowrap;
-       justify-content: space-around;
+       justify-content: space-evenly;
        li{
            &::before{
                margin-bottom: 0px;
