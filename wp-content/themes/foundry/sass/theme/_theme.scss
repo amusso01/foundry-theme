@@ -115,32 +115,45 @@ a.btn{
     position: static;
 }
 
+.dropdown-menu{
+    opacity: 0;
+    transition: all .4s;
+}
+
+
 .dropdown:hover .dropdown-menu {
     width: 100%;
     top: 97%;
-    border-radius: 0px;
     display: block;
+    border: none;
+    opacity:1;
+    @include fadeInLeftBig($duration:.4s);
     li{
         &:hover{
             a.dropdown-item{
                 color: $dark-blue!important;
-                background-color: $white;
+                background-color: transparent;
                 &::before{
                     color: $dark-blue;
                 }
             }
         }
         a.dropdown-item{
-            text-align: center;
+            @include media-breakpoint-up(md){
+                text-align: center;
+            }
         }
     }
-    @include fadeIn(
-        $duration:.5s
-    );
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md){  
+        @include fadeInDown(
+        $duration:.7s
+        ); 
        display: flex;
        flex-wrap: nowrap;
        justify-content: space-evenly;
+       border-bottom-left-radius: 80%;
+       border-bottom-right-radius: 80%;
+       border-bottom: 1px solid $grey;
        li{
            a{
                &::before{

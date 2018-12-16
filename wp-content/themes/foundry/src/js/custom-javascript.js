@@ -2,7 +2,7 @@
       // hamburger menu
     $(document).on('click', '.cta', function () {
         $(this).toggleClass('active')
-    })
+    });
 });
 
 jQuery(function($) {
@@ -26,7 +26,6 @@ $(function() {
   var dropdown = $(".bg-primary .container");
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-
       if (scroll >= 300) {
           header.addClass("navwhite");
           header.css({position:"fixed"});
