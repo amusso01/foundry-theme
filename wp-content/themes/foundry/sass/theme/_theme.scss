@@ -125,7 +125,13 @@ a.btn{
             a.dropdown-item{
                 color: $dark-blue!important;
                 background-color: $white;
+                &::before{
+                    color: $dark-blue;
+                }
             }
+        }
+        a.dropdown-item{
+            text-align: center;
         }
     }
     @include fadeIn(
@@ -136,18 +142,17 @@ a.btn{
        flex-wrap: nowrap;
        justify-content: space-evenly;
        li{
-           &::before{
-               margin-bottom: 0px;
-               position: relative;
-               display:block;
-               margin-left: auto;
-               margin-right: auto;
-               width: 50%;
-               @include fontawesome-icon();
-               justify-content: space-around;
-               content: $fa-var-exchange;
-               font-size: 48px;
-               color: green;
+           a{
+               &::before{
+                   margin-bottom: 0px;
+                   position: relative;
+                   display:block;
+                   @include fontawesome-icon();
+                   justify-content: space-around;
+                   content: $fa-var-exchange;
+                   font-size: 48px;
+                   color: grey;
+               }
            }
        }
     }
