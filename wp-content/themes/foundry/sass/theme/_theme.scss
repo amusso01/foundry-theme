@@ -1,11 +1,11 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
 // ============ GENERAL SETTING ================ 
+
+
 body{
     line-height: 24px; 
 }
-
-
 
 h1{
     color: $h-black;
@@ -66,7 +66,6 @@ a{
     }
 }
 
-
 a.btn{
     background-color: $primary;
     border-radius: 21px;
@@ -112,16 +111,37 @@ a.btn{
 
 // Dropdown menu :hover
 
+.dropdown{
+    position: static;
+}
+
 .dropdown:hover .dropdown-menu {
+    width: 100%;
+    top: 97%;
+    border-radius: 0px;
+    display: block;
     @include fadeIn(
         $duration:.5s
     );
-    display: block;
-}
-
-@media(min-width: 768px){
-    .dropdown:hover .dropdown-menu {
-          display: block;
+    @include media-breakpoint-up(md){
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: space-around;
+       li{
+           &::before{
+               margin-bottom: 0px;
+               position: relative;
+               display:block;
+               margin-left: auto;
+               margin-right: auto;
+               width: 50%;
+               @include fontawesome-icon();
+               justify-content: space-around;
+               content: $fa-var-exchange;
+               font-size: 48px;
+               color: green;
+           }
+       }
     }
 }
 
@@ -231,7 +251,8 @@ a.btn{
             background: transparent!important;
             width: 100%;
             line-height: 60px;
-            z-index: 100000;
+            z-index: 100;
+            padding-bottom: 0px;
             transition: .5s;
             border-bottom: 1px solid $grey;
             .container{
@@ -366,7 +387,7 @@ a.btn{
     }
 }
 
-// Parent page template
+//========= Parent page template =========
 #main{
     .parent-title{
         font-size: 13px;
