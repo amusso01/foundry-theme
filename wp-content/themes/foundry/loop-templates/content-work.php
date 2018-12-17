@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <section <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-<<<<<<< HEAD
+
    
 	<article class="parent-content">
 
@@ -31,6 +31,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 	</article><!-- .parent-content -->
-=======
+
 
 </section><!-- #post-## -->
