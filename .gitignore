@@ -55,6 +55,10 @@ Thumbs.db
 *.tar
 *.zip
 
+
+#ignore gulpconfig
+wp-content/themes/gulpconfig.json
+
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
