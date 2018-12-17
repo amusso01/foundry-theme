@@ -290,3 +290,12 @@
       }
     }
   }
+
+  // ======================fontawesome==============
+
+  @mixin fontawesome-icon {
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
