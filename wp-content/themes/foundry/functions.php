@@ -65,6 +65,8 @@ foreach ( $understrap_includes as $file ) {
                       'labels'              => $labels,
                       // Features this CPT supports in Post Editor
                       'supports'            => array( 'title', 'editor', 'thumbnail','custom-fields'),
+
+                      'taxonomies'          => array( 'category' ),
                    
                       /* A hierarchical CPT is like Pages and can have
                        * Parent and child items. A non-hierarchical CPT
