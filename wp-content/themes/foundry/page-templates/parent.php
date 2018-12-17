@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						}
 						?>
 
-						<?php get_template_part( 'loop-templates/page', 'work' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'work' ); ?>
 
 						<!-- todo make the if is_page loop here -->
 
