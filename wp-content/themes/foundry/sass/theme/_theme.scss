@@ -431,3 +431,38 @@ a.btn{
     }
 
 }
+
+
+// ============= Work ===============
+
+.work-navigation{
+    padding-bottom: 35px;
+    .work-category-nav{
+        list-style: none;
+        li{
+            margin: 0px;
+        }
+    }
+}
+
+
+.work-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+    .work-box{
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 270px;
+        max-height: 270px;
+        height: 100%;    
+        .overlay{
+            padding: 20px;
+            background: $white;
+            width: 40%;
+            overflow: hidden;
+        }
+    }
+}
