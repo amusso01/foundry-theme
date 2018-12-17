@@ -11,26 +11,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <section <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-
-		<article id="post-<?php the_ID(); ?>" <?php post_class( 'work-inner');?> >
-		
-		</article>
-
-
-	<header>
-
-	</header><!-- .entry-header -->
+<<<<<<< HEAD
    
-
-	<div class="parent-content">
-
-
-	</div><!-- .parent-content -->
-
-	<footer class="entry-footer">
+	<article class="parent-content">
 
 
-	</footer><!-- .entry-footer -->
+	<?php 
+    query_posts(array( 
+        'post_type' => 'works_post',
+        'showposts' => 9
+    ) );  
+	?>
+	<?php while (have_posts()) : the_post(); ?>
+			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			<?php get_the_post_thumbnail()?>
+	<?php endwhile;
+	wp_reset_postdata()
+	?>
+
+
+	</article><!-- .parent-content -->
+=======
 
 </section><!-- #post-## -->
