@@ -47,16 +47,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$cat = get_the_category(); // array of object of WP_Term
 				$postCat = $cat[0]; // object WP_Term for the current post
 
-				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $works->ID ), 'single-post-thumbnail' ); 
+				$thumbnail_id  = get_post_thumbnail_id($works->ID);
+				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+				$image = wp_get_attachment_image_src( $thumbnail_id,'medium-large' ); 
 				
 		?>
-				<article class="work-box" <?php echo $postCat->slug ?> style="background-image: url('<?php echo $image[0]; ?>')"  >
-		<?php
-		?>			
-					<div class="overlay">
-						<p class="work-cat"><?php echo $postCat->slug ?></p>
-						<h2 class="work-title" ><?php the_title(); ?></h2>
-						<p class="work-description"><?php echo get_field('description')?></p>
+				<article class="work-box" <?php echo $postCat->slug ?>"  >
+
+					<div class="hovereffect">
+						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" >
+						<div class="overlay">
+							<p class="work-cat"><?php echo $postCat->slug ?></p>
+							<h2 class="work-title" ><?php the_title(); ?></h2>
+							<p class="work-description info"><?php echo get_field('description')?></p>
+						</div>
 					</div>
 		
 				</article><!-- article.work-box -->
