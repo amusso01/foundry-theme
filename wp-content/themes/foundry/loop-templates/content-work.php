@@ -49,13 +49,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				$thumbnail_id  = get_post_thumbnail_id($works->ID);
 				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-				$image = wp_get_attachment_image_src( $thumbnail_id,'medium-large' ); 
-				
+				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
 		?>
-				<article class="work-box" <?php echo $postCat->slug ?>"  >
+				<a href="<?php echo get_permalink() ?>"><article class="work-box" <?php echo $postCat->slug ?>"  >
 
 					<div class="hovereffect">
-						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" >
+						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
 						<div class="overlay">
 							<p class="work-cat"><?php echo $postCat->slug ?></p>
 							<h2 class="work-title" ><?php the_title(); ?></h2>
@@ -63,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 					</div>
 		
-				</article><!-- article.work-box -->
+				</article></a><!-- article.work-box -->
 		<?php }
 			// Restore original Post Data
 		wp_reset_postdata();
