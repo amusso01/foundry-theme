@@ -98,3 +98,12 @@ foreach ( $understrap_includes as $file ) {
      */
     
     add_action( 'init', 'custom_Works_type', 0 );
+
+    /*--------------------------addsvg----------------------------------------------*/
+add_filter( 'upload_mimes', 'custom_upload_mimes' );
+function custom_upload_mimes( $existing_mimes = array() ) {
+  // Add the file extension to the array
+  $existing_mimes['svg'] = 'image/svg+xml';
+  return $existing_mimes;
+}
+/*--------------------------------------------------------------------------------------------------*/
