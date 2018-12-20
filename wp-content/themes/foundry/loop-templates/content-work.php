@@ -18,18 +18,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="row">
 
 		<nav class="col-md-12">
-		
-			<ul class="work-category-nav">
 	
 				<?php 
-					$args= array(  
-						'show_option_all'   =>   'Featured', //Text for button All
-						'title_li'          => __(''),
-						'exclude_tree'		=> 1
-					);
-					wp_list_categories( $args );
-				?>
-			</ul>
+					$args= array('exclude_tree'=> 1);
+					
+					$categories = get_categories($args); ?>
+
+					<ul id="category-menu">
+
+						<?php foreach ( $categories as $cat ) { ?>
+						<li id="cat-<?php echo $cat->term_id; ?>"><a class="<?php echo $cat->slug; ?> ajax" onclick="cat_ajax_get('<?php echo $cat->term_id; ?>');" href="#"><?php echo $cat->name; ?></a></li>
+
+						<?php } ?>
+					</ul>
 				
 		</nav><!-- col-md-12 -->
 	</div><!-- row -->
@@ -37,6 +38,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <section <?php post_class('container-fluid'); ?> id="post-<?php the_ID(); ?>">
+
+<div id="loading-animation" style="display: none;">
+	<div id="loader">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="lading"></div>
+	</div>						
+</div>
 
 	<div class="work-grid ">
 		<?php
@@ -51,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
 		?>
-				<a href="<?php echo get_permalink() ?>"><article class="work-box" <?php echo $postCat->slug ?>"  >
+				<a href="<?php echo get_permalink() ?>" class="ajax-call"><article class="work-box" <?php echo $postCat->slug ?>"  >
 
 					<div class="hovereffect">
 						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >

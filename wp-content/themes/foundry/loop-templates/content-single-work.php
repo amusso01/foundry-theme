@@ -39,7 +39,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					<div class="box-black h-100">
 						<div class="svg-brand">
 							<?php $svgImg = get_field('brand_logo'); ?>
-							<?php echo file_get_contents( $svgImg ); ?>
+							<img src="<?php echo $svgImg ?>" alt="brand logo">
 						</div>
 					</div>
 				</div>
@@ -81,7 +81,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 								}
 						?>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<?php if (count($images)>1) {
+							?>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
@@ -89,6 +91,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
+							<?php
+						}
+						?>
 					</div>
 						<?php
 							}
@@ -107,7 +112,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div><!-- container -->
 <?php
 		$images = get_field('mobile_images');
-		$size = 'full'; // (thumbnail, medium, large, full or custom size)
+		$size = 'large'; // (thumbnail, medium, large, full or custom size)
 		$i=1;
 		if ($images) {
 	?>

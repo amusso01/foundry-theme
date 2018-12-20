@@ -6545,20 +6545,19 @@ $(function() {
 });
   
 
-
 // ============ Works Grid =============
 
-$('.filter a').click(function(e) {
-	$('.filter a').removeClass('filterHighlighted');
-	$(this).addClass('filterHighlighted');
-  e.preventDefault();
-  var a = $(this).attr('href');
-  a = a.substr(1);
-  $('.gallery a').each(function() {
-    if (!$(this).hasClass(a) && a != 'all') {
-      $(this).addClass('hideImg');
-	} else {
-      $(this).removeClass('hideImg');
-	}
-  });
-});
+// $('.filter a').click(function(e) {
+// 	$('.filter a').removeClass('filterHighlighted');
+// 	$(this).addClass('filterHighlighted');
+//   e.preventDefault();
+//   var a = $(this).attr('href');
+//   a = a.substr(1);
+//   $('.gallery a').each(function() {
+//     if (!$(this).hasClass(a) && a != 'all') {
+//       $(this).addClass('hideImg');
+// 	} else {
+//       $(this).removeClass('hideImg');
+// 	}
+//   });
+// });

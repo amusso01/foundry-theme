@@ -1,8 +1,11 @@
 <?php
 /**
  * Template Name: Parent-pages
+ * 
+ * Template Post Type: post, page
  *
  * This template shows the all the parent pages of the site the highest in hierarchy
+ * 
  *
  * @package understrap
  */
@@ -57,13 +60,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 							}elseif(is_page("contact")){
 
-							}else{
-								
+							}elseif(is_page("insights")){
+
+								get_template_part( 'loop-templates/content', 'insight' ); 
+
 							}
 						?>
-						
-
-
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
