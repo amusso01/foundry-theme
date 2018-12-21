@@ -913,3 +913,80 @@ a.btn{
 }
 
 
+
+// ============= Inner Insight ==========
+
+.insight-hero{
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 270px;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin-top: -30px;
+    @include media-breakpoint-up(md){
+        height:370px;
+    }
+    @include media-breakpoint-up(xl){
+        height: 430px;
+    }
+    .insight-title{
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+        h1{
+            font-size: 28px;
+            font-weight: 400;
+            color: $white;
+            @include media-breakpoint-up(sm){
+                font-size: 32px;
+            }
+            @include media-breakpoint-up(md){
+                font-size: 41px;
+            }
+
+        }
+    }
+}
+.insight-content{
+    padding-bottom: 74px;
+    padding-top: 74px;
+    .insight-info{
+        .date{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .category{
+            text-transform: uppercase;
+            font-size: 13px;
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+    .entry-footer{
+        .grey-box{
+            background-color: $light-grey;
+            padding: 34px 34px;
+            @include media-breakpoint-up(md){
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            h3{
+                font-size: 21px;
+                padding-bottom: 14px;
+            }
+            p{
+                a{
+                    font-size: 16px;
+                    color: $primary;
+                    &:hover{
+                        color: $p-black;
+                    }
+                }
+            }
+        }
+    }
+}
