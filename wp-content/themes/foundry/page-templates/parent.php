@@ -1,8 +1,11 @@
 <?php
 /**
  * Template Name: Parent-pages
+ * 
+ * Template Post Type: post, page
  *
  * This template shows the all the parent pages of the site the highest in hierarchy
+ * 
  *
  * @package understrap
  */
@@ -23,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-12">
 
-				<main class="site-main" id="main" role="main">
+				<header class="site-main" id="parent" role="main">
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php the_title( '<h1 class="parent-title">', '</h1>' ); ?>
@@ -33,31 +36,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="parent-content">
 
-						<?php the_content(); ?>
+							<?php the_content(); ?>
 
 						</div><!-- .entry-content -->
 
-						<?php if(is_page("work")){
+						<?php endwhile; // end of the loop. ?>
 
-						}elseif(is_page("services")){
-
-						}elseif(is_page("about")){
-
-						}elseif(is_page("contact")){
-
-						}else{
-							continue;
-						}
-						?>
-
-						<?php get_template_part( 'loop-templates/content', 'work' ); ?>
-
-						<!-- todo make the if is_page loop here -->
-
-					<?php endwhile; // end of the loop. ?>
-				
-
-				</main><!-- #main -->
+				</header><!-- #header -->
 
 			</div><!-- .col-md-12 -->
 
@@ -65,6 +50,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- Container end -->
 
+						<?php if(is_page("work")){
+
+								get_template_part( 'loop-templates/content', 'work' ); 
+							
+							}elseif(is_page("services")){
+
+							}elseif(is_page("about")){
+
+							}elseif(is_page("contact")){
+
+							}elseif(is_page("insights")){
+
+								get_template_part( 'loop-templates/content', 'insight' ); 
+
+							}
+						?>
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

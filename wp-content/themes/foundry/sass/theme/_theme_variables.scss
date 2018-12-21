@@ -13,7 +13,7 @@ $primary: #5472C6; // Thats a sample how you could change a BootStrap variable.
 // Colours
 
 $grey:      #C6C6C6;
-$light-grey:#C6C6C6;
+$light-grey:#F8F8F8;
 $dark-blue: #202431;
 $p-black:   #212531;
 $h-black:   #1A1C22; 
@@ -75,7 +75,9 @@ $line-gradient:$gradient-1, $gradient-2, $gradient-3,$gradient-4,$gradient-5,$gr
 
     $font-family-sans-serif: "proxima-nova","Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-//font-size
+// carousel
+
+$carousel-transition: transform 1s ease;  
 
 
 
