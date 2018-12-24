@@ -23,6 +23,10 @@ get_header();
 					
 					get_template_part( 'loop-templates/content', 'single-work' );
 					
+				}elseif (get_post_type() == 'post'){
+
+					get_template_part( 'loop-templates/content', 'single-insight' );
+
 				}
 				?>
 

@@ -31,27 +31,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 			<article class="col-md-6 insight-grid">
 				<a href="<?php echo get_permalink() ?>">
-						<!-- <div class="hovereffect"> -->
-							<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
-							<!-- <div class="overlay">
-								
-								<h2 class="insight-title" ><?php the_title(); ?></h2>
-								<p class="insight-description info"><?php echo get_field('description')?></p>
-							</div> -->
-			</a><!-- article.insight-box -->
+					<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
+				</a><!-- article.insight-box -->
 				<div class="insight-info">
 					<p class="insight-cat"><?php echo $postCat->slug ?></p>
-					<p class="insight-date"><?php echo get_the_date('d M Y') ?></p>
+					<p class="insight-date"><?php echo get_the_date('d F,Y') ?></p>
 				</div>
 				<div class="grey-line"></div>
 				<div class="insight-title">
 					<?php the_title( '<h4>', '</h4>' ); 
 					the_field('description_insight')?>
-
 				</div>
-
-
-				
 			</article><!-- insight-grid -->
 		<?php }
 			// Restore original Post Data
