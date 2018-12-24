@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="insight-hero container-fluid" style="background-image: url(<?php the_field('hero_image');?>">
+<section class="insight-hero container-fluid" id="insight-hero" style="background-image: url(<?php the_field('hero_image');?>">
 	<header class="insight-title">
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header>
@@ -45,6 +45,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<p><?php next_post_link('%link'); ?></p>
 				<p><?php previous_post_link( '%link'); ?></p>
 			</div>
+			<a href="<?php echo site_url('insights') ?>" class="see-more go-left"><i class="fa fa-chevron-left left"></i>INSIGHTS</a>
+
 
 		</footer><!-- .entry-footer -->
 

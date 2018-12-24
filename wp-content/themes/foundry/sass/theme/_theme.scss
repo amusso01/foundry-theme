@@ -899,6 +899,13 @@ a.btn{
         @include media-breakpoint-up(md){
             margin-bottom: 105px;
         }
+        &:hover{
+            color: $p-black;
+            i{
+                color:$primary;
+                transition: .4s;
+            }
+        }
     }
 }
 
@@ -967,6 +974,19 @@ a.btn{
         font-size: 16px;
     }
     .entry-footer{
+        .see-more.go-left{
+            color:$grey;
+            padding-top: 44px;
+            display: block;
+            &:hover{
+                i.left{
+                    color: $primary;
+                }
+            }
+            i.left{
+                padding-left: 0px;
+            }
+        }
         .grey-box{
             background-color: $light-grey;
             padding: 34px 34px;

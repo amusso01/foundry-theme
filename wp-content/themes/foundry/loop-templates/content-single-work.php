@@ -149,7 +149,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 		<div class="grey-line"></div>
-			<a href="#" class="see-more go-left"><i class="fa fa-chevron-left left"></i>BACK TO WORKS</a>
+			<a href="<?php echo site_url('work') ?>" class="see-more go-left"><i class="fa fa-chevron-left left"></i>BACK TO WORKS</a>
 	</div>
 		
 

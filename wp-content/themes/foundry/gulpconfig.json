@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/foundry-site/",
+    "proxy": "localhost/foundry-web/",
     "notify": false
   },
   "browserSyncWatchFiles" : [
