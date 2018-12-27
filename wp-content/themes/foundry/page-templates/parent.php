@@ -7,7 +7,6 @@
  * This template shows the all the parent pages of the site the highest in hierarchy
  * 
  *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

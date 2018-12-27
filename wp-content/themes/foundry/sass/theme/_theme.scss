@@ -1323,3 +1323,16 @@ a.btn{
         display: inline-block;
     }
 }
+
+// ========== BUILD ==============
+
+#service-inner{
+    padding: 0px;
+    .jumbotrone{
+        img{
+            width: 100%;
+            max-height: 70vh;
+            margin-top: -14px;
+        }
+    }
+}
