@@ -1,25 +1,12 @@
 <svg id="promote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 55.824">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-      }
-
-      .cls-2 {
-        fill: url(#linear-gradient-2);
-      }
-
-      .cls-3 {
-        fill: url(#linear-gradient-3);
-      }
-    </style>
-    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0.013" stop-color="#d70042"/>
       <stop offset="0.523" stop-color="#b40066"/>
       <stop offset="0.992" stop-color="#91008a"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="-0.001" y1="0.504" x2="0.999" y2="0.504" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-3" x1="0.006" y1="0.504" x2="1.002" y2="0.504" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-0.001" y1="0.504" x2="0.999" y2="0.504" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-6" x1="0.006" y1="0.504" x2="1.002" y2="0.504" xlink:href="#linear-gradient-4"/>
   </defs>
   <g id="oQhOiA_1_" transform="translate(0)">
     <g id="Group_415" data-name="Group 415">

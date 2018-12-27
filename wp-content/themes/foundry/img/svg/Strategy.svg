@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.639 15.521">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5472c6;
+        stroke-miterlimit: 10;
+        stroke-width: 0.6px;
+      }
+    </style>
+  </defs>
+  <g id="Strategy_and_planning" data-name="Strategy and planning" transform="translate(-1.695 -0.67)">
+    <path id="Path_3411" data-name="Path 3411" class="cls-1" d="M5.865,58.865A3.805,3.805,0,0,1,8.76,54.9l.609.609.443.443A3.33,3.33,0,0,1,5.865,58.865Z" transform="translate(-2.819 -43.961)"/>
+    <path id="Path_3412" data-name="Path 3412" class="cls-1" d="M34.146,1.018S29.222.612,26.235,3.6s-2.84,5.458-2.84,5.458l2.582,2.674s4.426-.738,6.215-3.725A17.039,17.039,0,0,0,34.146,1.018Z" transform="translate(-17.122)"/>
+    <path id="Path_3413" data-name="Path 3413" class="cls-1" d="M43.425,50.3v1.881L39.7,55.7V51.849" transform="translate(-30.422 -40.209)"/>
+    <path id="Path_3414" data-name="Path 3414" class="cls-1" d="M7.951,22.3H5.941L2.4,25.988H6.273" transform="translate(0 -17.372)"/>
+    <line id="Line_124" data-name="Line 124" class="cls-1" x2="3.946" y2="3.946" transform="translate(12.229 1.7)"/>
+  </g>
+</svg>
