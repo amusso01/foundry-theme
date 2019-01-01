@@ -18,9 +18,17 @@ get_header();
 
 <main class="service-inside">
 
-	<div class="container-fluid" id="service-inner">
-		<div class="row jumbotrone">
-			<img class="img-fluid" src="<?php the_field('jumbo_image') ?>" alt="color banner">
+	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="container-fluid" id="service-inner">
+		<div class="row jumbotrone" >
+			<div class="container">
+				<div class="col-md-4 offset-md-2">
+					<?php the_title() ?>
+
+				</div>
+				<div class="col-md-6">
+
+				</div>
+			</div>
 			
 			
 		</div>
