@@ -18,9 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="svg-service">
 					<svg id="create" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 59.967">
 						<defs>
-							<style>
-								
-							</style>
 							<linearGradient id="linear-gradient" x1="0.147" y1="0.854" x2="0.853" y2="0.148" gradientUnits="objectBoundingBox">
 								<stop offset="0" stop-color="#ff9500"/>
 								<stop offset="0.265" stop-color="#ff7100"/>
