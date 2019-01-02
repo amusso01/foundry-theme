@@ -1329,22 +1329,34 @@ a.btn{
 }
 
 // ========== BUILD ==============
-   
+
 .jumbotrone{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 100%;
+    margin-bottom: 80px;
+    @include media-breakpoint-up(xxl){
+        background-size: cover;
+    }
     h1{
         color: $white;
-        padding-top: 108px;
+        padding-top: 50px;
+        text-align: center;
+        margin-left: -60px;
+        @include media-breakpoint-up(lg){
+            padding-top: 108px;
+            margin-left: 0px;
+            text-align: left;
+        }
         svg{
             position: relative;
             top: -5px;
             padding-right: 30px;
+            height: 50px;
+            @include media-breakpoint-up(lg){
+                height: 67px;
+            }
         }
         #build{
-            height: 67px;
             .cls-1 {
                 fill: url(#linear-gradient-3) $gradient-8;
                 }
@@ -1353,18 +1365,104 @@ a.btn{
                 fill: url(#linear-gradient-4) $gradient-8;
                 }
         } 
+        #create{
+            .cls-1 {
+                fill: url(#linear-gradient) $gradient-1;
+            }
+            
+            .cls-2 {
+                fill: url(#linear-gradient-2) $gradient-1;
+            }
+        }
+        #promote{
+            .cls-1 {
+                fill: url(#linear-gradient-5)$gradient-10;
+              }
+        
+              .cls-2 {
+                fill: url(#linear-gradient-6) $gradient-10;
+              }
+        
+              .cls-3 {
+                fill: url(#linear-gradient-7) $gradient-10;
+              }
+        }
     }  
-    .row{
-        padding-top: 90px;
-        padding-bottom: 100px;
+    .row.second-row{
+        padding-bottom: 50px;
+        @include media-breakpoint-up(lg){
+            padding-top: 90px;
+            padding-bottom: 50px;
+        }
         h2{
-            padding-left: 114px;
             color: $white;
-            width: 60%;
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 40px;
+            @include media-breakpoint-up(lg){
+                text-align: left;
+                font-size: 26px;
+                padding-left: 114px;
+                width: 80%;
+            }
         }
         p{
             color: $white;
-            width: 70%;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            @include media-breakpoint-up(lg){
+                font-size: 16px;
+                text-align: left;
+                margin: 0px;
+                width: 70%;
+            }
+        }
+    }
+    .row.third-row{
+        padding-bottom: 60px;
+        text-align: center;
+        @include media-breakpoint-up(lg){
+            padding-bottom: 108px;
+        }
+        .btn{
+            display: inline-block;
+            background-color: transparent;
+            border-color: $white;
+            &:hover{
+                box-shadow: none;
+                background-color: $white;
+            }
+            &.btn-build{
+                &:hover{
+                    color: #0E9F9C;
+                }
+            }
+            &.btn-create{
+                &:hover{
+                    color: #D8351B;
+                }
+            }
+            &.btn-promote{
+                &:hover{
+                    color: #73244B;
+                }
+            }
+        }
+    }
+}
+.service-inside{
+    margin-right: -15px;
+    .service-box-grid{
+        // width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sevice-gird-element{
+        .icon-service{
+            width: 40px;
         }
     }
 }
