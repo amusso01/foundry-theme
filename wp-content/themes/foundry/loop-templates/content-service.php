@@ -37,23 +37,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</svg>	
 				</div>
 				<div class="card-content">
-					<h3>CREATE</h3>
+					<a href="<?php echo site_url('/create/'); ?>"><h3>CREATE</h3></a>
 					<p>Our graphic designers use UX & visual strategy to create eye-catching identities and user interfaces</p>
 					<p class="primary">OVERVIEW</p>
 				</div>
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="brand" href="#">Brand Identity</a>
+							<a id="brand" href="<?php echo site_url('/brand-identity/'); ?>">Brand Identity</a>
 						</li>
 						<li>
-							<a id="graphic" href="#">Graphic Design</a>
+							<a id="graphic" href="<?php echo site_url('/graphic-design/'); ?>">Graphic Design</a>
 						</li>
 						<li>
-							<a  id="promotional" href="#">Promotional Artwork</a>
+							<a  id="promotional" href="<?php echo site_url('/promotional-artwork/'); ?>">Promotional Artwork</a>
 						</li>
 						<li>
-							<a id="ux" href="#">UX design</a>
+							<a id="ux" href="<?php echo site_url('/ux-design/'); ?>">UX design</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->
@@ -82,23 +82,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</svg>	
 				</div>
 				<div class="card-content">
-					<h3>BUILD</h3>
+					<a href="<?php echo site_url('/build/') ?>"><h3>BUILD</h3></a>
 					<p>We pair robust development with stunning design to build the best websites, apps and digital platforms</p>
 					<p class="primary">OVERVIEW</p>
 				</div>
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="web" href="#">Website Design and Build</a>
+							<a id="web" href="<?php echo site_url('/web-design/'); ?>">Website Design and Build</a>
 						</li>
 						<li>
-							<a id="ecommerce" href="#">Ecommerce Websites</a>
+							<a id="ecommerce" href="<?php echo site_url('/ecommerce/'); ?>">Ecommerce Websites</a>
 						</li>
 						<li>
-							<a  id="mobile" href="#">Mobile App Development</a>
+							<a  id="mobile" href="<?php echo site_url('/mobile-development/'); ?>">Mobile App Development</a>
 						</li>
 						<li>
-							<a id="saas" href="#">SAAS & CRM</a>
+							<a id="saas" href="<?php echo site_url('/crm-saas/'); ?>">SAAS & CRM</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->
@@ -137,23 +137,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</svg>	
 				</div>
 				<div class="card-content">
-					<h3>PROMOTE</h3>
+					<a href="<?php echo site_url('/promote/'); ?>"><h3>PROMOTE</h3></a>
 					<p>Once your business is online, it’s time to promote it so you can reach and engage your target audience effectively</p>
 					<p class="primary">OVERVIEW</p>
 				</div>
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="strategy" href="#">Strategy and Planning</a>
+							<a id="strategy" href="<?php echo site_url('/startegy/'); ?>">Strategy and Planning</a>
 						</li>
 						<li>
-							<a id="marketingActivation" href="#">Marketing Activation</a>
+							<a id="marketingActivation" href="<?php echo site_url('/marketing-activation/'); ?>">Marketing Activation</a>
 						</li>
 						<li>
-							<a id="data" href="#">Data Analytics</a>
+							<a id="data" href="<?php echo site_url('/data-analytics/'); ?>">Data Analytics</a>
 						</li>
 						<li>
-							<a id="marketingPackages" href="#">Marketing Packages</a>
+							<a id="marketingPackages" href="<?php echo site_url('/marketing-pakages/'); ?>">Marketing Packages</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->

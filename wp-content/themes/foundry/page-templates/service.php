@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 if(is_page('build')){
-
+	$page= 'build';
 	$mainSvg = '<svg id="build" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
 					<defs>
 						<linearGradient id="linear-gradient-3" x1="0.146" y1="0.854" x2="0.853" y2="0.147" gradientUnits="objectBoundingBox">
@@ -37,6 +37,7 @@ if(is_page('build')){
 				</svg>';
 	$btnClass = 'btn-build';
 }elseif (is_page('create')) {
+	$page = 'create';
 	$mainSvg = '<svg id="create" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 59.967">
 					<defs>
 						<linearGradient id="linear-gradient" x1="0.147" y1="0.854" x2="0.853" y2="0.148" gradientUnits="objectBoundingBox">
@@ -58,6 +59,7 @@ if(is_page('build')){
 				</svg>';
 	$btnClass = 'btn-create';
 }elseif (is_page('promote')) {
+	$page = 'promote';
 	$mainSvg = '<svg id="promote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 55.824">
 					<defs>
 						<linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
@@ -93,8 +95,6 @@ if(is_page('build')){
 ?>
 
 <main class="service-inside">
-
-	
 	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="row jumbotrone" >
 		<div class="container">
 			<div class="col-lg-4 offset-lg-1">
@@ -119,40 +119,88 @@ if(is_page('build')){
 			</div>
 		</div>
 	</div>
-
-	<div class="container">
-		<div class="service-box-grid">
+	<div class="container grid-section">
+		<div class="row no-gutters">
+			<div class="service-box-grid">
+				<?php
+					// check if the flexible content field has rows of data
+					if( have_rows('service_boxes') ):
+						// loop through the rows of data
+						while ( have_rows('service_boxes') ) : the_row();
+							?>
+							<a href="<?php the_sub_field('box-link-to') ?>">
+								<div class="sevice-gird-element container">
+									<div class="box-wrapper">
+										<div class="icon row justify-content-center">
+											<?php $svgImg = get_sub_field('icon'); ?>
+											<img src="<?php echo $svgImg;  ?>" alt="service icon" class="icon-service">
+										</div>
+										<div class="box-title row justify-content-center">
+											<h3><?php the_sub_field('box-title'); ?></h3>
+										</div>
+										<div class="box-description row justify-content-center">
+											<p><?php the_sub_field('box-description') ?></p>
+										</div>
+									</div><!-- box-wrapper -->
+								</div><!-- sevice-gird-element -->
+							</a>
+							<?php
+	
+						endwhile;
+	
+					else :
+	
+						// no layouts found
+	
+					endif;
+				?>	
+			</div><!-- service-box-grid -->
+		</div><!-- row .no-gutters -->
+	</div><!-- container -->
+	<div class="container-fluid our-process">
+		<div class="container">
+			<div class="icon row justify-content-center">
+				<?php echo $mainSvg; ?>
+				<p>Our process</p>
+			</div><!-- title -->
+			<div class="title row justify-content-center">
+				<h3>How we<?php echo ' '.$page; ?></h3>
+			</div><!-- title -->
+			<div class="description row justify-content-center">
+				<div class="col-md-6">
+					<p><?php the_field('process_description') ?></p>
+				</div>
+			</div><!-- description -->
+			<div class="row image-service justify-content-center" style="background: linear-gradient(rgba(0, 202, 255, .5),rgba(0, 240, 167, .5),rgba(0, 255, 131, .5)), url('<?php the_field('our_process_image') ?>') no-repeat;">
+				
 			<?php
-				// check if the flexible content field has rows of data
-				if( have_rows('service_boxes') ):
-					// loop through the rows of data
-					while ( have_rows('service_boxes') ) : the_row();
-						?>
-						<div class="sevice-gird-element">
-							<div class="icon">
-								<?php $svgImg = get_sub_field('icon'); ?>
-								<img src="<?php echo $svgImg;  ?>" alt="service icon" class="icon-service">
-							</div>
-							<div class="box-title">
 
-							</div>
-							<div class="box-description">
+			// check if the repeater field has rows of data
+			if( have_rows('process_section') ):
+				$counter = 1 ;
+				// loop through the rows of data
+				while ( have_rows('process_section') ) : the_row(); ?>
 
-							</div>
+				<div class="image-service-element col-lg-3">
+					<div class="element-visible">
+						<p class="nth-element">0<?php echo $counter?></p>
+						<h3><?php the_sub_field('title'); ?></h3>
+					</div>
+					<div class="element-hidden">
+						<div class="text-hidden">
+							<p><?php the_sub_field('paragraph'); ?></p>
 						</div>
-						<?php
+					</div>
+				</div>
+			<?php
+					$counter ++;
+				endwhile;
+			endif;
 
-					endwhile;
-
-				else :
-
-					// no layouts found
-
-				endif;
-			?>	
-		</div>
-	</div>
-
+			?>
+			</div><!-- .image-service <= this the container of the background image --> 
+		</div><!-- container -->
+	</div><!-- our-process .container-fluid -->
 </main><!-- main .service-inside -->
 	
 	

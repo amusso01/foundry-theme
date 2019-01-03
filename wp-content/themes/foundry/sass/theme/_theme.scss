@@ -1098,9 +1098,12 @@ a.btn{
                 li{
                     background-color: $white;
                     margin-bottom: 10px;
+                    transition: .2s;
                     &:hover{
                         background-color: $primary;
                         box-shadow: 0px 3px 6px 0px rgba(84,114,198,0.71);
+                        transform: scale(1.05);
+                        transition: .2s;
                         a{
                             transition: none;
                             color: $white;
@@ -1256,6 +1259,13 @@ a.btn{
                 font-weight: bold;
                 padding-top: 50px;
                 padding-bottom: 36px;
+                transition: .3s;
+                &:hover{
+                    color: $primary;
+                    transform: scale(1.2);
+                    transition: .3s;
+                    
+                }
             }
             p{
                 font-weight: 200;
@@ -1271,7 +1281,7 @@ a.btn{
         .svg-service{
             max-width: 50%;
             svg{
-                width: 60px;
+                width: 70px;
             }
             #create{
                 .cls-1 {
@@ -1328,8 +1338,9 @@ a.btn{
     }
 }
 
-// ========== BUILD ==============
+// ========== SERVICE INNER ==============
 
+// jumbotrone section
 .jumbotrone{
     background-position: center;
     background-repeat: no-repeat;
@@ -1451,18 +1462,174 @@ a.btn{
         }
     }
 }
+
+//services box central section 
 .service-inside{
     margin-right: -15px;
+    background-color: $light-grey;
+    .grid-section{
+        padding-left: 0px;
+        padding-bottom: 80px;
+    }
     .service-box-grid{
-        // width: 80%;
+        width: 80%;
         margin-right: auto;
         margin-left: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 30px 30px;
+        @include media-breakpoint-up(md){
+            grid-template-columns: 1fr 1fr;
+        }
     }
     .sevice-gird-element{
-        .icon-service{
-            width: 40px;
+        height: 310px;
+        background-color: $white;
+        -webkit-box-shadow: 0px 3px 13px -2px rgba(84,114,198,1);
+        -moz-box-shadow: 0px 3px 13px -2px rgba(84,114,198,1);
+        box-shadow: 0px 3px 10px -1px rgba(84,114,198,1);
+        transition: all .2s;
+        &:hover{
+            background-color: $primary;
+            transition: all .2s;
+            transform: scale(1.03);
+            .box-description{
+                p{
+                    color: $white;
+                }
+            }
+            .box-title{
+                h3{ 
+                    color: $white;
+                }
+            }
+        }
+        .box-wrapper{ 
+            .box-description{
+                p{
+                    font-weight: 200;
+                    font-size: 16px;
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+            .box-title{
+                h3{
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                    @include media-breakpoint-up(md){
+                        font-size: 26px;
+                    }
+                }
+            }
+            .icon{
+                padding-top: 62px;
+                padding-bottom: 30px; 
+                .icon-service{
+                    width: 40px;
+                    height: 40px;
+                    @include media-breakpoint-up(md){
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// our process section
+.service-inside{
+    .our-process{
+        background-color: $white;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .icon{
+            p{
+                display: block;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            svg{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 18px;
+                @include media-breakpoint-up(lg){
+                    height: 67px;
+                }
+            }
+            #build{
+                .cls-1 {
+                    fill: url(#linear-gradient-3) $gradient-8;
+                    }
+            
+                    .cls-2 {
+                    fill: url(#linear-gradient-4) $gradient-8;
+                    }
+            } 
+            #create{
+                .cls-1 {
+                    fill: url(#linear-gradient) $gradient-1;
+                }
+                
+                .cls-2 {
+                    fill: url(#linear-gradient-2) $gradient-1;
+                }
+            }
+            #promote{
+                .cls-1 {
+                    fill: url(#linear-gradient-5)$gradient-10;
+                  }
+            
+                  .cls-2 {
+                    fill: url(#linear-gradient-6) $gradient-10;
+                  }
+            
+                  .cls-3 {
+                    fill: url(#linear-gradient-7) $gradient-10;
+                  }
+            } 
+        }
+        .title{
+            h3{
+                font-size: 26px;
+                font-weight: bold;
+            }
+        }
+        .description{
+            p{
+                font-weight: 300;
+            }
+        }
+        .image-service{
+            margin-top: 68px;
+            height: 587px;
+            width: 1206px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            .image-service-element{
+                border-color: $white;
+                border-width: 1px;
+                border-bottom-style: solid;
+                &:hover{
+                    @include media-breakpoint-up(lg){
+                        background-color: rgba(26, 28, 34, .6)
+                    }
+                }
+                @include media-breakpoint-up(lg){
+                    border-right-style: solid;
+                }
+                p,h3{
+                    color: $white;
+                }
+                .element-hide,.element-visible{
+                    width: 100%;
+                }
+            }
         }
     }
 }
