@@ -61,6 +61,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 							}elseif(is_page("contact")){
 
+								get_template_part( 'loop-templates/content', 'contact' ); 
+
 							}elseif(is_page("insights")){
 
 								get_template_part( 'loop-templates/content', 'insight' ); 
