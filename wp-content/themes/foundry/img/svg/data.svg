@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.371 14.455">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5472c6;
+        stroke-miterlimit: 10;
+        stroke-width: 0.6px;
+      }
+    </style>
+  </defs>
+  <g id="data_analytics" data-name="data analytics" transform="translate(0 -0.7)">
+    <line id="Line_123" data-name="Line 123" class="cls-1" x2="16.372" transform="translate(0 14.855)"/>
+    <path id="Path_3405" data-name="Path 3405" class="cls-1" d="M4.6,40.293V34.8H6.751v5.493" transform="translate(-3.393 -25.437)"/>
+    <path id="Path_3406" data-name="Path 3406" class="cls-1" d="M19.3,32.39V24.3h2.125v8.09" transform="translate(-14.236 -17.535)"/>
+    <path id="Path_3407" data-name="Path 3407" class="cls-1" d="M34.2,37.282V30.8h2.151v6.482" transform="translate(-25.227 -22.427)"/>
+    <path id="Path_3408" data-name="Path 3408" class="cls-1" d="M49.1,29.455V20.4h2.125v9.055" transform="translate(-36.218 -14.6)"/>
+    <path id="Path_3409" data-name="Path 3409" class="cls-1" d="M5.1,7.383c.1-.322,4.8-4.429,4.8-4.429l3.936,2.623L18.769,1" transform="translate(-3.762)"/>
+    <path id="Path_3410" data-name="Path 3410" class="cls-1" d="M47.611,4.192V1H44.2" transform="translate(-32.603)"/>
+  </g>
+</svg>

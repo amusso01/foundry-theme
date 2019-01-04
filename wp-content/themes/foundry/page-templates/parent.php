@@ -7,7 +7,6 @@
  * This template shows the all the parent pages of the site the highest in hierarchy
  * 
  *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -54,7 +53,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 								get_template_part( 'loop-templates/content', 'work' ); 
 							
-							}elseif(is_page("services")){
+							}elseif(is_page("service")){
+
+								get_template_part( 'loop-templates/content', 'service' ); 
 
 							}elseif(is_page("about")){
 

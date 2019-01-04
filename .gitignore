@@ -57,7 +57,7 @@ Thumbs.db
 
 
 #ignore gulpconfig
-wp-content/themes/gulpconfig.json
+wp-content/themes/foundry/gulpconfig.json
 
 # -------------------------
 # BEGIN Whitelisted Files

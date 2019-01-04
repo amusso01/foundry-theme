@@ -1,6 +1,6 @@
 jQuery(function($){
 	var canBeLoaded = true, // this param allows to initiate the AJAX call only if necessary
-	    bottomOffset = 1800; // the distance (in px) from the page bottom when you want to load more posts
+	    bottomOffset = 1100; // the distance (in px) from the page bottom when you want to load more posts
  
 	$(window).scroll(function(){
 		var data = {

@@ -6545,19 +6545,34 @@ $(function() {
 });
   
 
-// ============ Works Grid =============
+// ============ animate on scroll =============
 
-// $('.filter a').click(function(e) {
-// 	$('.filter a').removeClass('filterHighlighted');
-// 	$(this).addClass('filterHighlighted');
-//   e.preventDefault();
-//   var a = $(this).attr('href');
-//   a = a.substr(1);
-//   $('.gallery a').each(function() {
-//     if (!$(this).hasClass(a) && a != 'all') {
-//       $(this).addClass('hideImg');
-// 	} else {
-//       $(this).removeClass('hideImg');
-// 	}
-//   });
-// });
+var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden-animate');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          'hidden-animate',
+          'fadeAll'
+        );
+      }
+    }
+  }
+  return {
+    init: init
+  };
+};
+animateHTML().init();
