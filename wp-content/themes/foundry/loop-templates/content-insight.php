@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php 
-	$insight = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-6)); ?>
+	$insight = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-100)); ?>
 
 <section <?php post_class('container'); ?> id="post-<?php the_ID(); ?>">
 	<div class="row grid-insight">

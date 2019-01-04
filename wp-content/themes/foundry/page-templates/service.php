@@ -89,6 +89,7 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-promote';
+	
 }
 
 
@@ -97,7 +98,7 @@ if(is_page('build')){
 <main class="service-inside">
 	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="row jumbotrone" >
 		<div class="container">
-			<div class="col-lg-4 offset-lg-1">
+			<div class="col-lg-6 offset-lg-1">
 				<?php the_title('<h1><span>'.$mainSvg.'</span>','</h1>') ?>
 			</div>
 			<div class="row second-row">
@@ -158,7 +159,7 @@ if(is_page('build')){
 		</div><!-- row .no-gutters -->
 	</div><!-- container -->
 	<div class="container-fluid our-process">
-		<div class="container">
+		<div class="container hidden-animate">
 			<div class="icon row justify-content-center">
 				<?php echo $mainSvg; ?>
 				<p>Our process</p>
@@ -181,7 +182,7 @@ if(is_page('build')){
 				// loop through the rows of data
 				while ( have_rows('process_section') ) : the_row(); ?>
 
-				<div class="image-service-element col-lg-3">
+				<div class="image-service-element col-md-6 col-lg-3">
 					<div class="element-visible">
 						<p class="nth-element">0<?php echo $counter?></p>
 						<h3><?php the_sub_field('title'); ?></h3>

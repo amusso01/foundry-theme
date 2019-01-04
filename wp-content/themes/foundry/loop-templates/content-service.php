@@ -163,11 +163,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- container -->
 
 
-<section <?php post_class('container-fluid service-main'); ?> id="post-<?php the_ID(); ?>">		
+<section <?php post_class('container-fluid service-main hidden-animate'); ?> id="post-<?php the_ID(); ?>">		
 </section><!-- section -->
 
 	
-<div class="col-md-6 offset-md-3 we-help">
+<div class="col-md-6 offset-md-3 we-help hidden-animate">
 	<h4>Need some extra help?</h4>
 	<p>If you are a little unsure of what you need please get it touch. Our team will be happy to help you put your project on the right path.</p>
 	<a href="" class="get-in-touch">GET IN TOUCH</a>
