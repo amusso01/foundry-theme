@@ -638,8 +638,10 @@ a.btn{
     }
     h2{
         color:$h-black;
-        font-size: 24px;
+        font-size: 23px;
+        margin-bottom: 10px;
         @include media-breakpoint-up(md){
+            margin-bottom: 20px;
             font-size: 30px;
             width: 80%;
         }
@@ -1855,6 +1857,60 @@ a.btn{
             @include media-breakpoint-up(md){
                 font-size: 30px;
             }
+        }
+    }
+}
+
+// ============ Contact Page ==============
+.contact-page{
+    margin-top: 30px;
+    @include media-breakpoint-up(md){
+        margin-top: 52px;
+    }
+    .contact-info{
+        margin-bottom: 30px;
+        @include media-breakpoint-down(sm){
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 15px;
+            margin-bottom: 0px;
+            @include media-breakpoint-down(sm){
+                padding-bottom: 10px;
+            }
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 0px;
+            @include media-breakpoint-down(sm){
+                padding-bottom: 10px;
+            }
+            a{
+                color: $primary;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .grey-line{
+        margin-bottom: 38px;
+    }
+    .gMap{
+        min-height: 340px;
+        margin-bottom: 108px;
+        &:first-of-type{
+            margin-bottom: 50px;
+        }
+        .city{
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+        .address{
+            font-size: 14px;
         }
     }
 }
