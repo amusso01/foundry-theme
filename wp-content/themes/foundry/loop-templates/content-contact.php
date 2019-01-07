@@ -41,9 +41,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<p><a href="mailto:<?php the_field('email') ?>" target="_blank" rel="noopener noreferrer"><?php the_field('email') ?></a></p>
 		</div>
 	</div>
+	<div class="grey-line"></div>
 	<div class="row">
 		<div class="col-md-6 gMap">
-		<div class="mapouter"><div class="gmap_canvas"><iframe width="480" height="NaN" id="gmap_canvas" src="https://maps.google.com/maps?q=88%20Peterborough%20Road%2C%20London%2C%20SW6%203HH%20London&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:NaNpx;width:480px;}.gmap_canvas {overflow:hidden;background:none!important;height:NaNpx;width:480px;}</style></div>	
+			<p class="city">London</p>
+			<p class="address">88 Peterborough Road, London, SW6 3HH London</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19879.12123532147!2d-0.20811153751221!3d51.478530547037536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f7bf73b8c6d%3A0xa92eb5fe1386d13b!2sSouthpark+Studios%2C+88+Peterborough+Rd%2C+Fulham%2C+London+SW6+3HH!5e0!3m2!1sen!2suk!4v1546857934761" width="100%" height="340px" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="col-md-6 gMap">
+			<p class="city">Knockholt</p>
+			<p class="address">The Stables, Baston, Burlings Lane, Kent, TN14 7PE</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9016.565954638001!2d0.08098258474375092!3d51.30868949520857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df54817cbc8737%3A0x170e4cfefc688f7f!2sKnockholt%2C+Sevenoaks+TN14+7PE!5e0!3m2!1sen!2suk!4v1546858176162" width="100%" height="340px;" frameborder="0" style="border:0"></iframe>
 		</div>
 	</div>
-</div>

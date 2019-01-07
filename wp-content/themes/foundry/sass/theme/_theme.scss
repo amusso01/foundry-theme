@@ -1868,6 +1868,7 @@ a.btn{
         margin-top: 52px;
     }
     .contact-info{
+        margin-bottom: 30px;
         @include media-breakpoint-down(sm){
             margin-bottom: 20px;
         }
@@ -1892,6 +1893,24 @@ a.btn{
                     text-decoration: underline;
                 }
             }
+        }
+    }
+    .grey-line{
+        margin-bottom: 38px;
+    }
+    .gMap{
+        min-height: 340px;
+        margin-bottom: 108px;
+        &:first-of-type{
+            margin-bottom: 50px;
+        }
+        .city{
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+        .address{
+            font-size: 14px;
         }
     }
 }
