@@ -1,0 +1,100 @@
+<?php
+/**
+ * Post rendering content according to caller of get_template_part.
+ *
+ * @package understrap
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+?>
+<section class="about">
+	<article class="approach-about container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 text-center">
+				<h3>Approach</h3>
+				<p>Each project we undertake is backed by years of experience and technical skill and we love overcoming creative challenges and technical obstacles. You can trust that you have a dedicated team in Foundry Digital.</p>
+			</div>
+			<div class="col-md-10 offset-md-1">
+
+			<?php if( have_rows('skills_list') ): ?>
+
+				<ul class="skills-list">
+
+				<?php while( have_rows('skills_list') ): the_row(); 
+
+				// vars
+				$skill = get_sub_field('skill');
+				$description = get_sub_field('skill_description');
+
+				?>
+
+					<li class="hidden-animate list-unstyled"><span class="single-skill "><?php echo $skill ?></span> <span class="skill-description"><?php echo $description ?></span></li>
+
+				<?php endwhile; ?>
+
+				</ul>
+
+			<?php endif; ?>
+			</div>
+		</div>
+	</article><!-- approach -->
+	<article class="container-fluid our-culture">
+		<div class="background">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 offset-lg-1">
+						<h2>Our Culture</h2>
+					</div>
+				</div>		
+				<div class="row">
+					<div class="col-lg-5 offset-lg-1">
+						<p>When you work with Foundry Digital you don’t just get access to digital experts, you get access to our people and our values as a collaborative, supportive team of talented individuals who have been working together since 2012. We don’t just get on board with a project, we get invested in achieving our clients’ goals as if they were our own. We know who we are and we know what we’re good at, that’s why we don’t pretend to be digital giants. We’re your local agency, dedicated to bringing your project to life.</p>
+					</div>
+					<div class="col-lg-5 offset-lg-1">
+						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way. Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
+						<a href="" class="btn">AGENCY LIFE</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- background -->
+	</article><!-- our-culture -->
+	<aside class="info-box-about">
+		<div class="container" id="counter">
+			<div class="grid-about">
+				<div class="grid-item-about">
+					<div class="inner-box">
+						<p class="number"><span class="counter-value" data-count="600">0</span>+</p>
+						<p class="info-inner">Projects designed and built</p>
+					</div>
+				</div>
+				<div class="grid-item-about">
+					<div class="inner-box">
+						<p class="counter-value" data-count="7">0</p>
+						<p class="info-inner">Seven years delivering creative technology solutions</p>
+					</div>
+				</div>
+				<div class="grid-item-about">
+					<div class="inner-box">
+						<p class="counter-value" data-count="3">0</p>
+						<p class="info-inner">We have offices in the UK and Argentina</p>
+					</div>
+				</div>
+			</div> <!-- grid-about -->
+		</div> <!-- container -->
+	</aside><!-- info-box-about -->
+	<article class="the-team">
+		<div class="container-fluid">
+			<header class="team-intro col-md-6 offset-md-3 text-center">
+				<h3>The Team</h3>
+				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our project managers who are on the spectrum somewhere between organised and OCD and our digital marketing experts, the latest addition of whom is a pure genius.</p>
+			</header>
+			<div class="grid-team">
+
+			</div>
+		</div>
+	</article><!-- the-team -->
+</section><!-- .about -->
+
+
