@@ -1919,6 +1919,7 @@ a.btn{
 // ========== About ===========
 
 .about {
+    margin-bottom: 100px;
     .approach-about{
         padding-bottom: 110px;
         padding-top:10px;
@@ -2078,6 +2079,232 @@ a.btn{
     }
     .the-team{
         margin-top: 100px;
+        .container-fluid{
+            padding-left: 0px;
+            padding-right: 0px;
+            .grid-info{
+                display: grid;
+                grid-template-columns: 1fr;
+                @include media-breakpoint-up(sm){
+                    grid-template-columns: 1fr 2fr 1fr;
+                    grid-column-gap: 7px;
+                }
+                .info-card{
+                    max-height: 466px;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    @include media-breakpoint-down(xsm){
+                        margin-bottom: 7px;
+                    }
+                    .overlay{
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            top: 0%;
+                            left: 0%;
+                            background-color: rgba($primary, 1);
+                            z-index: 10;
+                            transition: .5s;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            &:hover{
+                                background-color: rgba($primary, .7);
+                                transition: .5s;
+                            }
+                            &.darker{
+                                background-color: rgba($dark-blue, 1);
+                                transition: .5s;
+                                max-height: 466px;
+                                &:hover{
+                                    background-color: rgba($dark-blue, .7);
+                                    transition: .5s;
+                                }
+                                button{
+                                   &.learn-more{
+                                       .circle{
+                                           background: $dark-blue;
+                                       }
+                                   } 
+                                }
+                            }
+                        p{
+                            color: $white;
+                            text-align: center;
+                            margin-bottom: 15px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            &.title{
+                                font-size: 30px;
+                                font-weight: bold;
+                            }
+                            &.description{
+                                margin-bottom: 40px;
+                            }
+                        }
+                        button {
+                            position: relative;
+                            display: inline-block;
+                            @include center-block;
+                            cursor: pointer;
+                            outline: none;
+                            border: 0;
+                            vertical-align: middle;
+                            text-decoration: none;
+                            background: transparent;
+                            padding: 0;
+                            font-size: inherit;
+                            font-family: inherit;
+                            &.learn-more {
+                              width: 12rem;
+                              height: auto;
+                              .circle {
+                                @include button-slide(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                                position: relative;
+                                margin: 0;
+                                width: 3rem;
+                                height: 3rem;
+                                background: $primary;
+                                border-radius: 1.625rem;
+                                .icon {
+                                  @include button-slide(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                                  position: absolute;
+                                  top: 0;
+                                  bottom: 0;
+                                  margin: auto;
+                                  background: $white;
+                                  &.arrow {
+                                    @include button-slide(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                                    left: 0.625rem;
+                                    width: 1.125rem;
+                                    height: 0.125rem;
+                                    background: none;
+                                    &::before {
+                                      position: absolute;
+                                      content: '';
+                                      top: -0.25rem;
+                                      right: 0.0625rem;
+                                      width: 0.625rem;
+                                      height: 0.625rem;
+                                      border-top: 0.125rem solid #fff;
+                                      border-right: 0.125rem solid #fff;
+                                      transform: rotate(45deg);
+                                    }
+                                  }
+                                }
+                              }
+                              .button-text {
+                                @include button-slide(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                padding: 0.75rem 0;
+                                margin: 0 0 0 1.85rem;
+                                color: $white;
+                                font-weight: 700;
+                                line-height: 1.6;
+                                text-align: center;
+                                text-transform: uppercase;
+                              }
+                            }
+                            &:hover {
+                              .circle {
+                                width: 100%;
+                                .icon {
+                                  &.arrow {
+                                  background: $white;
+                                  transform: translate(1rem, 0);
+                                  }
+                                }
+                              }
+                              .button-text {
+                                color: $white;
+                              }
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            .grid-team{
+                grid-column-gap: 7px;
+                grid-row-gap: 7px;
+                margin-bottom: 7px;
+                @include media-breakpoint-up(sm){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                @include media-breakpoint-up(lg){
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+                @include media-breakpoint-up(xl){
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+                @include media-breakpoint-up(xxl){
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+                .card-team{
+                    max-height: 466px;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    @include media-breakpoint-down(xsm){
+                        margin-bottom: 10px;
+                    }
+                    .img-fluid{
+                        @include media-breakpoint-down(xsm){
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            float: left;
+                        }
+                        @include media-breakpoint-down(sm){
+                            max-height: 180px;
+                        }
+                        @include media-breakpoint-up(sm){
+                            max-height: 466px;
+                       }
+                    }
+                    .overlay{
+                        @include media-breakpoint-up(sm){
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            top: 0%;
+                            left: -100%;
+                            background-color: rgba($primary, 0.7);
+                            z-index: 10;
+                        }
+                        .name,.role{
+                            font-size: 16px;
+                            font-weight: 300;
+                            @include media-breakpoint-up(sm){
+                                text-align: center;
+                                color: $white;
+                            }
+                        }
+                        .role{
+                            margin-bottom: 0px;
+                        }
+                        .name {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            @include media-breakpoint-down(sm){
+                                padding-top: 16%;
+                            }
+                            @include media-breakpoint-up(sm){
+                                padding-top: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         h3{
             font-size: 26px;
             font-weight: bold;
@@ -2085,6 +2312,7 @@ a.btn{
         }
         p{
             font-size: 16px;
+            margin-bottom: 88px;
         }
     }
 }

@@ -91,9 +91,62 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our project managers who are on the spectrum somewhere between organised and OCD and our digital marketing experts, the latest addition of whom is a pure genius.</p>
 			</header>
 			<div class="grid-team">
+			<?php
 
+			// check if the repeater field has rows of data
+			if( have_rows('the_team') ):
+
+				// loop through the rows of data
+				while ( have_rows('the_team') ) : the_row();
+?>
+				<div class="card-team hidden-animate">
+					<img class="img-fluid" src="<?php the_sub_field('picture') ?>" alt="Team member picture">
+					<div class="overlay h-100 w-100">
+						<p class="name"><?php the_sub_field('name_and_surname')?></p>
+						<p class="role"><?php the_sub_field('member_role') ?></p>
+					</div><!-- overlay -->
+				</div><!-- card-team -->
+				
+
+<?php			endwhile;
+
+			else :
+
+				// no rows found
+
+			endif;
+
+			?>
+			</div><!-- grid-team -->
+			<div class="grid-info hidden-animate">
+				<div class="info-card">
+						<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/retina.jpg" alt="Our Team">
+						<div class="overlay h-100 w-100">
+							<p class="title">AGENCY LIFE</p>
+							<p class="description">Alongside working on exciting projects we make sure we let off some steam</p>
+							<button class="learn-more">
+								<div class="circle">
+								<span class="icon arrow"></span>
+								</div>
+								<p class="button-text">Learn More</p>
+							</button>
+						</div><!-- overlay -->
+				</div>
+				<div class="info-card work">
+					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/no-retina.jpg" alt="Work with us">
+					<div class="overlay darker h-100 w-100">
+						<p class="title">WORK WITH US</p>
+						<p class="description">If you are interested in a full time position, internship or work experience please get in touch at studio@foundrydigital.co.uk</p>
+						<button class="learn-more">
+							<div class="circle">
+							<span class="icon arrow"></span>
+							</div>
+							<p class="button-text">Learn More</p>
+						</button>
+					</div><!-- overlay -->
+				</div>
 			</div>
-		</div>
+		</div><!-- container-fluid -->
 	</article><!-- the-team -->
 </section><!-- .about -->
 
