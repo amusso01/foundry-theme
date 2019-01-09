@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for post/insight page
+ * Partial template for Contact page
  *
  * @package understrap
  */
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 	<div class="grey-line"></div>
-	<div class="row">
+	<div class="row hidden-animate">
 		<div class="col-md-6 gMap">
 			<p class="city">London</p>
 			<p class="address">88 Peterborough Road, London, SW6 3HH London</p>

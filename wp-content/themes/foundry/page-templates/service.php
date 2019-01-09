@@ -130,7 +130,7 @@ if(is_page('build')){
 						while ( have_rows('service_boxes') ) : the_row();
 							?>
 							<a href="<?php the_sub_field('box-link-to') ?>">
-								<div class="sevice-gird-element container">
+								<div class="sevice-gird-element container hidden-animate">
 									<div class="box-wrapper">
 										<div class="icon row justify-content-center">
 											<?php $svgImg = get_sub_field('icon'); ?>

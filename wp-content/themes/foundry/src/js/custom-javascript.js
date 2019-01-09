@@ -131,67 +131,6 @@ function closestEdge(distLeft,distTop,w,h){
   }
 }
 
-
-// var boxes = $('.info-card');
-
-// if($(window).width()>576){
-
-//   for(var i = 0; i < boxes.length; i++){
-//     boxes[i].onmouseenter = function(e){
-//         var edge = closestEdge(e.offsetX, e.offsetY, $(this).width(), $(this).height());
-//         var overlay = this.childNodes[3];
-  
-//         switch(edge){
-//             case "left":
-//                 //tween overlay from the left
-//                 overlay.style.top = "0%";
-//                 overlay.style.left = "-100%";
-//                 TweenMax.to(overlay, .4, {left: '0%'});
-//                 break;
-//             case "right":
-//                 overlay.style.top = "0%";
-//                 overlay.style.left = "100%";
-//                 //tween overlay from the right
-//                 TweenMax.to(overlay, .4, {left: '0%'});
-//                 break;
-//             case "top":
-//                 overlay.style.top = "-100%";
-//                 overlay.style.left = "0%";
-//                 //tween overlay from the right
-//                 TweenMax.to(overlay, .4, {top: '0%'});
-//                 break;
-//             case "bottom":
-//                 overlay.style.top = "100%";
-//                 overlay.style.left = "0%";
-//                 //tween overlay from the right
-//                 TweenMax.to(overlay, .4, {top: '0%'});
-//                 break;
-//         }
-//     };
-  
-   
-//     boxes[i].onmouseleave = function(e){
-//         var edge = closestEdge(e.offsetX, e.offsetY, $(this).width(), $(this).height());
-//         var overlay = this.childNodes[3];
-      
-  
-//         switch(edge){
-//             case "left":
-//                 TweenMax.to(overlay, .4, {left: '-100%'});
-//                 break;
-//             case "right":
-//                 TweenMax.to(overlay, .4, {left: '100%'});
-//                 break;
-//             case "top":
-//                 TweenMax.to(overlay, .4, {top: '-100%'});
-//                 break;
-//             case "bottom":
-//                 TweenMax.to(overlay, .4, {top: '100%'});
-//                 break;
-//         }
-//     };
-//   }
-// }
 var boxes = $('.card-team');
 
 if($(window).width()>576){

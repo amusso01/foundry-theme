@@ -1,8 +1,8 @@
 <?php
 /**
- * Post rendering content according to caller of get_template_part.
+ * Partial template for content in About page
  *
- * @package understrap
+ * 
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -120,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div><!-- grid-team -->
 			<div class="grid-info hidden-animate">
 				<div class="info-card">
-						<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/retina.jpg" alt="Our Team">
+						<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/640x1080.jpeg" alt="Our Team">
 						<div class="overlay h-100 w-100">
 							<p class="title">AGENCY LIFE</p>
 							<p class="description">Alongside working on exciting projects we make sure we let off some steam</p>
@@ -133,7 +133,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div><!-- overlay -->
 				</div>
 				<div class="info-card work">
-					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/no-retina.jpg" alt="Work with us">
+					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/960x750.jpeg" alt="Work with us">
 					<div class="overlay darker h-100 w-100">
 						<p class="title">WORK WITH US</p>
 						<p class="description">If you are interested in a full time position, internship or work experience please get in touch at studio@foundrydigital.co.uk</p>
