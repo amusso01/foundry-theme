@@ -176,7 +176,7 @@ $works = new WP_Query( array (
 </div><!-- container -->
 <section <?php post_class('container-fluid home-draw hidden-animate'); ?> id="post-<?php the_ID(); ?>">		
 </section><!-- section -->
-<section class="home-work container-fluid">
+<section class="home-work container-fluid hidden-animate">
 	<header class=" work-header col-md-6 text-center offset-md-3">
 		<h3>Featured Work</h3>
 		<p>Our team have completed projects across many industries, all backed by UX-focused design, strong development and years of marketing expertise.</p>
@@ -215,7 +215,7 @@ $works = new WP_Query( array (
 		}	
 		?>
 	</div><!-- home-work-grid -->
-	<article class="container brief">
+	<article class="container brief hidden-animate">
 		<div class="row">
 
 			<div class="col-lg-6">

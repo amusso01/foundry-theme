@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php 
-	$insight = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-100)); ?>
+	$insight = new WP_Query(array('post_type'=>'post', 'paged' => get_query_var( 'paged' ), 'post_status'=>'publish', 'posts_per_page'=>-4)); ?>
 
 <section <?php post_class('container'); ?> id="post-<?php the_ID(); ?>">
 	<div class="row grid-insight">
@@ -43,10 +43,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 					the_field('description_insight')?>
 				</div>
 			</article><!-- insight-grid -->
+
 		<?php }
+		
 			// Restore original Post Data
 		wp_reset_postdata();
+		
 		}	
 		?>
+		
 </div><!-- row grid-insight-->
+
+
+<?php echo bootstrap_pagination($insight); ?>
 </section><!-- section -->

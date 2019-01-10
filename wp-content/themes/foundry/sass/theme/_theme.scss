@@ -826,9 +826,19 @@ a.btn{
                 padding-left: 0px;
                 padding-right: 0px;
                 &.box-gray{
-                    padding-top: 90px;
-                    padding-left: 90px;
-                    padding-right: 90px;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    @include media-breakpoint-up(xl){
+                        padding-top: 90px;
+                        padding-left: 90px;
+                        padding-right: 90px;
+                    }
+                    @include media-breakpoint-up(xxl){
+                        padding-top: 140px;
+                        padding-left: 120px;
+                        padding-right: 120px;
+                    }
                     h1{
                         font-size: 13px;
                         line-height: 16px;
@@ -854,8 +864,29 @@ a.btn{
                 }
                 .carousel-indicators{
                     right: auto;
-                    margin-left: 13%;
+                    margin-left: 16%;
                     margin-right: 10%;
+                    @include media-breakpoint-up(xxl){
+                        margin-left: 19%;
+                    }
+                    li{
+                        width: 12px;
+                        height: 12px;
+                        border: none;
+                        border-radius: 100%;
+                        border: 1.1px solid $white;
+                        background-color: transparent;
+                        transition: all 0.25s ease;
+                        @include media-breakpoint-up(xl){
+                            margin-right: 28px;
+                        }
+                        @include media-breakpoint-up(xxl){
+                            margin-right: 36px;
+                        }
+                        &.active, &:hover {
+                            background-color: $white;        
+                          }
+                    }
                 }
                 .meet-team{
                     position:absolute;
