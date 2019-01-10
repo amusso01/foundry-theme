@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php 
-	$insight = new WP_Query(array('post_type'=>'post', 'paged' => get_query_var( 'paged' ), 'post_status'=>'publish', 'posts_per_page'=>-4)); ?>
+	$insight = new WP_Query(array('post_type'=>'post', 'paged' => get_query_var( 'paged' ), 'post_status'=>'publish', 'posts_per_page'=>-8)); ?>
 
 <section <?php post_class('container'); ?> id="post-<?php the_ID(); ?>">
 	<div class="row grid-insight">
@@ -50,10 +50,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 		wp_reset_postdata();
 		
 		}	
-		?>
-		
+		?>	
 </div><!-- row grid-insight-->
 
+<div class="grey-line"></div>
 
-<?php echo bootstrap_pagination($insight); ?>
+<footer class="row">
+	<div class="col-12 insight-pagination">
+		<?php echo bootstrap_pagination($insight); ?>
+	</div>
+</footer>
+
 </section><!-- section -->

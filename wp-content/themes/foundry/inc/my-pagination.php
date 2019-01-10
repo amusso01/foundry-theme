@@ -32,18 +32,23 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true ) {
 			'show_all'     => false,
 			'end_size'     => 3,
 			'mid_size'     => 1,
-			'prev_next'    => true,
-			'prev_text'    => __( '« Prev' ),
-			'next_text'    => __( 'Next »' ),
+			'prev_next'    => false,
+			'prev_text'    => __( '' ),
+			'next_text'    => __( '' ),
 			'add_args'     => false,
 			'add_fragment' => ''
 		]
 	);
+
 	if ( is_array( $pages ) ) {
-		//$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
-		$pagination = '<div class="pagination"><ul class="pagination">';
-		foreach ( $pages as $page ) {
-			$pagination .= '<li class="page-item '.(strpos($page, 'current') !== false ? 'active' : '').'"> ' . str_replace( 'page-numbers', 'page-link', $page ) . '</li>';
+		$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
+		$pagination = '<div class="pagination"><ul class="pagination my-pagination">';
+		foreach ( $pages as $key => $page ) {
+			$anchor = str_replace( 'page-numbers', 'page-link', $page );
+			$a = new SimpleXMLElement($anchor);
+			$class = $a['class'];
+			$link = $a['href'];
+			$pagination .= '<li class="page-item '.(strpos($page, 'current') !== false ? 'active' : '').'"> <a  href="'.$link.'"></a></li>';
 		}
 		$pagination .= '</ul></div>';
 		if ( $echo ) {
