@@ -16,11 +16,24 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 <section id="full-screen-video">
+	<div id="TopVideoContainer">
+		<div class="background-dark">
+			<div id="video_overlays"></div>
+			<video class="StretchtoFit"  loop="" autoplay="" poster="<?php echo site_url('/video/poster2016.png');?>">
+				<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
+				<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo site_url('/video/foundry2016.webm');?>">
+				<!--fallback image -->
+				<img src="<?php echo site_url('/video/poster2016.png');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
+			</video>
+			<img class="img-fluid" src="<?php echo site_url('/video/poster2016.png');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
+		</div>
+		<div class="video-text">
+		<?php while ( have_posts() ) : the_post(); ?>
+				<?php the_content() ?>
+		<?php endwhile; // end of the loop. ?>
+		</div>
 
-	<!-- Full width video here with the_content displayed on top and the two buttons -->
-	<?php while ( have_posts() ) : the_post(); ?>
-				
-	<?php endwhile; // end of the loop. ?>
+	</div>
 
 </section>
 
