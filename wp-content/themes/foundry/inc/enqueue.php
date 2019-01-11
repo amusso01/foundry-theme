@@ -24,7 +24,10 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_script( 'jquery');
 		wp_deregister_script('jquery');
 		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-		wp_enqueue_script('tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js', array(), null, true);
+		if(is_page('about')){
+			wp_enqueue_script('tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js', array(), null, true);
+			wp_enqueue_script('about', get_stylesheet_directory_uri().'/js/about.js', array('tweenmax'), null, true);
+		}
 
 		// register script to load more post 
 		wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery') );

@@ -15,7 +15,8 @@ $understrap_includes = array(
 	'/widgets.php',                         // Register widget area.
 	'/enqueue.php',                         // Enqueue scripts and styles.
 	'/template-tags.php',                   // Custom template tags for this theme.
-	'/pagination.php',                      // Custom pagination for this theme.
+  '/pagination.php',                      // Custom pagination for this theme.
+  '/my-pagination.php',                   // My personal pagination for the foundry theme
 	'/hooks.php',                           // Custom hooks.
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/customizer.php',                      // Customizer additions.

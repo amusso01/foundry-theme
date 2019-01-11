@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
 		?>
-				<a href="<?php echo get_permalink() ?>" class="ajax-call"><article class="work-box" <?php echo $postCat->slug ?>"  >
+				<a href="<?php echo get_permalink(); ?>" class="ajax-call"><article class="work-box" <?php echo $postCat->slug; ?>"  >
 
 					<div class="hovereffect">
 						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >

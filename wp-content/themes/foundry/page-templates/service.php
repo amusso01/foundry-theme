@@ -36,6 +36,7 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-build';
+	$backgroundGradient = 'background: linear-gradient(rgba(0, 202, 255, .5),rgba(0, 240, 167, .5),rgba(0, 255, 131, .5))';
 }elseif (is_page('create')) {
 	$page = 'create';
 	$mainSvg = '<svg id="create" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 59.967">
@@ -58,6 +59,7 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-create';
+	$backgroundGradient = 'background: linear-gradient(rgba(255, 149, 0, .5),rgba(255, 113, 0, .5),rgba(255, 23, 0, .5),rgba(255, 0, 0, .5))';
 }elseif (is_page('promote')) {
 	$page = 'promote';
 	$mainSvg = '<svg id="promote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 55.824">
@@ -89,7 +91,7 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-promote';
-	
+	$backgroundGradient = 'background: linear-gradient(rgba(215, 0, 66, .5),rgba(180, 0, 102, .5),rgba(145, 0, 138, .5))';
 }
 
 
@@ -130,7 +132,7 @@ if(is_page('build')){
 						while ( have_rows('service_boxes') ) : the_row();
 							?>
 							<a href="<?php the_sub_field('box-link-to') ?>">
-								<div class="sevice-gird-element container">
+								<div class="sevice-gird-element container hidden-animate">
 									<div class="box-wrapper">
 										<div class="icon row justify-content-center">
 											<?php $svgImg = get_sub_field('icon'); ?>
@@ -172,7 +174,7 @@ if(is_page('build')){
 					<p><?php the_field('process_description') ?></p>
 				</div>
 			</div><!-- description -->
-			<div class="row image-service justify-content-center" style="background: linear-gradient(rgba(0, 202, 255, .5),rgba(0, 240, 167, .5),rgba(0, 255, 131, .5)), url('<?php the_field('our_process_image') ?>') no-repeat;">
+			<div class="row image-service justify-content-center" style="<?php echo $backgroundGradient; ?>, url('<?php the_field('our_process_image') ?>') no-repeat;">
 				
 			<?php
 

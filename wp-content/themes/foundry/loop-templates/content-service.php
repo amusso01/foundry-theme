@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="container services">
 	<div class="row">
 
-		<article class="col-md-4 service-card">
+		<article class="col-lg-4 service-card hidden-animate">
 			<div class="card-container">
 				<div class="svg-service">
 					<svg id="create" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 59.967">
@@ -44,22 +44,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="brand" href="<?php echo site_url('/brand-identity/'); ?>">Brand Identity</a>
+							<a id="brand" href="<?php echo site_url('/creative-services/'); ?>">Brand Identity</a>
 						</li>
 						<li>
-							<a id="graphic" href="<?php echo site_url('/graphic-design/'); ?>">Graphic Design</a>
+							<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>">Graphic Design</a>
 						</li>
 						<li>
-							<a  id="promotional" href="<?php echo site_url('/promotional-artwork/'); ?>">Promotional Artwork</a>
+							<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>">Promotional Artwork</a>
 						</li>
 						<li>
-							<a id="ux" href="<?php echo site_url('/ux-design/'); ?>">UX design</a>
+							<a id="ux" href="<?php echo site_url('/creative-services/'); ?>">UX design</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->
 			</div><!-- card-container -->		
 		</article><!-- service-card -->
-		<article class="col-md-4 service-card">
+		<article class="col-lg-4 service-card hidden-animate">
 			<div class="card-container">
 				<div class="svg-service">
 					<svg id="build" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
@@ -104,7 +104,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div><!-- card-link -->
 			</div><!-- card-container -->		
 		</article><!-- service-card -->
-		<article class="col-md-4 service-card">
+		<article class="col-lg-4 service-card hidden-animate">
 			<div class="card-container">
 				<div class="svg-service">
 					<svg id="promote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 55.824">
@@ -163,7 +163,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- container -->
 
 
-<section <?php post_class('container-fluid service-main hidden-animate'); ?> id="post-<?php the_ID(); ?>">		
+<section <?php post_class('container-fluid service-draw hidden-animate'); ?> id="post-<?php the_ID(); ?>">		
 </section><!-- section -->
 
 	
