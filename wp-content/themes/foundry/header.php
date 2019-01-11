@@ -35,35 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-			<?php
-				if(is_front_page()){
-					?>
-					<section id="full-screen-video">
-
-						<header class="jumbo-video">
-							<div id="video_overlays"></div>
-							<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="<?php echo site_url('/video/poster2016.png');?>">
-								<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
-								<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo site_url('/video/foundry2016.webm');?>">
-								<!--fallback image -->
-								<img src="<?php echo site_url('/video/poster2016.png');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
-							</video>
-							<div class="container h-100">
-								<div class="d-flex h-100 align-items-center">
-								<div class="w-100">
-									<?php while ( have_posts() ) : the_post(); ?>
-											<?php the_content() ?>
-									<?php endwhile; // end of the loop. ?>
-								</div>
-								</div>
-							</div>
-						</header>
-
-					</section>
-					<?php
-				}
-
-			?>
 			
 			<nav class="navbar navbar-expand-md bg-primary"> 
 			<?php if(!is_front_page()){
