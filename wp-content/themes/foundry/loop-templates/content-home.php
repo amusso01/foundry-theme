@@ -18,8 +18,10 @@ $works = new WP_Query( array (
 
 <div class="container">
 	<article class="row statment">
-		<h2>We create and build interactive digital platforms, and help businesses promote their services online.</h2>
-		<p>Our team of designers, developers and digital marketing experts are always on hand to offer guidance, so if you can’t find what you’re looking for just give us a call and we can put together the right strategy to put your project on the right path.</p>
+		<div class="col-md-8 offset-md-2 text-center">
+			<h2>We create and build interactive digital platforms, and help businesses promote their services online.</h2>
+			<p>Our team of designers, developers and digital marketing experts are always on hand to offer guidance, so if you can’t find what you’re looking for just give us a call and we can put together the right strategy to put your project on the right path.</p>
+		</div>
 	</article>
 </div>
 
@@ -57,16 +59,16 @@ $works = new WP_Query( array (
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="brand" href="<?php echo site_url('/brand-identity/'); ?>">Brand Identity</a>
+							<a id="brand" href="<?php echo site_url('/creative-services/'); ?>">Brand Identity</a>
 						</li>
 						<li>
-							<a id="graphic" href="<?php echo site_url('/graphic-design/'); ?>">Graphic Design</a>
+							<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>">Graphic Design</a>
 						</li>
 						<li>
-							<a  id="promotional" href="<?php echo site_url('/promotional-artwork/'); ?>">Promotional Artwork</a>
+							<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>">Promotional Artwork</a>
 						</li>
 						<li>
-							<a id="ux" href="<?php echo site_url('/ux-design/'); ?>">UX design</a>
+							<a id="ux" href="<?php echo site_url('/creative-services/'); ?>">UX design</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->

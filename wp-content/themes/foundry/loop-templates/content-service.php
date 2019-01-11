@@ -44,16 +44,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="card-link">
 					<ul>
 						<li>
-							<a id="brand" href="<?php echo site_url('/brand-identity/'); ?>">Brand Identity</a>
+							<a id="brand" href="<?php echo site_url('/creative-services/'); ?>">Brand Identity</a>
 						</li>
 						<li>
-							<a id="graphic" href="<?php echo site_url('/graphic-design/'); ?>">Graphic Design</a>
+							<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>">Graphic Design</a>
 						</li>
 						<li>
-							<a  id="promotional" href="<?php echo site_url('/promotional-artwork/'); ?>">Promotional Artwork</a>
+							<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>">Promotional Artwork</a>
 						</li>
 						<li>
-							<a id="ux" href="<?php echo site_url('/ux-design/'); ?>">UX design</a>
+							<a id="ux" href="<?php echo site_url('/creative-services/'); ?>">UX design</a>
 						</li>
 					</ul>
 				</div><!-- card-link -->

@@ -478,9 +478,14 @@ a.btn{
     // -------  navbar homepage  -------
         &.navbar-home{
             background: transparent !important;
+            @include media-breakpoint-up(xl){
+                height: 100vh;
+            }
             #main-logo{
                 .cls-1{
-                    fill: $white;
+                    @include media-breakpoint-up(xl){
+                        fill: $white;
+                    }
                 }
             }
             .navbar.bg-primary{
@@ -494,7 +499,7 @@ a.btn{
         width: 150px;
         transition: .8s;
         .cls-1{
-            fill: $black;
+            fill: #1A1A1A;
             }
         }
       .navbar.bg-primary{
@@ -672,53 +677,78 @@ a.btn{
 //============== Home ===============
 
 #full-screen-video{
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    @include media-breakpoint-up(lg){
-        min-height: 890px;
+    @include media-breakpoint-down(lg){
+        display: none;
     }
-    .video-text{
-        margin-left: auto;
-        margin-right: auto;
-        @include media-breakpoint-up(lg){
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            width: 80%;
-        }
-        h1,h2,h3,p{
-            @include media-breakpoint-up(lg){
-                color: white;
-            }
-        }
-    }
-    .background-dark{
-         @include media-breakpoint-up(lg){
-            position: absolute;
-            top: -90px;
-            z-index: -1000;
-         }
-         #video_overlays {
-             display: none;
-            @include media-breakpoint-up(lg){
-                display: block;
-                position:absolute;
-                width:100%;
-                min-height:99.5%;
-                background-image: linear-gradient(to left, #5472C6, #202431);
-                opacity: .5;
-                z-index:300000;
-            }
-        }
+    .jumbo-video{
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1000; 
         video{
-            @include media-breakpoint-down(md){
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+     
+         
+            z-index: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            p,h1,h2,h3{
+                color: $white;
+            }
+        }
+        #video_overlays{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: .5;
+            background-image: linear-gradient(to left , #5472C6, #202431 );
+            z-index: 1;
+        }
+    }
+}
+#full-screen-image{
+    @include media-breakpoint-up(xl){
+        display: none;
+    }
+    .jumbotron-fluid{
+        background: transparent;
+        padding: 0px;
+        position: relative;
+        height: 75vh;
+        .img-fluid{
+            position: absolute;
+            z-index: -1000;
+            @include media-breakpoint-down(xsm){
                 display: none;
             }
-            max-height: auto;
         }
-        img{
-            @include media-breakpoint-up(lg){
+        .container{
+            z-index: 2;
+            p,h1,h2,h3{
+                @include media-breakpoint-up(sm){
+                    color: $white;
+                }
+            }
+        }
+        #image_overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to left , #5472C6, #202431 );
+            opacity: 0.5;
+            z-index: -100;
+            @include media-breakpoint-down(xsm){
                 display: none;
             }
         }
@@ -727,6 +757,13 @@ a.btn{
 
 #home-wrapper{
     #main{
+        .statment{
+            h2{
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+        }
         .home-work{
             .work-header{
                 padding-bottom: 90px;
@@ -1464,6 +1501,9 @@ a.btn{
     top: 50%;
     z-index: -1000;
 }
+.home-draw{
+    top: 132%;
+}
 .service-card{
     margin-bottom: 35px;
     .card-container{
@@ -1974,6 +2014,10 @@ a.btn{
             #create{
                 &:hover{
                     animation: spin 1.3s linear infinite; 
+                    
+                    .cls-2{
+                        animation: scale 1.3s linear infinite; 
+                    } 
                 }
                 .cls-1 {
                     fill: url(#linear-gradient) $gradient-1;
