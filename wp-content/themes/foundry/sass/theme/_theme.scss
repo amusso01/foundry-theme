@@ -107,7 +107,7 @@ a{
               transform: translateX(70px);
               transition: .3s;
               &.left{
-                  padding-right: 9px;
+                  transform: translateX(-20px);
               }
            }
        }
@@ -117,6 +117,7 @@ a{
         &.left{
             padding-left: 10px;
             padding-right: 4px;
+            transform: translateX(-10px);
             }
         }
     }
