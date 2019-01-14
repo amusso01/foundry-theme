@@ -15,34 +15,18 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
-<section id="full-screen-image">
-
-	<header class="jumbotron jumbotron-fluid">
-		<div id="image_overlay"></div>
-		<img class="img-fluid" src="<?php echo site_url('/video/poster2016.png');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
-		<div class="container h-100">
-			<div class="d-flex h-100 align-items-center">
-				<div class="w-100">
-					<?php while ( have_posts() ) : the_post(); ?>
-							<?php the_content() ?>
-					<?php endwhile; // end of the loop. ?>
-				</div>
-			</div>
-		</div>
-	</header>
-
-</section>
 
 <section id="full-screen-video">
 
 	<header class="jumbo-video">
 		<div id="video_overlays"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted"  poster="<?php echo site_url('/video/poster2016.png');?>">
+		<video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted">
 			<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
 			<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo site_url('/video/foundry2016.webm');?>">
 			<!--fallback image -->
-			<img src="<?php echo site_url('/video/poster2016.png');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
+			<img src="<?php echo site_url('/video/2200x1460.jpg');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
 		</video>
+		<img class="mobile-banner" src="<?php echo site_url('/video/780x1080.jpeg');?>" alt="mobile banner image" >
 		<div class="container h-100">
 			<div class="d-flex h-100 align-items-center">
 			<div class="w-100">
