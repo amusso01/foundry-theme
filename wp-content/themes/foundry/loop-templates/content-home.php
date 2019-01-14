@@ -235,7 +235,7 @@ $works = new WP_Query( array (
 					<li data-target="#home-carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="meet-team">
-					<a class="see-more" href="<?php echo site_url( '/about/');?>">MEET THE TEAM <i class="fa fa-chevron-right"></i></a>
+					<a class="carousel-meet" href="<?php echo site_url( '/about/');?>">MEET THE TEAM <i class="fa fa-chevron-right"></i></a>
 				</div>
 				<div class="carousel-inner">
 				<?php foreach( $images as $image ): ?>	
