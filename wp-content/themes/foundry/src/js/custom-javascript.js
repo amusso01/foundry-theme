@@ -99,3 +99,51 @@ var animateHTML = function() {
 };
 animateHTML().init();
 
+// ======== Contact Form ========
+
+function remove(array, element) {
+  var index = array.indexOf(element);
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
+
+var inputValue = $('.btn-categorie');
+var allValue =[] ;
+var element;
+var target = $('#categorie');
+$(inputValue).click(function(){
+  element = $(this).val();
+  if (Array.isArray(allValue) && allValue.length){
+    if(allValue.indexOf($(this).val()) === -1){
+      allValue.push(element);
+    }else{ 
+      remove(allValue,element);
+    }
+  }else{
+    allValue.push(element);
+  }
+  target.val(allValue.toString())
+  
+})
+	
+  
+
+	
+	// if (step2.indexOf(value)!=-1) {
+	// 	allvalue =  step2.replace(", "+value, "" );
+	// 	document.getElementById(id).className = "btn-categorie";
+		
+	// }else{
+	// 	allvalue = step2 + ", " + value;
+	// 	document.getElementById(id).className += " btn-click";
+	// }
+	
+	// if (allvalue.charAt(0) == ','){
+		
+	// 	allvalue=allvalue.substring(1, allvalue.length);
+	// }
+
+	// // console.log(allvalue);
+	// document.getElementById("categorie").value = allvalue;

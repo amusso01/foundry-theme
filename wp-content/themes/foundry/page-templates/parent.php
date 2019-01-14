@@ -69,6 +69,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 								get_template_part( 'loop-templates/content', 'insight' ); 
 
+							}elseif (is_page('brief-1')) {
+								get_template_part( 'loop-templates/content', 'brief-1' ); 
 							}
 						?>
 </div><!-- Wrapper end -->
