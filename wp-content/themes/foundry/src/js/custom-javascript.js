@@ -1,7 +1,25 @@
   $(document).ready(function () {
+    var mainBanner = $('.jumbo-video');
+    var logo = $("#main-logo .cls-1");
+    var header = $(".navbar");
       // hamburger menu
     $(document).on('click', '.cta', function () {
-        $(this).toggleClass('active')
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+          mainBanner.css({top:0});
+          logo.css({
+            fill:"#000",
+            transition:"1s"
+          })
+        }else if (mainBanner.length){
+          mainBanner.css({top:-87});
+          if(!header.hasClass('navwhite')){
+            logo.css({
+              fill:"#fff",
+              transition:"1s"
+            })
+          }
+        }
     });
 });
 

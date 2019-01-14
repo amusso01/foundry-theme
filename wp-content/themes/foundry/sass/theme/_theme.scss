@@ -474,11 +474,11 @@ a.btn{
 
 
   #wrapper-navbar{
-      background: transparent!important;
+      background: transparent;
       width: 100%;
     // -------  navbar homepage  -------
         &.navbar-home{
-            background: transparent !important;
+            background: transparent;
             #main-logo{
                 .cls-1{
                         fill: $white; 
@@ -487,6 +487,9 @@ a.btn{
             .navbar.bg-primary{
                 border-bottom: 2px solid transparent;
                 background: transparent!important;
+                &.navwhite{
+                    background: $white!important;
+                }
             }
             .line-gradient{
                 z-index: 100;
