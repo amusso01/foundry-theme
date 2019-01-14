@@ -33,8 +33,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content() ?>
 				<?php endwhile; // end of the loop. ?>
-				<a href="" class="btn">VIEW WORK</a>
-				<a href="" class="btn">VIEW SERVICES</a>
+				<a href="<?php echo site_url( '/work/');?>" class="btn">VIEW WORK</a>
+				<a href="<?php echo site_url( '/service/');?>" class="btn">VIEW SERVICES</a>
 			</div>
 			</div>
 		</div>
