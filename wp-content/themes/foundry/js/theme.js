@@ -6517,6 +6517,9 @@
           }
         }
     });
+    projectType();
+    projectCat();
+    callingHour()
 });
 
 jQuery(function($) {
@@ -6594,4 +6597,90 @@ var animateHTML = function() {
   };
 };
 animateHTML().init();
+
+// ======== Contact Form ========
+
+function remove(array, element) {
+  var index = array.indexOf(element);
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
+function projectCat(){
+  var inputValue = $('.btn-categorie');
+  var allValue =[] ;
+  var element;
+  var target = $('#categorie');
+  $(inputValue).click(function(){
+    element = $(this).val();
+    if(!$(this).hasClass('.btn-click')){
+      $(this).addClass("btn-click");
+    }
+
+    if (Array.isArray(allValue) && allValue.length){
+      if(allValue.indexOf($(this).val()) === -1){
+        allValue.push(element);
+      }else{ 
+        remove(allValue,element);
+        $(this).removeClass("btn-click");
+      }
+    }else{
+      allValue.push(element);
+    }
+    target.val(allValue.toString())
+  });
+}
+
+function projectType(){
+  var inputValue = $('.btn-project');
+  var allValue =[] ;
+  var element;
+  var target = $('#categoriesProject');
+  $(inputValue).click(function(){
+    element = $(this).val();
+    if(!$(this).hasClass('.btn-click')){
+      $(this).addClass("btn-click");
+    }
+
+    if (Array.isArray(allValue) && allValue.length){
+      if(allValue.indexOf($(this).val()) === -1){
+        allValue.push(element);
+      }else{ 
+        remove(allValue,element);
+        $(this).removeClass("btn-click");
+      }
+    }else{
+      allValue.push(element);
+    }
+    target.val(allValue.toString())
+  });
+}
+
+function callingHour(){
+  var inputValue = $('.btn-time');
+  var allValue =[] ;
+  var element;
+  var target = $('#hour');
+  $(inputValue).click(function(){
+    element = $(this).val();
+    if(!$(this).hasClass('.btn-click')){
+      $(this).addClass("btn-click");
+    }
+    if (Array.isArray(allValue) && allValue.length){
+      if(allValue.indexOf($(this).val()) === -1){
+        allValue.push(element);
+      }else{ 
+        remove(allValue,element);
+        $(this).removeClass("btn-click");
+      }
+    }else{
+      allValue.push(element);
+    }
+    target.val(allValue.toString())
+  });
+}
+
+	
+  
 
