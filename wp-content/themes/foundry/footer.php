@@ -17,6 +17,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
+	<div class="container-fluid brief-footer">
+		<div class="row">
+			<div class="col-md-6 offset-md-2">
+				<p>Let’s talk</p>
+				<p>Send us your brief</p>
+				<p>and calculate your budget and timescale</p>
+			</div>
+			<div class="col-md-3">
+				<a href="" class="btn brief">START</a>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer-main">
 

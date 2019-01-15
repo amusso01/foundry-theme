@@ -673,6 +673,60 @@ a.btn{
     }
 }
 
+// ======== Footer brief banner =========
+
+#wrapper-footer{
+    padding-top: 0px;
+    .brief-footer{
+        display: block;
+        height: 282px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: url("./../img/images/brief.jpg"),
+        -webkit-linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        background-image: url("./../img/images/brief.jpg"),
+        -moz-linear-gradient(right, rgba(33, 37, 49, 1) rgba(84, 114, 198, 1));
+        background-image: url("./../img/images/brief.jpg"),
+        -o-linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        background-image: url("./../img/images/brief.jpg"),
+        linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        background-blend-mode: overlay;
+        .row{
+            padding-top: 17px;
+            @include media-breakpoint-up(md){
+                padding-top: 57px;
+            }
+            .col-md-6{
+                p{
+                    color: $white;
+                    text-align: center;
+                    @include media-breakpoint-up(md){
+                        text-align: left;
+                    }
+                    &:first-of-type{
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        line-height: 45px;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 45px;
+                        line-height: 45px;
+                        letter-spacing: 1px;
+                    }
+                    &:last-of-type{
+                        font-size: 24px;
+                        line-height: 45px;
+                        letter-spacing: .8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 //========= Parent page template =========
 #parent{
     .parent-title{
@@ -2918,7 +2972,6 @@ a.btn{
                     -moz-box-shadow: none;
                     box-shadow: none;
                 }
-
             }
         }
         input[type=date]{
