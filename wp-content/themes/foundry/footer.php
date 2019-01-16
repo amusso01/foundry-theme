@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p>and calculate your budget and timescale</p>
 			</div>
 			<div class="col-md-3">
-				<a href="" class="btn brief">START</a>
+				<a href="" id="box" class="btn brief"><p>START</p></a>
 			</div>
 		</div>
 	</div>
