@@ -13,7 +13,7 @@ $('.cat-item a').click(function(e) {
   $('.ajax-call').each(function() {
     if ($(this).hasClass(a) && a != 'all') {
         $(this).addClass('hideImg');
-        $(this).hide();
+        setTimeout(function() { this.style.display='none'; }, 3000);
 	} else {
       $(this).removeClass('hideImg');
       $(this).show();

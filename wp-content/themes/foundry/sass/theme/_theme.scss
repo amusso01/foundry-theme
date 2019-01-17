@@ -1139,7 +1139,7 @@ a.btn{
     }
 }
 .hideImg{ 
-    @include fadeInUp();
+    animation: appear .5s linear forwards;
 }
 .work-grid{
     display: grid;
