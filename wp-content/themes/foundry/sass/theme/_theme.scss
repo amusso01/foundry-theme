@@ -680,7 +680,7 @@ a.btn{
     padding-top: 0px;
     .brief-footer{
         display: block;
-        height: 282px;
+        min-height: 282px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -700,19 +700,24 @@ a.btn{
             }
             .col-md-3{
                 #box{
+                    
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 144px;
                     height: 144px;
-                    
                     background-color: transparent;
                     border: 3px solid $white;
-                    
                     border-radius:50%;
                     overflow: hidden;
                     transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out, border-width 300ms ease;
                     z-index: 100;
+                    @include media-breakpoint-down (sm){
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
                     &::after{
                         content: "";
                         position: absolute;
@@ -722,16 +727,20 @@ a.btn{
                         height: 135px;
                         border-radius: 50%;
                         background-color: rgba($dark-blue, .7);
-                        // z-index: -1;
                         transform: scaleX(0);
                         transition: transform 150ms ease-out;
+                        @include media-breakpoint-down (sm){
+                           display: none;
+                        }
                     }
                     &:hover {
-                        border-width: 4px;
                         box-shadow: 0 0 9px rgb(255, 255, 255);
                         transition: all .3s ease;
+                        @include media-breakpoint-up(sm){
+                            border-width: 4px;
+                        }
                         p{
-                            color: $primary;
+                            color: $white;
                             transition: 300ms ;
                         }
                         &:after {
@@ -743,7 +752,7 @@ a.btn{
                       p{
                           z-index: 100;
                           font-size: 21px;
-                          color: $white;
+                          color: $dark-blue;
                           transition: 300ms;
                       }
                 }
@@ -3044,3 +3053,46 @@ a.btn{
         }
     }
 }
+
+
+
+
+// ======= Foundry Digital =========
+
+// --- image grid ---
+// .fd-row-container{
+//     h3{
+//         text-align: center;
+//         padding-bottom: 110px;
+//         margin-top: 50px;
+//         font-size: 30px;
+//         font-weight: bold;
+//     }
+//     .fd-image-grid{
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         justify-items: start;
+//         grid-column-gap: 20px;
+//         @include media-breakpoint-up(lg){
+//             grid-template-columns: 1fr 1fr 1fr;
+//         }
+//         .fd-image-box{
+//             padding-bottom: 50px;
+//             max-width: 100%;
+//             width: 100%;
+//             img{
+                
+//                 margin-left: auto;
+//                 margin-right: auto;
+//                 display: block;
+//                 align-items: center;
+//                 padding-bottom: 50px;
+//             }
+//             p{
+//                 padding-left: 40px;
+//                 padding-right: 40px;
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }
