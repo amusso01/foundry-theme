@@ -28,6 +28,11 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 			wp_enqueue_script('tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js', array(), null, true);
 			wp_enqueue_script('about', get_stylesheet_directory_uri().'/js/about.js', array('tweenmax'), null, true);
 		}
+		//Ajax filter scripts     
+        wp_register_script( 'filterCategory', get_stylesheet_directory_uri().'/js/filterCategory.js', array( 'jquery' ), '1.0.0', true );
+        wp_enqueue_script( 'filterCategory' );
+
+
 
 		// register script to load more post 
 		wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery') );

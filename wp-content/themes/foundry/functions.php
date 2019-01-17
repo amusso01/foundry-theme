@@ -191,3 +191,4 @@ function revcon_change_post_object() {
 
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
+
