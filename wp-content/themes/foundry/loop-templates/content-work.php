@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<li class="cat-item selected"><a href="#all" class="category-all active" data-category="category-all">Featured</a></li>
 						<?php
 						foreach($categories as $term){?>
-							<li class="cat-item"><a href="#<?php echo $term->name; ?>" class="category-<?php echo $term->name; ?>" data-category="<?php echo $term->name; ?>"><?php echo $term->name; ?></a></li>
+							<li class="cat-item"><a href="#<?php echo $term->name; ?>" class="<?php echo $term->cat_ID; ?>" data-category="<?php echo $term->name; ?>"><?php echo $term->name; ?></a></li>
 					<?php	}
 
 						//  echo '<pre>'; print_r($categories); echo '</pre>';
@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
 		?>
-				<a href="<?php echo get_permalink(); ?>" class="ajax-call <?php echo $postCat->cat_name ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
+				<a href="<?php echo get_permalink(); ?>" class="ajax-call  <?php echo $postCat->cat_name ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
 
 					<div class="hovereffect">
 						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >

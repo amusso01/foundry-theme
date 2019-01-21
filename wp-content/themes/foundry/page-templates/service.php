@@ -117,7 +117,7 @@ if(is_page('build')){
 			</div>
 			<div class="row third-row">
 				<div class="col-lg-6 offset-lg-6">
-					<a href="#" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
+					<a href="<?php echo site_url( '/contact/');?>" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
 				</div>
 			</div>
 		</div>

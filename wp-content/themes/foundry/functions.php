@@ -36,7 +36,7 @@ foreach ( $understrap_includes as $file ) {
 }
 
 /*
-     * Creating a function to create our Services
+     * Creating a function to create our Works
      */
     
 	 function custom_Works_type() {
@@ -120,6 +120,7 @@ function my_loadmore_ajax_handler(){
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
   $args['post_status'] = 'publish';
   $args['post_type'] = 'works_post';
+  // $args['cat'] = ''
  
 	// it is always better to use WP_Query but not here
 	$works = query_posts( $args );
@@ -138,7 +139,7 @@ function my_loadmore_ajax_handler(){
     ?>
 
 			
-    <a href="<?php echo get_permalink() ?>" class="ajax-call fadeInUp"><article class="work-box" <?php echo $postCat->slug ?>"  >
+    <a href="<?php echo get_permalink() ?>" class="ajax-call new-loaded <?php echo $postCat->cat_name ?> "><article class="work-box" <?php echo $postCat->slug ?>"  >
 
     <div class="hovereffect">
       <img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >

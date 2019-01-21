@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p>and calculate your budget and timescale</p>
 			</div>
 			<div class="col-md-3">
-				<a href="" id="box" class="btn brief"><p>START</p></a>
+				<a href="<?php echo site_url('/brief-1/'); ?>" id="box" class="btn brief"><p>START</p></a>
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="social social-footer">
 					<ul>
 						<li>
-							<a href="">
+							<a href="https://twitter.com/Foundry_Studio" target="_blank">
 								<svg class="social-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.598 27.599">
 									<defs>
 										<style>
@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="https://www.instagram.com/foundry.digital/?hl=en" target="_blank">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -73,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="https://www.linkedin.com/company/foundry-digital-limited/" target="_blank">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -96,36 +96,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>CREATE</h2>
-				<a href="#">Brand Identity</a>
-				<a href="#">Creative Design</a>
-				<a href="#">Promote Artwork</a>
-				<a href="#">UX Design</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Brand Identity</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Creative Design</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Promote Artwork</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">UX Design</a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>BUILD</h2>
-				<a href="#">Website Design & Build</a>
-				<a href="#">Ecommerce Website</a>
-				<a href="#">Mobile App Development</a>
-				<a href="#">SAAS & CRM </a>
+				<a href="<?php echo site_url('/service/build/web-design/'); ?>">Website Design & Build</a>
+				<a href="<?php echo site_url('/service/build/ecommerce/'); ?>">Ecommerce Website</a>
+				<a href="<?php echo site_url('/service/build/crm-saas/'); ?>">Mobile App Development</a>
+				<a href="">SAAS & CRM </a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>PROMOTE</h2>
-				<a href="#">Strategy & Planning</a>
-				<a href="#">Marketing Activation</a>
-				<a href="#">Data Analytics</a>
-				<a href="#">Marketing Packages </a>
+				<a href="<?php echo site_url('/service/promote/strategy/'); ?>">Strategy & Planning</a>
+				<a href="<?php echo site_url('/service/promote/marketing-activation/'); ?>">Marketing Activation</a>
+				<a href="<?php echo site_url('/service/promote/data-analytics/'); ?>">Data Analytics</a>
+				<a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a>
 			</div><!-- col-md-2  footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>COMPANY</h2>
-				<a href="#">Home</a>
-				<a href="#">Work</a>
-				<a href="#">Services</a>
-				<a href="#">About</a>
-				<a href="#">Insights</a>
-				<a href="#">Contact</a>
+				<a href="<?php echo site_url(); ?>">Home</a>
+				<a href="<?php echo site_url('/work/'); ?>">Work</a>
+				<a href="<?php echo site_url('/service/'); ?>">Services</a>
+				<a href="<?php echo site_url('/about'); ?>">About</a>
+				<a href="<?php echo site_url('/insights/'); ?>">Insights</a>
+				<a href="<?php echo site_url('/contact/'); ?>">Contact</a>
 			</div><!-- col-md-2 footer-push-down -->
 			
 

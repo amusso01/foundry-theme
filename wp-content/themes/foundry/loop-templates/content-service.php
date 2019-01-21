@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="card-content">
 						<a href="<?php echo site_url('/create/'); ?>"><h3>CREATE</h3></a>
 						<p>Our graphic designers use UX & visual strategy to create eye-catching identities and user interfaces</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/create/');?>"><p class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="card-content">
 						<a href="<?php echo site_url('/build/') ?>"><h3>BUILD</h3></a>
 						<p>We pair robust development with stunning design to build the best websites, apps and digital platforms</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/build/');?>"><p class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="card-content">
 						<a href="<?php echo site_url('/promote/'); ?>"><h3>PROMOTE</h3></a>
 						<p>Once your business is online, it’s time to promote it so you can reach and engage your target audience effectively</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/promote/');?>"><p class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -173,5 +173,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="col-md-6 offset-md-3 we-help hidden-animate">
 	<h4>Need some extra help?</h4>
 	<p>If you are a little unsure of what you need please get it touch. Our team will be happy to help you put your project on the right path.</p>
-	<a href="" class="get-in-touch">GET IN TOUCH</a>
+	<a href="<?php echo site_url( '/contact/');?>" class="get-in-touch">GET IN TOUCH</a>
 </div>
