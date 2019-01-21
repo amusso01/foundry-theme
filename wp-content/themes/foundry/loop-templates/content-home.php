@@ -56,7 +56,7 @@ $works = new WP_Query( array (
 					<div class="card-content">
 						<a href="<?php echo site_url('/create/'); ?>"><h3>CREATE</h3></a>
 						<p>Our graphic designers use UX & visual strategy to create eye-catching identities and user interfaces</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/create/');?>"><p style="margin-bottom:35px; padding:0px;" class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -101,7 +101,7 @@ $works = new WP_Query( array (
 					<div class="card-content">
 						<a href="<?php echo site_url('/build/') ?>"><h3>BUILD</h3></a>
 						<p>We pair robust development with stunning design to build the best websites, apps and digital platforms</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/build/');?>"><p style="margin-bottom:35px; padding:0px;"  class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -156,7 +156,7 @@ $works = new WP_Query( array (
 					<div class="card-content">
 						<a href="<?php echo site_url('/promote/'); ?>"><h3>PROMOTE</h3></a>
 						<p>Once your business is online, it’s time to promote it so you can reach and engage your target audience effectively</p>
-						<p class="primary">OVERVIEW</p>
+						<a href="<?php echo site_url( '/promote/');?>"><p style="margin-bottom:35px; padding:0px;" class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -169,7 +169,7 @@ $works = new WP_Query( array (
 							<li>
 								<a id="data" href="<?php echo site_url('/data-analytics/'); ?>">Data Analytics</a>
 							</li>
-							<li>
+							<li style="display:none;">
 								<a id="marketingPackages" href="<?php echo site_url('/marketing-pakages/'); ?>">Marketing Packages</a>
 							</li>
 						</ul>
@@ -239,7 +239,7 @@ $works = new WP_Query( array (
 					<li data-target="#home-carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="meet-team">
-					<a class="see-more" href="<?php echo site_url( '/about/');?>">MEET THE TEAM <i class="fa fa-chevron-right"></i></a>
+					<a class="see-more" href="<?php echo site_url( '/about/');?>">ABOUT US <i class="fa fa-chevron-right"></i></a>
 				</div>
 				<div class="carousel-inner">
 				<?php foreach( $images as $image ): ?>	
@@ -260,7 +260,7 @@ $works = new WP_Query( array (
 				<p>Foundry Digital are a digital creative agency based in Fulham, London. We offer web design & development services covering ecommerce design, mobile app development, social media portal construction, CRM and intranet development. Our team of graphic designers, web developers & digital marketers have completed projects spanning many industries, always looking for smart ways to unlock your brand’s potential.</p>
 				
 				<footer>
-					<a href="#">DISCOVER MORE</a>
+					<a href="<?php echo site_url( '/about/');?>">DISCOVER MORE</a>
 				</footer>
 			</div>
 		</div>

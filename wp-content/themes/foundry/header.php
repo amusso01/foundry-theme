@@ -46,7 +46,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container" >
+			<div class="container" > 
+				<!-- Make it container fluid then target the menu properly with css. The menu is targeted through .container selector change it -->
 		<?php endif; ?>
 
 				<!-- Your site title as branding in the menu -->
