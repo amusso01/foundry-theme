@@ -419,7 +419,7 @@ a.btn{
             padding-bottom: 0px;
             transition: .5s;
             border-bottom: 1px solid $grey;
-            .container{
+            .container-fluid{
               #main-menu{
                   li.menu-item{
                         padding-right: 37px;
@@ -1912,38 +1912,47 @@ a.btn{
             @include media-breakpoint-up(lg){
                 height: 67px;
             }
-        }
-        #build{
-            .cls-1 {
-                fill: url(#linear-gradient-3) $gradient-8;
-                }
-        
-                .cls-2 {
-                fill: url(#linear-gradient-4) $gradient-8;
-                }
-        } 
-        #create{
-            .cls-1 {
-                fill: url(#linear-gradient) $gradient-1;
+            .cls-1{
+                fill: $white;
             }
+            .cls-2{
+                fill: $white;
+            }
+            .cls-3{
+                fill: $white;
+            }
+        }
+        // #build{
+        //     .cls-1 {
+        //         fill: url(#linear-gradient-3) $gradient-8;
+        //         }
+        
+        //         .cls-2 {
+        //         fill: url(#linear-gradient-4) $gradient-8;
+        //         }
+        // } 
+        // #create{
+        //     .cls-1 {
+        //         fill: url(#linear-gradient) $gradient-1;
+        //     }
             
-            .cls-2 {
-                fill: url(#linear-gradient-2) $gradient-1;
-            }
-        }
-        #promote{
-            .cls-1 {
-                fill: url(#linear-gradient-5)$gradient-10;
-              }
+        //     .cls-2 {
+        //         fill: url(#linear-gradient-2) $gradient-1;
+        //     }
+        // }
+        // #promote{
+        //     .cls-1 {
+        //         fill: url(#linear-gradient-5)$gradient-10;
+        //       }
         
-              .cls-2 {
-                fill: url(#linear-gradient-6) $gradient-10;
-              }
+        //       .cls-2 {
+        //         fill: url(#linear-gradient-6) $gradient-10;
+        //       }
         
-              .cls-3 {
-                fill: url(#linear-gradient-7) $gradient-10;
-              }
-        }
+        //       .cls-3 {
+        //         fill: url(#linear-gradient-7) $gradient-10;
+        //       }
+        // }
     }  
     .row.second-row{
         padding-bottom: 50px;
@@ -2038,7 +2047,6 @@ a.btn{
         &:hover{
             background-color: $primary;
             transition: all .2s;
-            transform: scale(1.03);
             .box-description{
                 p{
                     color: $white;
@@ -2047,6 +2055,15 @@ a.btn{
             .box-title{
                 h3{ 
                     color: $white;
+                }
+            }
+            .icon{
+                .icon-service{
+                    svg{
+                        .cls-1,.cls-2,.cls-3{
+                            fill: #fff !important;
+                        }
+                    }
                 }
             }
         }
@@ -2078,6 +2095,11 @@ a.btn{
                     @include media-breakpoint-up(lg){
                         width: 50px;
                         height: 50px;
+                    }
+                    svg{
+                        .cls-1{
+                            fill: url(#linear-gradient);
+                        }
                     }
                 }
             }
@@ -2960,45 +2982,8 @@ a.btn{
     }
 }
 
+// ==== temp hide section =====
 
-
-
-// ======= Foundry Digital =========
-
-// --- image grid ---
-// .fd-row-container{
-//     h3{
-//         text-align: center;
-//         padding-bottom: 110px;
-//         margin-top: 50px;
-//         font-size: 30px;
-//         font-weight: bold;
-//     }
-//     .fd-image-grid{
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         justify-items: start;
-//         grid-column-gap: 20px;
-//         @include media-breakpoint-up(lg){
-//             grid-template-columns: 1fr 1fr 1fr;
-//         }
-//         .fd-image-box{
-//             padding-bottom: 50px;
-//             max-width: 100%;
-//             width: 100%;
-//             img{
-                
-//                 margin-left: auto;
-//                 margin-right: auto;
-//                 display: block;
-//                 align-items: center;
-//                 padding-bottom: 50px;
-//             }
-//             p{
-//                 padding-left: 40px;
-//                 padding-right: 40px;
-//                 text-align: center;
-//             }
-//         }
-//     }
-// }
+#marketingPackages{
+    display: none;
+}
