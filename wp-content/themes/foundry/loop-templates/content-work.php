@@ -22,7 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php 
 
 					$args= array( 
-						'exclude_tree'=> 1
+						'exclude_tree'=> 7,
+						'exclude'=> 1
 					);
 					
 					$categories = get_categories($args); ?>
