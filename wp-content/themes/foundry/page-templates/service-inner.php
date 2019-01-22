@@ -32,7 +32,7 @@ get_header();
 						echo $content;
 					endif;
 					?>
-					<a href="#" class="btn">GET IN TOUCH</a>
+					<a href="<?php echo site_url( '/contact/');?>" class="btn">GET IN TOUCH</a>
 				</div>
 				<div class="img-fluid text-center col-md-12">
 					<?php the_post_thumbnail( array(900, 400), 'hero image of the page' ) ?>

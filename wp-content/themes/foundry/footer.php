@@ -25,14 +25,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p>and calculate your budget and timescale</p>
 			</div>
 			<div class="col-md-3">
-				<a href="" id="box" class="btn brief"><p>START</p></a>
+				<a href="<?php echo site_url('/brief-1/'); ?>" id="box" class="btn brief"><p>START</p></a>
 			</div>
 		</div>
 	</div>
 
 	<footer class="footer-main">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="container-fluid pl-5">
 
 		<div class="row footer-info">
 
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="social social-footer">
 					<ul>
 						<li>
-							<a href="">
+							<a href="https://twitter.com/Foundry_Studio" target="_blank">
 								<svg class="social-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.598 27.599">
 									<defs>
 										<style>
@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="https://www.instagram.com/foundry.digital/?hl=en" target="_blank">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -73,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="https://www.linkedin.com/company/foundry-digital-limited/" target="_blank">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -96,36 +96,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>CREATE</h2>
-				<a href="#">Brand Identity</a>
-				<a href="#">Creative Design</a>
-				<a href="#">Promote Artwork</a>
-				<a href="#">UX Design</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Brand Identity</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Creative Design</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Promote Artwork</a>
+				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">UX Design</a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>BUILD</h2>
-				<a href="#">Website Design & Build</a>
-				<a href="#">Ecommerce Website</a>
-				<a href="#">Mobile App Development</a>
-				<a href="#">SAAS & CRM </a>
+				<a href="<?php echo site_url('/service/build/web-design/'); ?>">Website Design & Build</a>
+				<a href="<?php echo site_url('/service/build/ecommerce/'); ?>">Ecommerce Website</a>
+				<a href="<?php echo site_url('/service/build/crm-saas/'); ?>">Mobile App Development</a>
+				<a href="">SAAS & CRM </a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>PROMOTE</h2>
-				<a href="#">Strategy & Planning</a>
-				<a href="#">Marketing Activation</a>
-				<a href="#">Data Analytics</a>
-				<a href="#">Marketing Packages </a>
+				<a href="<?php echo site_url('/service/promote/strategy/'); ?>">Strategy & Planning</a>
+				<a href="<?php echo site_url('/service/promote/marketing-activation/'); ?>">Marketing Activation</a>
+				<a href="<?php echo site_url('/service/promote/data-analytics/'); ?>">Data Analytics</a>
+				<a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a>
 			</div><!-- col-md-2  footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
 				<h2>COMPANY</h2>
-				<a href="#">Home</a>
-				<a href="#">Work</a>
-				<a href="#">Services</a>
-				<a href="#">About</a>
-				<a href="#">Insights</a>
-				<a href="#">Contact</a>
+				<a href="<?php echo site_url(); ?>">Home</a>
+				<a href="<?php echo site_url('/work/'); ?>">Work</a>
+				<a href="<?php echo site_url('/service/'); ?>">Services</a>
+				<a href="<?php echo site_url('/about'); ?>">About</a>
+				<a href="<?php echo site_url('/insights/'); ?>">Insights</a>
+				<a href="<?php echo site_url('/contact/'); ?>">Contact</a>
 			</div><!-- col-md-2 footer-push-down -->
 			
 
@@ -150,36 +150,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-6 my-auto">
 
 					<div class="footer-logo">
-						<svg id="footer-logo" data-name="Group 882" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 43.204">
-							<defs>
-								<style>
-								.cls-1 {
-									fill: #f8f8f8;
-								}
-								</style>
-							</defs>
-							<g id="Group_1" data-name="Group 1" transform="translate(0 4.217)">
-								<path id="Path_1" data-name="Path 1" class="cls-1" d="M0,28.309V4.9H12.479V7.826H3.356v6.627h9.123v2.926H3.356V28.223H0Z" transform="translate(0 -4.9)"/>
-								<path id="Path_2" data-name="Path 2" class="cls-1" d="M77.239,19.373a8.323,8.323,0,0,1-2.754,6.455,10.571,10.571,0,0,1-7.315,2.41,10.719,10.719,0,0,1-7.315-2.41A8.322,8.322,0,0,1,57.1,19.373V5h3.356V18.77a6.3,6.3,0,0,0,1.807,4.82,6.582,6.582,0,0,0,4.906,1.721,6.946,6.946,0,0,0,4.906-1.721,6.425,6.425,0,0,0,1.807-4.82V5h3.27V19.373Z" transform="translate(-7.958 -4.914)"/>
-								<path id="Path_3" data-name="Path 3" class="cls-1" d="M89,28.323V5h2.84l15.577,17.557V5H110.6V28.237H108.02L92.184,10.422v17.9" transform="translate(-12.403 -4.914)"/>
-								<path id="Path_4" data-name="Path 4" class="cls-1" d="M123.3,5h9.123a12.517,12.517,0,0,1,8.865,3.27A10.97,10.97,0,0,1,144.73,16.7a10.633,10.633,0,0,1-3.615,8.348,13.681,13.681,0,0,1-9.381,3.27H123.3V5Zm3.356,20.225h5.078a10.032,10.032,0,0,0,6.971-2.324,7.99,7.99,0,0,0,2.582-6.283,8.445,8.445,0,0,0-2.324-6.283,8.724,8.724,0,0,0-6.455-2.324h-5.852Z" transform="translate(-17.184 -4.914)"/>
-								<path id="Path_5" data-name="Path 5" class="cls-1" d="M156.3,5h5.938a8.1,8.1,0,0,1,5.508,1.635,5.855,5.855,0,0,1,1.979,4.647,5.855,5.855,0,0,1-1.979,4.647,6.216,6.216,0,0,1-2.238,1.2l.516.344a12.22,12.22,0,0,1,3.529,3.7l4.647,7.057h-3.787l-3.873-6.024a12.372,12.372,0,0,0-2.754-3.27A5.023,5.023,0,0,0,160.775,18h-1.119V28.237h-3.27V5Zm3.357,9.983h2.668a4.345,4.345,0,0,0,3.012-.861,3.247,3.247,0,0,0,1.033-2.582,3.021,3.021,0,0,0-1.033-2.582,4.345,4.345,0,0,0-3.012-.861h-2.668Z" transform="translate(-21.783 -4.914)"/>
-								<path id="Path_6" data-name="Path 6" class="cls-1" d="M189.192,16.274,180.5,5h4.475l5.938,8.262h0L196.852,5h4.3l-8.692,11.188V28.237h-3.27Z" transform="translate(-25.155 -4.914)"/>
-							</g>
-							<g id="Group_2" data-name="Group 2" transform="translate(18.159)">
-								<rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="3.529" height="3.443" transform="translate(9.983)"/>
-								<path id="Path_7" data-name="Path 7" class="cls-1" d="M36.85,5V8.529a9.92,9.92,0,0,1,2.238,1.635,8.433,8.433,0,0,1,2.5,6.2,8.718,8.718,0,0,1-2.5,6.2,8.376,8.376,0,0,1-6.111,2.5,8.078,8.078,0,0,1-5.852-2.5,8.241,8.241,0,0,1-2.582-6.283,8.376,8.376,0,0,1,2.5-6.111A8.641,8.641,0,0,1,28.76,8.787V5.172a10.9,10.9,0,0,0-4.131,2.754A11.064,11.064,0,0,0,21.1,16.274a11.292,11.292,0,0,0,3.873,8.951,12.189,12.189,0,0,0,16.61-.344,11.436,11.436,0,0,0,3.529-8.434,11.575,11.575,0,0,0-3.529-8.434A12.284,12.284,0,0,0,36.85,5Z" transform="translate(-21.1 -0.697)"/>
-							</g>
-							<g id="Group_3" data-name="Group 3" transform="translate(76.597 34.856)">
-								<path id="Path_8" data-name="Path 8" class="cls-1" d="M89,40.5h2.754a6.825,6.825,0,0,1,1.463.172,2.667,2.667,0,0,1,1.119.516,1.689,1.689,0,0,1,.775.775c.172.258.344.6.516.861.086.258.172.6.258.861a2.655,2.655,0,0,1,.086.775,4.02,4.02,0,0,1-.258,1.463,3.1,3.1,0,0,1-.861,1.291,3.748,3.748,0,0,1-1.377.861,4.378,4.378,0,0,1-1.893.344H89Zm1.119,6.971H91.5a6.643,6.643,0,0,0,1.291-.172,2.9,2.9,0,0,0,1.033-.516,2.627,2.627,0,0,0,1.033-2.238,3.229,3.229,0,0,0-.086-.861,3.181,3.181,0,0,0-.43-.947,2.1,2.1,0,0,0-.947-.775,4.111,4.111,0,0,0-1.549-.344H90.2v5.852Z" transform="translate(-89 -40.5)"/>
-								<path id="Path_9" data-name="Path 9" class="cls-1" d="M108.6,40.5h1.119v8H108.6Z" transform="translate(-91.732 -40.5)"/>
-								<path id="Path_10" data-name="Path 10" class="cls-1" d="M128.615,44.029v3.959a5.111,5.111,0,0,1-.688.344l-.775.258c-.258.086-.516.086-.775.172-.258,0-.516.086-.775.086A3.992,3.992,0,0,1,123.8,48.5a4.919,4.919,0,0,1-1.377-.947,6.744,6.744,0,0,1-.861-1.291,5.011,5.011,0,0,1-.258-1.635A3.493,3.493,0,0,1,121.644,43a3.956,3.956,0,0,1,2.152-2.152,5.032,5.032,0,0,1,1.635-.344,5.361,5.361,0,0,1,1.807.258,3.61,3.61,0,0,1,1.2.775l-.775.861a3.6,3.6,0,0,0-1.033-.689,5.036,5.036,0,0,0-1.119-.172,2.749,2.749,0,0,0-1.2.258,3.822,3.822,0,0,0-.947.689,2.976,2.976,0,0,0-.6,1.033,2.735,2.735,0,0,0-.172,1.2,3.453,3.453,0,0,0,.258,1.291,3.6,3.6,0,0,0,.689,1.033,3.821,3.821,0,0,0,.947.689,2.749,2.749,0,0,0,1.2.258,4.907,4.907,0,0,0,1.119-.086,2.577,2.577,0,0,0,.861-.344V45.32h-1.807V44.287h2.754Z" transform="translate(-93.501 -40.5)"/>
-								<path id="Path_11" data-name="Path 11" class="cls-1" d="M141.7,40.5h1.119v8H141.7Z" transform="translate(-96.344 -40.5)"/>
-								<path id="Path_12" data-name="Path 12" class="cls-1" d="M156.582,41.533H154V40.5h6.2v1.033h-2.582V48.5h-1.033Z" transform="translate(-98.059 -40.5)"/>
-								<path id="Path_13" data-name="Path 13" class="cls-1" d="M173.329,40.5h.947l3.443,8h-1.291l-.775-1.979h-3.787l-.775,1.979H169.8Zm1.893,5.078-1.463-3.615h0l-1.549,3.615Z" transform="translate(-100.261 -40.5)"/>
-								<path id="Path_14" data-name="Path 14" class="cls-1" d="M189.9,40.5h1.119v6.971h2.754V48.5h-3.787v-8Z" transform="translate(-103.062 -40.5)"/>
-							</g>
-						</svg>
+						<a href="<?php echo site_url() ?>">
+							<svg id="footer-logo" data-name="Group 882" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 43.204">
+								<defs>
+									<style>
+									.cls-1 {
+										fill: #f8f8f8;
+									}
+									</style>
+								</defs>
+								<g id="Group_1" data-name="Group 1" transform="translate(0 4.217)">
+									<path id="Path_1" data-name="Path 1" class="cls-1" d="M0,28.309V4.9H12.479V7.826H3.356v6.627h9.123v2.926H3.356V28.223H0Z" transform="translate(0 -4.9)"/>
+									<path id="Path_2" data-name="Path 2" class="cls-1" d="M77.239,19.373a8.323,8.323,0,0,1-2.754,6.455,10.571,10.571,0,0,1-7.315,2.41,10.719,10.719,0,0,1-7.315-2.41A8.322,8.322,0,0,1,57.1,19.373V5h3.356V18.77a6.3,6.3,0,0,0,1.807,4.82,6.582,6.582,0,0,0,4.906,1.721,6.946,6.946,0,0,0,4.906-1.721,6.425,6.425,0,0,0,1.807-4.82V5h3.27V19.373Z" transform="translate(-7.958 -4.914)"/>
+									<path id="Path_3" data-name="Path 3" class="cls-1" d="M89,28.323V5h2.84l15.577,17.557V5H110.6V28.237H108.02L92.184,10.422v17.9" transform="translate(-12.403 -4.914)"/>
+									<path id="Path_4" data-name="Path 4" class="cls-1" d="M123.3,5h9.123a12.517,12.517,0,0,1,8.865,3.27A10.97,10.97,0,0,1,144.73,16.7a10.633,10.633,0,0,1-3.615,8.348,13.681,13.681,0,0,1-9.381,3.27H123.3V5Zm3.356,20.225h5.078a10.032,10.032,0,0,0,6.971-2.324,7.99,7.99,0,0,0,2.582-6.283,8.445,8.445,0,0,0-2.324-6.283,8.724,8.724,0,0,0-6.455-2.324h-5.852Z" transform="translate(-17.184 -4.914)"/>
+									<path id="Path_5" data-name="Path 5" class="cls-1" d="M156.3,5h5.938a8.1,8.1,0,0,1,5.508,1.635,5.855,5.855,0,0,1,1.979,4.647,5.855,5.855,0,0,1-1.979,4.647,6.216,6.216,0,0,1-2.238,1.2l.516.344a12.22,12.22,0,0,1,3.529,3.7l4.647,7.057h-3.787l-3.873-6.024a12.372,12.372,0,0,0-2.754-3.27A5.023,5.023,0,0,0,160.775,18h-1.119V28.237h-3.27V5Zm3.357,9.983h2.668a4.345,4.345,0,0,0,3.012-.861,3.247,3.247,0,0,0,1.033-2.582,3.021,3.021,0,0,0-1.033-2.582,4.345,4.345,0,0,0-3.012-.861h-2.668Z" transform="translate(-21.783 -4.914)"/>
+									<path id="Path_6" data-name="Path 6" class="cls-1" d="M189.192,16.274,180.5,5h4.475l5.938,8.262h0L196.852,5h4.3l-8.692,11.188V28.237h-3.27Z" transform="translate(-25.155 -4.914)"/>
+								</g>
+								<g id="Group_2" data-name="Group 2" transform="translate(18.159)">
+									<rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="3.529" height="3.443" transform="translate(9.983)"/>
+									<path id="Path_7" data-name="Path 7" class="cls-1" d="M36.85,5V8.529a9.92,9.92,0,0,1,2.238,1.635,8.433,8.433,0,0,1,2.5,6.2,8.718,8.718,0,0,1-2.5,6.2,8.376,8.376,0,0,1-6.111,2.5,8.078,8.078,0,0,1-5.852-2.5,8.241,8.241,0,0,1-2.582-6.283,8.376,8.376,0,0,1,2.5-6.111A8.641,8.641,0,0,1,28.76,8.787V5.172a10.9,10.9,0,0,0-4.131,2.754A11.064,11.064,0,0,0,21.1,16.274a11.292,11.292,0,0,0,3.873,8.951,12.189,12.189,0,0,0,16.61-.344,11.436,11.436,0,0,0,3.529-8.434,11.575,11.575,0,0,0-3.529-8.434A12.284,12.284,0,0,0,36.85,5Z" transform="translate(-21.1 -0.697)"/>
+								</g>
+								<g id="Group_3" data-name="Group 3" transform="translate(76.597 34.856)">
+									<path id="Path_8" data-name="Path 8" class="cls-1" d="M89,40.5h2.754a6.825,6.825,0,0,1,1.463.172,2.667,2.667,0,0,1,1.119.516,1.689,1.689,0,0,1,.775.775c.172.258.344.6.516.861.086.258.172.6.258.861a2.655,2.655,0,0,1,.086.775,4.02,4.02,0,0,1-.258,1.463,3.1,3.1,0,0,1-.861,1.291,3.748,3.748,0,0,1-1.377.861,4.378,4.378,0,0,1-1.893.344H89Zm1.119,6.971H91.5a6.643,6.643,0,0,0,1.291-.172,2.9,2.9,0,0,0,1.033-.516,2.627,2.627,0,0,0,1.033-2.238,3.229,3.229,0,0,0-.086-.861,3.181,3.181,0,0,0-.43-.947,2.1,2.1,0,0,0-.947-.775,4.111,4.111,0,0,0-1.549-.344H90.2v5.852Z" transform="translate(-89 -40.5)"/>
+									<path id="Path_9" data-name="Path 9" class="cls-1" d="M108.6,40.5h1.119v8H108.6Z" transform="translate(-91.732 -40.5)"/>
+									<path id="Path_10" data-name="Path 10" class="cls-1" d="M128.615,44.029v3.959a5.111,5.111,0,0,1-.688.344l-.775.258c-.258.086-.516.086-.775.172-.258,0-.516.086-.775.086A3.992,3.992,0,0,1,123.8,48.5a4.919,4.919,0,0,1-1.377-.947,6.744,6.744,0,0,1-.861-1.291,5.011,5.011,0,0,1-.258-1.635A3.493,3.493,0,0,1,121.644,43a3.956,3.956,0,0,1,2.152-2.152,5.032,5.032,0,0,1,1.635-.344,5.361,5.361,0,0,1,1.807.258,3.61,3.61,0,0,1,1.2.775l-.775.861a3.6,3.6,0,0,0-1.033-.689,5.036,5.036,0,0,0-1.119-.172,2.749,2.749,0,0,0-1.2.258,3.822,3.822,0,0,0-.947.689,2.976,2.976,0,0,0-.6,1.033,2.735,2.735,0,0,0-.172,1.2,3.453,3.453,0,0,0,.258,1.291,3.6,3.6,0,0,0,.689,1.033,3.821,3.821,0,0,0,.947.689,2.749,2.749,0,0,0,1.2.258,4.907,4.907,0,0,0,1.119-.086,2.577,2.577,0,0,0,.861-.344V45.32h-1.807V44.287h2.754Z" transform="translate(-93.501 -40.5)"/>
+									<path id="Path_11" data-name="Path 11" class="cls-1" d="M141.7,40.5h1.119v8H141.7Z" transform="translate(-96.344 -40.5)"/>
+									<path id="Path_12" data-name="Path 12" class="cls-1" d="M156.582,41.533H154V40.5h6.2v1.033h-2.582V48.5h-1.033Z" transform="translate(-98.059 -40.5)"/>
+									<path id="Path_13" data-name="Path 13" class="cls-1" d="M173.329,40.5h.947l3.443,8h-1.291l-.775-1.979h-3.787l-.775,1.979H169.8Zm1.893,5.078-1.463-3.615h0l-1.549,3.615Z" transform="translate(-100.261 -40.5)"/>
+									<path id="Path_14" data-name="Path 14" class="cls-1" d="M189.9,40.5h1.119v6.971h2.754V48.5h-3.787v-8Z" transform="translate(-103.062 -40.5)"/>
+								</g>
+							</svg>
+						</a>
 					</div>
 
 			</div><!--col end -->

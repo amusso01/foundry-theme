@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<div class="col-lg-5 offset-lg-1">
 						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way. Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
-						<a href="" class="btn">AGENCY LIFE</a>
+						<a href="<?php echo site_url( '/agency-life/' ) ?>" class="btn">AGENCY LIFE</a>
 					</div>
 				</div>
 			</div>
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div> <!-- grid-about -->
 		</div> <!-- container -->
 	</aside><!-- info-box-about -->
-	<article class="the-team">
+	<article class="the-team d-none">
 		<div class="container-fluid">
 			<header class="team-intro col-md-6 offset-md-3 text-center">
 				<h3>The Team</h3>
@@ -124,12 +124,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<div class="overlay h-100 w-100">
 							<p class="title">AGENCY LIFE</p>
 							<p class="description">Alongside working on exciting projects we make sure we let off some steam</p>
-							<button class="learn-more">
+							<a href="<?php echo site_url( '/agency-life/' ) ?>"><button class="learn-more">
 								<div class="circle">
 								<span class="icon arrow"></span>
 								</div>
 								<p class="button-text">Learn More</p>
-							</button>
+							</button></a>
 						</div><!-- overlay -->
 				</div>
 				<div class="info-card work">

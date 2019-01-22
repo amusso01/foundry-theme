@@ -94,7 +94,6 @@ if(is_page('build')){
 	$backgroundGradient = 'background: linear-gradient(rgba(215, 0, 66, .5),rgba(180, 0, 102, .5),rgba(145, 0, 138, .5))';
 }
 
-
 ?>
 
 <main class="service-inside">
@@ -117,7 +116,7 @@ if(is_page('build')){
 			</div>
 			<div class="row third-row">
 				<div class="col-lg-6 offset-lg-6">
-					<a href="#" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
+					<a href="<?php echo site_url( '/contact/');?>" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
 				</div>
 			</div>
 		</div>
@@ -134,9 +133,12 @@ if(is_page('build')){
 							<a href="<?php the_sub_field('box-link-to') ?>">
 								<div class="sevice-gird-element container hidden-animate">
 									<div class="box-wrapper">
+										<?php $svgImg = get_sub_field('icon');?>
 										<div class="icon row justify-content-center">
-											<?php $svgImg = get_sub_field('icon'); ?>
-											<img src="<?php echo $svgImg;  ?>" alt="service icon" class="icon-service">
+										<div class="icon-service">
+											<?php echo file_get_contents($svgImg); ?>
+										</div>
+
 										</div>
 										<div class="box-title row justify-content-center">
 											<h3><?php the_sub_field('box-title'); ?></h3>
