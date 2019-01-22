@@ -23,6 +23,7 @@ $works = new WP_Query( array (
 			<div class="col-md-8 offset-md-2 text-center">
 				<h2>We create and build interactive digital platforms, and help businesses promote their services online.</h2>
 				<p>Our team of designers, developers and digital marketing experts are always on hand to offer guidance, so if you can’t find what you’re looking for just give us a call and we can put together the right strategy to put your project on the right path.</p>
+				<a href="<?php echo site_url('/work/'); ?>">GET IN TOUCH</a>
 			</div>
 		</article>
 	</div>
@@ -56,7 +57,7 @@ $works = new WP_Query( array (
 					<div class="card-content">
 						<a href="<?php echo site_url('/create/'); ?>"><h3>CREATE</h3></a>
 						<p>Our graphic designers use UX & visual strategy to create eye-catching identities and user interfaces</p>
-						<a href="<?php echo site_url( '/create/');?>><p class="primary">OVERVIEW</p></a>
+						<a href="<?php echo site_url( '/create/');?>"><p class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
 						<ul>
@@ -251,7 +252,7 @@ $works = new WP_Query( array (
 			</div>	
 			<?php endif; ?>
 			</div>
-			<div class="col-lg-6 box-gray">
+			<div class="col-lg-6 box-grey">
 				<header>
 					<h1>FOUNDRY DIGITAL</h1>
 					<h2>The London Ecommerce Agency</h2>

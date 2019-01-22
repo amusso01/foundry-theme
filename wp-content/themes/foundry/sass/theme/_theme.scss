@@ -35,12 +35,21 @@ input[type=text]:focus
 
 // Animation 
 
+@include keyframes(shadow-pulse){
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}
 
-    @include keyframes(spin) {
-        100% {
-            transform:rotate(360deg);
-        }
-  }
+
+@include keyframes(spin) {
+    100% {
+        transform:rotate(360deg);
+    }
+}
     @include keyframes(bounce) {
         25%{
             transform: scale(.9)
@@ -395,6 +404,27 @@ a.btn{
                 background: transparent!important;
                 &.navwhite{
                     background: $white!important;
+                    .container-fluid{
+                        #main-menu{
+                            li.menu-item{
+                                .nav-link{
+                                    color: $grey;
+                                    &:hover{
+                                        color: $dark-blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .container-fluid{
+                    #main-menu{
+                        li.menu-item{
+                            .nav-link{
+                                color: $white;
+                            }
+                        }
+                    }
                 }
             }
             .line-gradient{
@@ -562,13 +592,13 @@ a.btn{
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-image: url("./../img/images/brief.jpg"),
-        -webkit-linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        -webkit-linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
         background-image: url("./../img/images/brief.jpg"),
-        -moz-linear-gradient(right, rgba(33, 37, 49, 1) rgba(84, 114, 198, 1));
+        -moz-linear-gradient(right, rgba(32, 36, 48, 1) rgba(67, 75, 97, 1));
         background-image: url("./../img/images/brief.jpg"),
-        -o-linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        -o-linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
         background-image: url("./../img/images/brief.jpg"),
-        linear-gradient(right, rgba(33, 37, 49, 1), rgba(84, 114, 198, 1));
+        linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
         background-blend-mode: overlay;
         .row{
             padding-top: 17px;
@@ -583,51 +613,24 @@ a.btn{
                     justify-content: center;
                     width: 144px;
                     height: 144px;
-                    background-color: transparent;
-                    border: 3px solid $white;
+                    background-color: $yellow;
+                    border: 3px solid $yellow;
                     border-radius:50%;
                     overflow: hidden;
-                    transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out, border-width 300ms ease;
-                    z-index: 100;
+                    // transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out, border-width 300ms ease;
+                    animation: shadow-pulse 1s infinite;
                     @include media-breakpoint-down (sm){
                         margin-top: 50px;
                         margin-bottom: 50px;
                         margin-right: auto;
                         margin-left: auto;
                     }
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        left: 20px;
-                        top: 5px;
-                        width: 135px;
-                        height: 135px;
-                        border-radius: 50%;
-                        background-color: rgba($dark-blue, .7);
-                        transform: scaleX(0);
-                        transition: transform 150ms ease-out;
-                        @include media-breakpoint-down (sm){
-                           display: none;
-                        }
-                    }
+
                     &:hover {
-                        box-shadow: 0 0 9px rgb(255, 255, 255);
-                        transition: all .3s ease;
-                        @include media-breakpoint-up(sm){
-                            border-width: 4px;
-                        }
-                        p{
-                            color: $white;
-                            transition: 300ms ;
-                        }
-                        &:after {
-                            transform: scaleX(1);
-                            transform-origin: 50% 50%;
-                            transition: transform 150ms ease-out;
-                         }
+                        animation: none;
+                        box-shadow: none;
                       }
                       p{
-                          z-index: 100;
                           font-size: 21px;
                           color: $dark-blue;
                           transition: 300ms;
@@ -757,7 +760,7 @@ a.btn{
             z-index: 20;
             position: absolute;
             top: -10%;
-            left: 5%;
+            left: 10%;
             @include media-breakpoint-down(xl){
                 top: 0;
             }
@@ -805,6 +808,10 @@ a.btn{
                 display: inline-block;
                 z-index: 50;
                 margin-right: 25px;
+                &.work-btn{
+                    background: $primary;
+                    border-color: $primary;
+                }
                 @include media-breakpoint-down(md){
                     font-size: 13px;
                     padding-left: 0px;
@@ -817,9 +824,9 @@ a.btn{
                     margin-top: 25px;
                 }
                 &:hover{
-                    background: $primary;
-                    border-color: $primary;
-                    box-shadow: none;
+                    -webkit-box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.75);
+                    box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.75);
                 }
             }
         }
@@ -833,12 +840,17 @@ a.btn{
                 font-size: 26px;
                 font-weight: bold;
                 margin-bottom: 16px;
+                line-height: 30px;
+            }
+            a{
+                color: $primary;
+                font-weight: bold;
             }
         }
         .home-work{
             .work-header{
-                padding-bottom: 90px;
-                padding-top: 90px;
+                padding-bottom: 65px;
+                padding-top: 30px;
                 h3{
                     font-weight: bold;
                     font-size: 26px;
@@ -951,9 +963,9 @@ a.btn{
                         text-align: left;
                         padding-left: 20px;
                         font-size: 15px;
-                        -webkit-transform: translateY(90px);
-                        -ms-transform: translateY(90px);
-                        transform: translateY(90px);
+                        -webkit-transform: translateY(80px);
+                        -ms-transform: translateY(80px);
+                        transform: translateY(80px);
                         -webkit-transition: all 0.4s ease-in-out;
                         transition: all 0.4s ease-in-out;
                     }
@@ -993,27 +1005,42 @@ a.btn{
             .col-lg-6{
                 padding-left: 0px;
                 padding-right: 0px;
-                &.box-gray{
+                &.box-grey{
                     padding-top: 50px;
                     padding-left: 50px;
                     padding-right: 50px;
+                    @include media-breakpoint-up(lg){
+                        padding-top: 10px;
+                    }
                     @include media-breakpoint-up(xl){
-                        padding-top: 90px;
+                        padding-top: 35px;
                         padding-left: 90px;
                         padding-right: 90px;
                     }
                     @include media-breakpoint-up(xxl){
-                        padding-top: 140px;
+                        padding-top: 75px;
+                        padding-left: 120px;
+                        padding-right: 120px;
+                    }
+                    @include media-breakpoint-up(videoXXL){
+                        padding-top: 30px;
                         padding-left: 120px;
                         padding-right: 120px;
                     }
                     h1{
-                        font-size: 13px;
-                        line-height: 16px;
+                        font-size: 84px;
+                        line-height: 60px;
                         padding-bottom: 16px;
+                        @include media-breakpoint-up(lg){
+                            font-size: 68px;
+                        }
+                        @include media-breakpoint-up(xxl){
+                            font-size: 92px;
+                            line-height: 70px;
+                        }
                     }
                     h2{
-                        font-size: 26px;
+                        font-size: 16px;
                         font-weight: bold;
                         padding-bottom: 16px;
                         width: 80%;
