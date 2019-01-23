@@ -144,7 +144,6 @@ function my_loadmore_ajax_handler(){
     <div class="hovereffect">
       <img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
       <div class="overlay">
-        <p class="work-cat"><?php echo $postCat->slug ?></p>
         <h2 class="work-title" ><?php the_title(); ?></h2>
         <p class="work-description info"><?php echo get_field('description')?></p>
       </div>
