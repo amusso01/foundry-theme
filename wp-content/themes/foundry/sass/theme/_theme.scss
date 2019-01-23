@@ -216,7 +216,7 @@ a.btn{
 }
 
 .container{
-    @include media-breakpoint-only(xxl){
+    @include media-breakpoint-up(xxl){
         max-width: 1350px;
     }
 }
@@ -2351,6 +2351,7 @@ a.btn{
         padding-top: 45px;
         line-height: 16px;
         padding-bottom: 20px;
+        text-transform: uppercase;
         @include media-breakpoint-down(sm){
             font-size: 15px;
         }
@@ -2398,19 +2399,19 @@ a.btn{
         background-color: $white;
     }
     .article-box{
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         &.image{
             @include media-breakpoint-down(sm){
                 display: none;
             }
             @include media-breakpoint-only(md){
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
             @include media-breakpoint-up(xxl){
-                // padding-left: 160px;
-                // padding-right: 160px;
+                padding-left: 100px;
+                padding-right: 100px;
             }
         }
         @include media-breakpoint-up(sm){
@@ -2441,6 +2442,13 @@ a.btn{
             padding-bottom: 20px;
             @include media-breakpoint-up(md){
                 font-size: 30px;
+            }
+        }
+        .service-inner-link{
+            margin-top: 25px;
+            a{
+                color: $primary;
+                font-weight: bold;
             }
         }
     }
@@ -2508,16 +2516,16 @@ a.btn{
         padding-bottom: 110px;
         padding-top:10px;
         @include media-breakpoint-up(md){
-            padding-top:70px;
+            padding-top:40px;
         }
         h3{
             font-size: 26px;
             font-weight: bold;
-            padding-bottom: 25px;
+            padding-bottom: 10px;
         }
         p{
             @include media-breakpoint-up(md){
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
         }
         .skills-list{
@@ -2575,14 +2583,14 @@ a.btn{
             h2{
                 font-size: 38px;
                 font-weight: bold;
-                // padding-bottom: 23px;
+                letter-spacing: 3px;
                 @include media-breakpoint-up(md){
                     font-size: 48px;
                     padding-bottom: 35px;
                 }
                 @include media-breakpoint-up(lg){
                     font-size: 68px;
-                    padding-bottom: 75px;
+                    padding-bottom: 15px;
                 }
             }
             p{
@@ -2628,7 +2636,7 @@ a.btn{
                 display: none;
             }
             .grid-item-about{
-                height: 335px;
+                height: 364px;
                 background-color: $light-grey;
                 -webkit-box-shadow: 0px 3px 6px 0px rgba(198,198,198,1);
                 -moz-box-shadow: 0px 3px 6px 0px rgba(198,198,198,1);
@@ -2638,6 +2646,10 @@ a.btn{
                     padding-top: 100px;
                     padding-left: 50px;
                     padding-right: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly; 
+                    align-items: center;  
                     @include media-breakpoint-down(md){
                         padding-left: 15px;
                         padding-right: 15px;
@@ -2645,17 +2657,25 @@ a.btn{
                     .counter-value{
                         font-size: 80px;
                         font-weight: bold;
-                        padding-bottom: 60px;
+                        padding-bottom: 50px;
                     }
                     .number{
                         font-size: 80px;
                         font-weight: bold;
-                        padding-bottom: 60px;
+                        padding-bottom: 50px;
                     }
                     .info-inner{
-                        font-weight: bold;
                         font-size: 16px;
+                        width:70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    a{
                         color: $primary;
+                        font-weight: bold;
+                        font-size: 15px;
+                        padding-top: 40px;
+                        display: block;
                     }
                 }
             }
@@ -2893,6 +2913,7 @@ a.btn{
             font-size: 26px;
             font-weight: bold;
             padding-bottom: 25px;
+            margin-bottom: 0px;
         }
         p{
             font-size: 16px;
@@ -3051,5 +3072,8 @@ a.btn{
 // ==== temp hide section =====
 
 #marketingPackages{
+    display: none;
+}
+.the-team{
     display: none;
 }

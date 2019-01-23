@@ -18,21 +18,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 	<div class="container-fluid brief-footer">
-		<div class="row">
-			<div class="col-md-6 offset-md-2">
-				<p>Let’s talk</p>
-				<p>Send us your brief</p>
-				<p>and calculate your budget and timescale</p>
-			</div>
-			<div class="col-md-3">
-				<a href="<?php echo site_url('/brief-1/'); ?>" id="box" class="btn brief"><p>START</p></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ">
+					<p>Let’s talk</p>
+					<p>Send us your brief</p>
+					<p>and calculate your budget and timescale</p>
+				</div>
+				<div class="col-md-3 offset-md-3">
+					<a href="<?php echo site_url('/brief-1/'); ?>" id="box" class="btn brief"><p>START</p></a>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<footer class="footer-main">
 
-	<div class="container-fluid pl-5">
+	<div class="container">
 
 		<div class="row footer-info">
 
@@ -115,7 +117,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo site_url('/service/promote/strategy/'); ?>">Strategy & Planning</a>
 				<a href="<?php echo site_url('/service/promote/marketing-activation/'); ?>">Marketing Activation</a>
 				<a href="<?php echo site_url('/service/promote/data-analytics/'); ?>">Data Analytics</a>
-				<a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a>
+				<!-- <a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a> -->
 			</div><!-- col-md-2  footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
