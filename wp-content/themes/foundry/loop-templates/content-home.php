@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $works = new WP_Query( array (
 	'post_type' => 'works_post',
-	'posts_per_page' => 5
+	'posts_per_page' => 3
 ));
 
 ?>
@@ -192,7 +192,6 @@ $works = new WP_Query( array (
 	<div class="home-work-grid">
 
 	<?php if ($works-> have_posts() ) {
-		$iteration = 1;
 			while ($works-> have_posts() ) {
 				$works->the_post(); 
 
@@ -206,7 +205,7 @@ $works = new WP_Query( array (
 		<a href="<?php echo get_permalink(); ?>" class="work-box-home">
 			<article class="<?php echo $postCat->slug; ?>">
 				<div class="hovereffect">
-					<img src="<?php if($iteration==1){the_field('home_image');}else{echo $image[0];} ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
+					<img src="<?php the_field('home_image');?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
 					<div class="overlay">
 						<p class="work-cat"><?php echo $postCat->slug ?></p>
 						<h2 class="work-title" ><?php the_title(); ?></h2>
@@ -215,7 +214,7 @@ $works = new WP_Query( array (
 				</div>
 			</article>
 		</a><!-- work-box-home -->
-		<?php $iteration++;
+		<?php 
 		}
 			// Restore original Post Data
 		wp_reset_postdata();

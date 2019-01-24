@@ -911,26 +911,16 @@ a.btn{
         }
         .home-work-grid{
             display: grid;
-            grid-row-gap: 10px;
             grid-column-gap: 10px;
             justify-content: center;
             padding-bottom: 10px;
             @include media-breakpoint-up(sm){
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
             }
             @include media-breakpoint-up(lg){
                 grid-template-columns: 1fr 1fr 1fr;
             }
             .work-box-home{
-                &:first-of-type{
-                    @include media-breakpoint-up(sm){
-                        grid-column-start: 1;
-                        grid-column-end: 1;
-                        grid-row-start: 1;
-                        grid-row-end: 3;
-                    }
-                }
                 .hovereffect {
                     overflow: hidden;
                     position: relative;
