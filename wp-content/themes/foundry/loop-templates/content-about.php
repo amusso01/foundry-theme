@@ -50,10 +50,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>		
 				<div class="row">
 					<div class="col-lg-5 offset-lg-1">
-						<p>When you work with Foundry Digital you don’t just get access to digital experts, you get access to our people and our values as a collaborative, supportive team of talented individuals who have been working together since 2012. We don’t just get on board with a project, we get invested in achieving our clients’ goals as if they were our own. We know who we are and we know what we’re good at, that’s why we don’t pretend to be digital giants. We’re your local agency, dedicated to bringing your project to life.</p>
+						<p>When you work with Foundry Digital you don’t just get access to digital experts, you get access to our people and our values as a collaborative, supportive team of talented individuals who have been working together since 2012. We don’t just get on board with a project, we get invested in achieving our clients’ goals as if they were our own. </br> </br> We know who we are and we know what we’re good at, that’s why we don’t pretend to be digital giants. We’re your local agency, dedicated to bringing your project to life.</p>
 					</div>
 					<div class="col-lg-5 offset-lg-1">
-						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way. Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
+						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way.</br> </br> Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
 						<a href="<?php echo site_url( '/agency-life/' ) ?>" class="btn">AGENCY LIFE</a>
 					</div>
 				</div>
@@ -66,25 +66,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="grid-item-about">
 					<div class="inner-box">
 						<p class="number"><span class="counter-value" data-count="600">0</span>+</p>
-						<p class="info-inner">Projects designed and built</p>
+						<p class="info-inner">Projects designed, built and promoted</p>
+						<a href="<?php echo site_url('/work/') ?>">VIEW PORTFOLIO</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
 						<p class="counter-value" data-count="7">0</p>
-						<p class="info-inner">Seven years delivering creative technology solutions</p>
+						<p class="info-inner">Years delivering creative technology solutions</p>
+						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICE</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
 						<p class="counter-value" data-count="3">0</p>
 						<p class="info-inner">We have offices in the UK and Argentina</p>
+						<a href="<?php echo site_url('/contact/') ?>">GET IN TOUCH</a>
 					</div>
 				</div>
 			</div> <!-- grid-about -->
 		</div> <!-- container -->
 	</aside><!-- info-box-about -->
-	<article class="the-team d-none">
+	<article class="the-team ">
 		<div class="container-fluid">
 			<header class="team-intro col-md-6 offset-md-3 text-center">
 				<h3>The Team</h3>

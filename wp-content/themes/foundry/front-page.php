@@ -19,13 +19,15 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <section id="full-screen-video">
 
 	<header class="jumbo-video">
-		<div id="video_overlays"></div>
-		<video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted">
-			<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
-			<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo site_url('/video/foundry2016.webm');?>">
-			<!--fallback image -->
-			<img src="<?php echo site_url('/video/2200x1460.jpg');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
-		</video>
+		<div class="heigh-solving">
+			<div id="video_overlays"></div>
+			<video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted">
+				<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
+				<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo site_url('/video/foundry2016.webm');?>">
+				<!--fallback image -->
+				<img src="<?php echo site_url('/video/2200x1460.jpg');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
+			</video>
+		</div>
 		<img class="mobile-banner" src="<?php echo site_url('/video/780x1080.jpeg');?>" alt="mobile banner image" >
 		<div class="container h-100">
 			<div class="d-flex h-100 align-items-center">
@@ -33,7 +35,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content() ?>
 				<?php endwhile; // end of the loop. ?>
-				<a href="<?php echo site_url( '/work/');?>" class="btn">VIEW WORK</a>
+				<a href="<?php echo site_url( '/work/');?>" class="btn work-btn">VIEW WORK</a>
 				<a href="<?php echo site_url( '/service/');?>" class="btn">VIEW SERVICES</a>
 			</div>
 			</div>

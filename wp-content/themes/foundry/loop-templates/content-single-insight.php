@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <section class="insight-hero container-fluid" id="insight-hero" style="background-image: url(<?php the_field('hero_image');?>">
 	<header class="insight-title">
+		<div class="inner-category-hero"><h4>INSIGHTS</h4></div>
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header>
 	

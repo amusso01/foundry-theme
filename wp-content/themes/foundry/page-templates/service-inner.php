@@ -60,6 +60,9 @@ if( have_rows('service_article') ):
 				<div class="col-md-6 article-box">
 					<h3><?php the_sub_field('title');?></h3>
 					<p><?php the_sub_field('paragraph');?></p>
+					<div class="service-inner-link">
+						<a href="<?php echo site_url('/contact/')?>">LET'S TALK</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -75,6 +78,9 @@ if( have_rows('service_article') ):
 				<div class="col-md-6 article-box">
 					<h3><?php the_sub_field('title');?></h3>
 					<p><?php the_sub_field('paragraph');?></p>
+					<div class="service-inner-link">
+						<a href="<?php echo site_url('/contact/')?>">LET'S TALK</a>
+					</div>
 				</div>
 				<div class="col-md-6 image article-box">
 					<img src="<?php the_sub_field('side_image'); ?>" alt="article image">
