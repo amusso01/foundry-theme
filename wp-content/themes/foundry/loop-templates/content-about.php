@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="grid-item-about">
 					<div class="inner-box">
 						<p class="counter-value" data-count="7">0</p>
-						<p class="info-inner">Seven years delivering creative technology solutions</p>
+						<p class="info-inner">Years delivering creative technology solutions</p>
 						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICE</a>
 					</div>
 				</div>
