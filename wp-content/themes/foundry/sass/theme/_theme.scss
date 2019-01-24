@@ -235,34 +235,33 @@ a.btn{
 
 
 .dropdown:hover .dropdown-menu {
-    width: 50%;
-    top: 90%;
-    left: 48%;
+    width:100%;
+    top: 85%;
     display: block;
-    right: 0;
     opacity:1;
+    border: none;
     @include fadeInLeftBig($duration:.4s);
-    &::before{
-        content:"";
-        position: absolute;
-        right:470px;
-        top: -10px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 10px 10px 10px;
-        border-color: transparent transparent $yellow transparent;
-        z-index:9999;
-    }
     li{
+        @include media-breakpoint-up(md){
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
+            -moz-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
+            box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
+            background-color: $light-grey;
+            &:first-child{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            &:last-child{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
         &:hover{
             a.dropdown-item{
                 color: $dark-blue!important;
                 background-color: transparent;
                 &::before{
                     transition: .4s;   
-                    // width: 35px;
-                    // height: 35px;
                 }
             }
         }
@@ -278,13 +277,7 @@ a.btn{
         ); 
        display: flex;
        flex-wrap: nowrap;
-       justify-content: space-evenly;
-       -webkit-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
-        box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
-    //    background-color: $light-grey;
-    //    border-bottom: 1px solid $grey;
-    //    border-top: 1px solid $dark-blue;
+       justify-content: center;
        li{
            &:nth-of-type(1){
                a{
@@ -445,7 +438,7 @@ a.btn{
                 }
             }
             .line-gradient{
-                z-index: 100;
+                z-index: 99;
                 position: absolute;
             }
         }
@@ -471,6 +464,14 @@ a.btn{
                   li.menu-item{
                         padding-right: 37px;
                         &:last-child{padding-right: 0px;}
+                        &:nth-child(2){
+                            @include media-breakpoint-up(md){
+                                padding-left: 37px;
+                            }
+                        }
+                        &:first-child{
+                            padding-right: 0px;
+                        }
                         &.active{
                             .nav-link{
                                 font-weight: 600;
