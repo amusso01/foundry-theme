@@ -1487,14 +1487,40 @@ a.btn{
 .grid-insight{
     padding-bottom: 35px;
 }
+.insight-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    .insight-date{
+        @include font-size(14px, 16px);
+        color: $grey;
+        padding-bottom: 13px;
+        margin-bottom: 0px;
+    }
+    .insight-cat{
+        @include font-size(14px, 16px);
+        color: $primary;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 13px;
+        margin-bottom: 0px;
+    }
+}
 .insight-grid {
     padding-bottom: 15px;
     padding-top: 15px;
     .grey-line{
         border-width: 1px;
+        margin-bottom: 13px;
     }
     .insight-title{
         padding-bottom: 55px;
+        h4{
+            @include font-size(15px,16px);
+            font-weight: bold;
+            margin-bottom: 0px;
+            padding-bottom: 13px;
+        }
     }
 }
  .insight-pagination{
@@ -1546,6 +1572,14 @@ a.btn{
     @include media-breakpoint-up(xl){
         height: 430px;
     }
+    .inner-category-hero{
+        h4{
+            font-size: 15px;
+            font-weight: bold;
+            color: $white !important;
+            letter-spacing: 1px;
+        }
+    }
     .insight-title{
         position: relative;
         top: 50%;
@@ -1558,7 +1592,7 @@ a.btn{
                 font-size: 32px;
             }
             @include media-breakpoint-up(md){
-                font-size: 41px;
+                font-size: 36px;
             }
 
         }
