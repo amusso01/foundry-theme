@@ -23,11 +23,71 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+
+		<!-- Global site tag (gtag.js) - Google Ads: 790752334 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-790752334"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-790752334');
+</script>
+<meta name="google-site-verification" content="x-inojAeKOVWg0Xf86aIGdX_z4RAZS2kvPrru0bfT7M" />
+<meta name="description" content="<?php bloginfo('description') ?>">
+<meta name="title" content=" Foundry Digital | Ecommerce Agency - ecommerce website design mobile apps development">
+<!-- G Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9590086-32', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 	<?php wp_head(); ?>
+<?php if (is_front_page()) {
+	?>
+	<script>
+	$(window).on('load', function(){
+    	$('#loading-animation').fadeOut(500);
+	})
+	</script>
+	<?php
+}
+
+
+?>
+
+	
 </head>
 
 <body <?php body_class(); ?>>
 
+<?php if (is_front_page()) {
+	?>
+
+<div id="loading-animation"  >
+	<div id="loader">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="lading"></div>
+	</div>						
+</div>
+
+	<?php
+}
+?>
 
 
 	<!-- ******************* The Navbar Area ******************* -->

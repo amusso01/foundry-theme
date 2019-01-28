@@ -121,7 +121,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<?php
 			foreach ($images as $image) {
 	?>
-				<div class="col-6 p-0 <?php echo "mobile-background-".$i;?>">
+				<div class="col-md-6 p-0 <?php echo "mobile-background-".$i;?>">
 					<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
 				</div>
 	<?php	

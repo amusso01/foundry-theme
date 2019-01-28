@@ -108,8 +108,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>BUILD</h2>
 				<a href="<?php echo site_url('/service/build/web-design/'); ?>">Website Design & Build</a>
 				<a href="<?php echo site_url('/service/build/ecommerce/'); ?>">Ecommerce Website</a>
-				<a href="<?php echo site_url('/service/build/crm-saas/'); ?>">Mobile App Development</a>
-				<a href="">SAAS & CRM </a>
+				<a href="<?php echo site_url('/service/build/mobile-development/'); ?>">Mobile App Development</a>
+				<a href="<?php echo site_url('/service/build/crm-saas/'); ?>">SAAS & CRM </a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-2 text-center text-md-left footer-push-down">
@@ -128,6 +128,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo site_url('/about'); ?>">About</a>
 				<a href="<?php echo site_url('/insights/'); ?>">Insights</a>
 				<a href="<?php echo site_url('/contact/'); ?>">Contact</a>
+				<a href="<?php echo site_url('/privacy-policy/'); ?>">Privacy Policy</a>
 			</div><!-- col-md-2 footer-push-down -->
 			
 
@@ -143,13 +144,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row copyright ">
 
-			<div class="col-6 my-auto">
+			<div class="col-md-6 my-auto">
 
 						<p>COPYRIGHT 2018 FOUNDRY DIGITAL</p>
 				
 			</div><!--col end -->
 
-			<div class="col-6 my-auto">
+			<div class="col-md-6 my-auto">
 
 					<div class="footer-logo">
 						<a href="<?php echo site_url() ?>">

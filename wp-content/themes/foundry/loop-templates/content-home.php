@@ -20,10 +20,10 @@ $works = new WP_Query( array (
 
 	<div class="container">
 		<article class="row statment">
-			<div class="col-md-8 offset-md-2 text-center">
+			<div class="col-md-6 offset-md-3 text-center">
 				<h2>We create and build interactive digital platforms, and help businesses promote their services online.</h2>
 				<p>Our team of designers, developers and digital marketing experts are always on hand to offer guidance, so if you can’t find what you’re looking for just give us a call and we can put together the right strategy to put your project on the right path.</p>
-				<a href="<?php echo site_url('/work/'); ?>">GET IN TOUCH</a>
+				<a href="<?php echo site_url('/contact/'); ?>">GET IN TOUCH</a>
 			</div>
 		</article>
 	</div>

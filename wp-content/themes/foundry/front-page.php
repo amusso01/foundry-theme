@@ -28,7 +28,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<img src="<?php echo site_url('/video/2200x1460.jpg');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
 			</video>
 		</div>
-		<img class="mobile-banner" src="<?php echo site_url('/video/780x1080.jpeg');?>" alt="mobile banner image" >
+		<img class="mobile-banner" src="<?php echo site_url('/video/780x1080.jpg');?>" alt="mobile banner image" >
 		<div class="container h-100">
 			<div class="d-flex h-100 align-items-center">
 			<div class="w-100">

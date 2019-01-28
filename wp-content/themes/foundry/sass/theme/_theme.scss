@@ -33,6 +33,128 @@ input[type=text]:focus
     color: #0E9F9C!important;
 }
 
+// ================= Loader ================
+
+#loading-animation{
+    z-index: 100;
+    position: absolute;
+    min-height: 2000px;
+    width: 100%;
+    background: $dark-blue;
+}
+
+#loader {
+    z-index: 100;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 175px;
+}
+#loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+}
+#loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: $gradient-1 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: $gradient-3 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: $gradient-4 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: $gradient-5 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: $gradient-7 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: $gradient-8 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: $gradient-9 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: $gradient-10 none repeat scroll 0 0;
+}
+#loader .lading {
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+
+
 // Animation 
 
 @include keyframes(shadow-pulse){
@@ -245,10 +367,10 @@ a.btn{
     @include fadeInLeftBig($duration:.2s);
     li{
         @include media-breakpoint-up(md){
+            background-color: $light-grey;
             -webkit-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
             -moz-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
             box-shadow: 0px 2px 0px 0px rgba(84,114,198,.4);
-            background-color: $light-grey;
             &:first-child{
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
@@ -408,7 +530,7 @@ a.btn{
             background: transparent;
             #main-logo{
                 .cls-1{
-                        fill: $white; 
+                    fill: $white; 
                 }
             }
             .navbar.bg-primary{
@@ -430,11 +552,11 @@ a.btn{
                     }
                     .dropdown:hover .dropdown-menu {
                         li{
-                            -webkit-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
-                            -moz-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
-                            box-shadow: 0px 2px 0px 0px rgba(84,114,198,.4);
-                            background-color: $light-grey;
                             @include media-breakpoint-up(md){
+                                -webkit-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
+                                -moz-box-shadow: 0px 2px 3px 0px rgba(84,114,198,.4);
+                                box-shadow: 0px 2px 0px 0px rgba(84,114,198,.4);
+                                background-color: $light-grey;
                                 &:nth-child(2){
                                     &::before{
                                         border-top: 15px solid $white;
@@ -448,7 +570,9 @@ a.btn{
                     #main-menu{
                         li.menu-item{
                             .nav-link{
-                                color: $white;
+                                @include media-breakpoint-up(md){
+                                    color: $white;
+                                }
                             }
                         }
                     }
@@ -492,11 +616,11 @@ a.btn{
             .container-fluid{
               #main-menu{
                   li.menu-item{
-                        padding-right: 37px;
+                        padding-right: 33px;
                         &:last-child{padding-right: 0px;}
                         &:nth-child(2){
                             @include media-breakpoint-up(md){
-                                padding-left: 37px;
+                                padding-left: 33px;
                             }
                         }
                         &:first-child{
@@ -619,9 +743,16 @@ a.btn{
         }
         p{
             font-size: 12px;
+            @include media-breakpoint-down(sm){
+                text-align: center;
+            }
         }
         .footer-logo{
+
                 text-align: right;
+                @include media-breakpoint-down(sm){
+                    text-align: center;
+                }
             #footer-logo{
                 max-width: 180px;
             }
@@ -701,11 +832,17 @@ a.btn{
                         font-size: 45px;
                         line-height: 45px;
                         letter-spacing: 1px;
+                        @include media-breakpoint-down(sm){
+                            padding-bottom: 20px;
+                        }
                     }
                     &:last-of-type{
                         font-size: 24px;
                         line-height: 45px;
                         letter-spacing: .8px;
+                        @include media-breakpoint-down(sm){
+                            line-height: 30px;
+                        }
                     }
                 }
             }
@@ -730,6 +867,9 @@ a.btn{
         color:$h-black;
         font-size: 23px;
         margin-bottom: 10px;
+        @include media-breakpoint-down(sm){
+            line-height: 26px;
+        }
         @include media-breakpoint-up(md){
             margin-bottom: 20px;
             font-size: 30px;
@@ -785,10 +925,14 @@ a.btn{
             width: 100%;
             position: absolute;
             z-index: 1;
+            @include media-breakpoint-down(sm){
+                min-height: 110vh;
+                height: 110vh;
+            }
         }
         .mobile-banner{
             @include media-breakpoint-down(md){
-                height: 90vh;
+                height: 110vh;
                 width: 100vw;
             }
             @include media-breakpoint-up(md){
@@ -807,10 +951,11 @@ a.btn{
         .container{
             z-index: 20;
             position: absolute;
-            top: -10%;
+            top: -5%;
             left: 10%;
+            width: 70%;
             @include media-breakpoint-down(xl){
-                top: 0;
+                top: 40px;
             }
             @include media-breakpoint-down(md){
                 top: 8%;
@@ -820,8 +965,9 @@ a.btn{
                 top: -10%;
                 left: 0;
             }
+
             @include media-breakpoint-down(xsm){
-                top: 3%;
+                top: 23%;
                 left: 0;
             }
             h1,p,h2,h3{
@@ -837,7 +983,8 @@ a.btn{
                     line-height: 45px;
                 }
                 @include media-breakpoint-down (xsm){
-                    font-size: 30px;
+                    font-size: 24px;
+                    line-height: 26px;
                 }
             }
             p{
@@ -864,6 +1011,7 @@ a.btn{
                     font-size: 13px;
                     padding-left: 0px;
                     padding-right: 0px;
+                    margin-top: 15px;
                 }
                 @include media-breakpoint-down(xs){
                     margin-right: auto;
@@ -882,6 +1030,7 @@ a.btn{
 }
 
 #home-wrapper{
+    padding-top: 80px;
     #main{
         .statment{
             h2{
@@ -912,6 +1061,7 @@ a.btn{
         .home-work-grid{
             display: grid;
             grid-column-gap: 10px;
+            grid-row-gap: 10px;
             justify-content: center;
             padding-bottom: 10px;
             @include media-breakpoint-up(sm){
@@ -1040,13 +1190,21 @@ a.btn{
         .brief{
             margin-top: 118px;
             margin-bottom: 190px;
+            @include media-breakpoint-down(sm){
+                margin-top: 50px
+            }
             .col-lg-6{
                 padding-left: 0px;
                 padding-right: 0px;
                 &.box-grey{
-                    padding-top: 50px;
-                    padding-left: 50px;
-                    padding-right: 50px;
+                    padding-top: 20px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    @include media-breakpoint-up(md){
+                        padding-top: 50px;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                    }
                     @include media-breakpoint-up(lg){
                         padding-top: 10px;
                     }
@@ -1066,9 +1224,13 @@ a.btn{
                         padding-right: 120px;
                     }
                     h1{
-                        font-size: 84px;
-                        line-height: 70px;
+                        font-size: 38px;
+                        line-height: 32px;
                         padding-bottom: 0px;
+                        @include media-breakpoint-up(md){
+                            font-size: 74px;
+                            line-height: 55px;
+                        }
                         @include media-breakpoint-up(lg){
                             font-size: 68px;
                         }
@@ -2018,16 +2180,29 @@ a.btn{
         padding-top: 50px;
         text-align: center;
         margin-left: -60px;
+        @include media-breakpoint-down(sm){
+            margin-left: 0px;
+            font-size: 3rem;
+        }
         @include media-breakpoint-up(lg){
             padding-top: 108px;
             margin-left: 0px;
             text-align: left;
+        }
+        span{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
         svg{
             position: relative;
             top: -5px;
             padding-right: 30px;
             height: 50px;
+            @include media-breakpoint-down(sm){
+                padding-right: 3px;
+                height: 60px;
+            }
             @include media-breakpoint-up(lg){
                 height: 67px;
             }
@@ -2111,7 +2286,8 @@ a.btn{
             padding-bottom: 108px;
         }
         .btn{
-            
+            margin-left: auto;
+            margin-right: auto;
             background-color: transparent;
             border-color: $white;
             &:hover{
@@ -2152,6 +2328,7 @@ a.btn{
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px 30px;
+        grid-row-gap: 20px;
         @include media-breakpoint-up(md){
             grid-template-columns: 1fr 1fr;
         }
@@ -2164,16 +2341,19 @@ a.btn{
         box-shadow: 0px 3px 6px 0px rgba(84,114,198,.4);
         transition: all .2s;
         &:hover{
-            background-color: $primary;
+            // background-color: $primary;
+            -webkit-box-shadow: 0px 8px 25px 0px rgba(84,114,198,.4);
+            -moz-box-shadow: 0px 8px 25px 0px rgba(84,114,198,.4);
+            box-shadow: 0px 8px 25px 0px rgba(84,114,198,.4);
             transition: all .2s;
             .box-description{
                 p{
-                    color: $white;
+                    // color: $white;
                 }
             }
             .box-title{
                 h3{ 
-                    color: $white;
+                    // color: $white;
                 }
             }
             .icon{
@@ -3147,5 +3327,9 @@ a.btn{
     display: none;
 }
 .the-team{
+    display: none;
+}
+
+.grecaptcha-badge{
     display: none;
 }

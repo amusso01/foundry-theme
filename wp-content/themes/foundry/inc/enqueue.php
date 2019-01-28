@@ -31,10 +31,13 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		if(is_page('about')){
 			wp_enqueue_script('about', get_stylesheet_directory_uri().'/js/about.js', array('tweenmax'), null, true);
 		}
+		if(is_page('work')){
+				//Ajax filter scripts     
+				wp_register_script( 'filterCategory', get_stylesheet_directory_uri().'/js/filterCategory.js', array( 'jquery' ), '1.0.0', true );
+				wp_enqueue_script( 'filterCategory' );
+		}
 
-		//Ajax filter scripts     
-        wp_register_script( 'filterCategory', get_stylesheet_directory_uri().'/js/filterCategory.js', array( 'jquery' ), '1.0.0', true );
-        wp_enqueue_script( 'filterCategory' );
+		
 
 		// register script to load more post 
 		wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery') );

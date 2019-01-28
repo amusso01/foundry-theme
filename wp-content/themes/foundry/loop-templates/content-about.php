@@ -74,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="inner-box">
 						<p class="counter-value" data-count="7">0</p>
 						<p class="info-inner">Years delivering creative technology solutions</p>
-						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICE</a>
+						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICES</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
