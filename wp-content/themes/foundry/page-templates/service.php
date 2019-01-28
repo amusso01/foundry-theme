@@ -128,9 +128,10 @@ if(is_page('build')){
 					// check if the flexible content field has rows of data
 					if( have_rows('service_boxes') ):
 						// loop through the rows of data
+						$class = array('#brand', '#graphic', '#promotional', '#design');
 						while ( have_rows('service_boxes') ) : the_row();
 							?>
-							<a href="<?php the_sub_field('box-link-to') ?>">
+							<a href="<?php the_sub_field('box-link-to');?><?php echo $class[$i]; ?>">
 								<div class="sevice-gird-element container hidden-animate">
 									<div class="box-wrapper">
 										<?php $svgImg = get_sub_field('icon');?>
@@ -151,7 +152,7 @@ if(is_page('build')){
 								</div><!-- sevice-gird-element -->
 							</a>
 							<?php
-	
+						$i++;
 						endwhile;
 	
 					else :

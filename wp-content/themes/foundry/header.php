@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	?>
 	<script>
 	$(window).on('load', function(){
-    	$('#loading-animation').fadeOut(500);
+    	$('#loading-animation').fadeOut();
 	})
 	</script>
 	<?php

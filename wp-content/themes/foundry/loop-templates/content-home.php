@@ -62,16 +62,16 @@ $works = new WP_Query( array (
 					<div class="card-link">
 						<ul>
 							<li>
-								<a id="brand" href="<?php echo site_url('/creative-services/'); ?>">Brand Identity</a>
+								<a id="brand" href="<?php echo site_url('/creative-services/'); ?>#brand">Brand Identity</a>
 							</li>
 							<li>
-								<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>">Graphic Design</a>
+								<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>#graphic">Graphic Design</a>
 							</li>
 							<li>
-								<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>">Promotional Artwork</a>
+								<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>#promotional">Promotional Artwork</a>
 							</li>
 							<li>
-								<a id="ux" href="<?php echo site_url('/creative-services/'); ?>">UX design</a>
+								<a id="ux" href="<?php echo site_url('/creative-services/'); ?>#design">UX design</a>
 							</li>
 						</ul>
 					</div><!-- card-link -->

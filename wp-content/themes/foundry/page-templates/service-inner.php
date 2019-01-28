@@ -43,6 +43,8 @@ get_header();
 	<?php
 	$color = 'gray';
 	$count = 1;
+	$i=0;
+	$class = array('brand', 'graphic', 'promotional', 'design');
 // check if the repeater field has rows of data
 if( have_rows('service_article') ):
 
@@ -53,7 +55,7 @@ if( have_rows('service_article') ):
 	?>
 	<div class="container-fluid <?php echo $color; ?>">
 		<div class="container hidden-animate">
-			<div class="row">
+			<div class="row " id="<?php echo $class[$i] ?>">
 				<div class="col-md-6 image article-box">
 					<img src="<?php the_sub_field('side_image'); ?>" alt="article image">
 				</div>
@@ -74,7 +76,7 @@ if( have_rows('service_article') ):
 	?>
 	<div class="container-fluid <?php echo $color; ?>">
 		<div class="container hidden-animate">
-			<div class="row">
+			<div class="row" id="<?php echo $class[$i] ?>">
 				<div class="col-md-6 article-box">
 					<h3><?php the_sub_field('title');?></h3>
 					<p><?php the_sub_field('paragraph');?></p>
@@ -90,7 +92,7 @@ if( have_rows('service_article') ):
 	</div>
 	<?php
 	}
-
+	$i++;
 	$count++;
     endwhile;
 
