@@ -97,7 +97,7 @@ if(is_page('build')){
 ?>
 
 <main class="service-inside">
-	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="row jumbotrone" >
+	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="jumbotrone" >
 		<div class="container">
 			<div class="col-lg-6 offset-lg-1">
 				<?php the_title('<h1><span>'.$mainSvg.'</span>','</h1>') ?>

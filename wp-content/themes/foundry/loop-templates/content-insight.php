@@ -39,7 +39,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<div class="grey-line"></div>
 				<div class="insight-title">
+				<a href="<?php echo get_permalink() ?>">
 					<?php the_title( '<h4>', '</h4>' ); 
+					?></a><?php
 					the_field('description_insight')?>
 				</div>
 			</article><!-- insight-grid -->
