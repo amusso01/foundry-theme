@@ -730,7 +730,18 @@ a.btn{
             @include media-breakpoint-up(md){
                 padding-top: 190px;
             }
+            &:nth-of-type(5),&:nth-of-type(6){
+                @include media-breakpoint-down(md){
+                    padding-top: 30px;
+                }
+            }
             a{
+                display: block;
+            }
+        }
+        .show-md{
+            display: none;
+            @include media-breakpoint-only(md){
                 display: block;
             }
         }
@@ -786,7 +797,6 @@ a.btn{
             }
             .col-md-3{
                 #box{
-                    
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -835,6 +845,9 @@ a.btn{
                         @include media-breakpoint-down(sm){
                             padding-bottom: 20px;
                         }
+                        @include media-breakpoint-down(md){
+                            font-size: 38px;
+                        }
                     }
                     &:last-of-type{
                         font-size: 24px;
@@ -842,6 +855,9 @@ a.btn{
                         letter-spacing: .8px;
                         @include media-breakpoint-down(sm){
                             line-height: 30px;
+                        }
+                        @include media-breakpoint-down(md){
+                            font-size: 16px;    
                         }
                     }
                 }
@@ -1759,13 +1775,13 @@ a.btn{
 // ============= Inner Insight ==========
 
 .insight-hero{
-    background-repeat: no-repeat; 
-    background-size: cover;
+    background-repeat: no-repeat;
     height: 270px;
     position: relative;
     text-align: center;
     padding: 30px;
     margin-top: -30px;
+    background-size: cover;
     @include media-breakpoint-up(md){
         height:370px;
     }
@@ -1784,6 +1800,10 @@ a.btn{
         position: relative;
         top: 50%;
         transform: perspective(1px) translateY(-50%);
+        @include media-breakpoint-down(md){ // This to support old IOS 5/6 that don't support inline background image 
+           background-color: rgba(0,0,0, .6);  
+           padding: 10px;
+        }
         h1{
             font-size: 28px;
             font-weight: 400;
@@ -2784,6 +2804,8 @@ a.btn{
         }
         .skills-list{
             padding-top: 53px;
+            padding-left:10px;
+            padding-right:10px;
             .list-unstyled{
                 padding-top: 25px;
                 padding-bottom: 25px;
@@ -2810,12 +2832,9 @@ a.btn{
                     padding-left: 0px;
                     display: block;
                     padding-top: 13px;
-                    @include media-breakpoint-up(sm){
-                        padding-left: 15px;
-                    }
                     @include media-breakpoint-up(lg){
                         display: inline;
-                        padding-left: 30px;
+                        padding-left: 25px;
                     }
                 }
             }
@@ -2845,6 +2864,7 @@ a.btn{
                 @include media-breakpoint-up(lg){
                     font-size: 68px;
                     padding-bottom: 15px;
+                    line-height: 50px;
                 }
             }
             p{
@@ -2855,7 +2875,10 @@ a.btn{
             .col-lg-5{
                 padding-bottom: 30px;
                 @include media-breakpoint-up(md){
-                    padding-bottom: 100px;
+                    padding-bottom: 50px;
+                }
+                &.first-paragraph{
+                    padding-bottom: 0px;
                 }
                 .btn{
                     background-color: transparent;
@@ -2877,11 +2900,12 @@ a.btn{
     }
     .info-box-about{
         position: relative;
-        margin-top: -55px;
+        margin-top: -35px;
         .grid-about{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 20px;
+            grid-row-gap: 20px;
             margin-bottom: 88px;
             @include media-breakpoint-down(md){
                 grid-template-columns: 33% 33% 33%;
@@ -2895,6 +2919,7 @@ a.btn{
                 -webkit-box-shadow: 0px 3px 6px 0px rgba(198,198,198,1);
                 -moz-box-shadow: 0px 3px 6px 0px rgba(198,198,198,1);
                 box-shadow: 0px 3px 6px 0px rgba(198,198,198,1);
+                margin-bottom: 20px;
                 .inner-box{
                     text-align: center;
                     padding-top: 100px;

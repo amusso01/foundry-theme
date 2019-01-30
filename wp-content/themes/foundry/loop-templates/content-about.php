@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3>Approach</h3>
 				<p>Each project we undertake is backed by years of experience and technical skill and we love overcoming creative challenges and technical obstacles. You can trust that you have a dedicated team in Foundry Digital.</p>
 			</div>
-			<div class="col-md-10 offset-md-1">
+			<div class="col-lg-10 offset-lg-1">
 
 			<?php if( have_rows('skills_list') ): ?>
 
@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</div>		
 				<div class="row">
-					<div class="col-lg-5 offset-lg-1">
+					<div class="col-lg-5 first-paragraph offset-lg-1">
 						<p>When you work with Foundry Digital you don’t just get access to digital experts, you get access to our people and our values as a collaborative, supportive team of talented individuals who have been working together since 2012. We don’t just get on board with a project, we get invested in achieving our clients’ goals as if they were our own. </br> </br> We know who we are and we know what we’re good at, that’s why we don’t pretend to be digital giants. We’re your local agency, dedicated to bringing your project to life.</p>
 					</div>
 					<div class="col-lg-5 offset-lg-1">
