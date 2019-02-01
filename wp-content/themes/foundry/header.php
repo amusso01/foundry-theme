@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   gtag('config', 'AW-790752334');
 </script>
 <meta name="google-site-verification" content="x-inojAeKOVWg0Xf86aIGdX_z4RAZS2kvPrru0bfT7M" />
-<meta name="description" content="<?php bloginfo('description') ?>">
+<meta name="description" content="<?php  bloginfo( 'description' );  ?> ">
 <meta name="title" content=" Foundry Digital | Ecommerce Agency - ecommerce website design mobile apps development">
 <!-- G Analytics -->
 <script>

@@ -24,7 +24,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col-md-12">
-
 				<header class="site-main" id="parent" role="main">
 					<?php while ( have_posts() ) : the_post(); ?>
 
