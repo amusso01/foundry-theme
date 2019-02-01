@@ -138,6 +138,7 @@ if(is_page('build')){
 										<div class="icon row justify-content-center">
 										<div class="icon-service">
 											<!-- <?php echo file_get_contents($svgImg); ?> -->
+											
 											<img src="<?php echo $svgImg ?>" alt="services icon">
 										</div>
 
