@@ -212,7 +212,6 @@ input[type=text]:focus
 }
 
 
-
 // General
 
 body{
@@ -1791,6 +1790,63 @@ a.btn{
     }
     @include media-breakpoint-up(xl){
         height: 430px;
+    }
+    .social-share-icon{
+        position: absolute;
+        bottom: 3%;
+        right: 2%;
+    }
+    .social-share-icon a.a{
+        z-index: 123;
+    }
+    .social-share-icon a{
+        text-decoration: none;
+        color: $primary;
+        height: 45px;
+        width: 45px;
+        border-radius: 100px;
+        display: inline-block;
+        background-color: rgba($light-grey, 1);
+        line-height: 45px;
+        text-align: center;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2)
+    }
+    .social-share-icon a:hover{
+        background-color: $primary;
+        color: $light-grey;
+    }
+    .social-share-icon a i{
+        line-height: inherit;
+    }
+    .social-share-icon a.a1{
+        transform: translateX(245px);
+        transition: all ease-in-out 200ms;
+        opacity: 0;
+    }
+    .social-share-icon a.a2{
+        transform: translateX(196px);
+        transition: all ease-in-out 300ms;
+        opacity: 0;
+    }
+    .social-share-icon a.a3{
+        transform: translateX(147px);
+        transition: all ease-in-out 400ms;
+        opacity: 0;
+    }
+    .social-share-icon:hover a.a1{
+        transform: translateX(0);
+        transition: all ease-in-out 600ms;
+        opacity: 1;
+    }
+    .social-share-icon:hover a.a2{
+        transform: translateX(0);
+        transition: all ease-in-out 500ms;
+        opacity: 1;
+    }
+    .social-share-icon:hover a.a3{
+        transform: translateX(0);
+        transition: all ease-in-out 400ms;
+        opacity: 1;
     }
     .inner-category-hero{
         h4{

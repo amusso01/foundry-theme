@@ -1,14 +1,3 @@
-window.onload = function(){
-  TweenMax.from("#category-menu", .4, {
-    opacity: 0,
-    y: 50
-  });
-  TweenMax.from(".work-grid", .7, {
-    opacity: 0,
-    y: 50,
-    delay:.3
-  });
-}
 
 
 /*------------------- GALLERY GRID ------------------*/

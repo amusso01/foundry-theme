@@ -23,7 +23,8 @@
     });
     projectType();
     projectCat();
-    callingHour()
+    callingHour();
+    $(".unveil").unveil();
 });
 
 jQuery(function($) {
