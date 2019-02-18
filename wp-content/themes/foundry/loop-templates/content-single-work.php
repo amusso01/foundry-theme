@@ -39,7 +39,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					<div class="box-black h-100">
 						<div class="svg-brand">
 							<?php $svgImg = get_field('brand_logo'); ?>
-							<img src="<?php echo $svgImg ?>" alt="brand logo">
+							<img src="<?php echo $svgImg ?>" alt="brand-logo" class="logo-svg"  />
 						</div>
 					</div>
 				</div>

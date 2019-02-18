@@ -65,8 +65,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a href="<?php echo get_permalink(); ?>" class="ajax-call  <?php echo $postCat->cat_name ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
 
 					<div class="hovereffect">
-						<img src="https://media.giphy.com/media/jAYUbVXgESSti/source.gif" data-src="<?php echo $image[0]; ?>"  class="img-fluid unveil" />
-						<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid unveil" /></noscript>
+						<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>"  class="img-fluid lozad" />
+						<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid lozad" /></noscript>
 						<div class="overlay">
 							
 							<h2 class="work-title" ><?php the_title(); ?></h2>

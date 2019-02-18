@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
-	<div class="container-fluid brief-footer">
+	<div class="container-fluid brief-footer lozad" data-background-image="<?php echo get_template_directory_uri() ?>/img/images/brief-1.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 ">
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="social social-footer">
 					<ul>
 						<li>
-							<a href="https://twitter.com/Foundry_Studio" target="_blank">
+							<a href="https://twitter.com/Foundry_Studio" target="_blank" rel="noreferrer">
 								<svg class="social-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.598 27.599">
 									<defs>
 										<style>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/foundry.digital/?hl=en" target="_blank">
+							<a href="https://www.instagram.com/foundry.digital/?hl=en" target="_blank" rel="noreferrer">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/company/foundry-digital-limited/" target="_blank">
+							<a href="https://www.linkedin.com/company/foundry-digital-limited/" target="_blank" rel="noreferrer">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -148,7 +148,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-6 my-auto">
 
-						<p>COPYRIGHT 2018 FOUNDRY DIGITAL</p>
+						<p>COPYRIGHT <?php echo date("Y");?> FOUNDRY DIGITAL</p>
 				
 			</div><!--col end -->
 

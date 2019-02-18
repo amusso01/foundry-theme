@@ -6520,7 +6520,8 @@
     projectType();
     projectCat();
     callingHour();
-    $(".unveil").unveil();
+    var observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
 });
 
 jQuery(function($) {

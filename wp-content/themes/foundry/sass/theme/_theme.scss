@@ -134,7 +134,6 @@ input[type=text]:focus
     background: $gradient-10 none repeat scroll 0 0;
 }
 #loader .lading {
-    background-image: url("../images/loading.gif");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     bottom: -40px;
@@ -198,7 +197,7 @@ input[type=text]:focus
 
 .fadeAll{
     @include fadeInUp(
-        $delay: .3s,
+        $delay: .1s,
         $function: ease
         );
 }
@@ -783,14 +782,7 @@ a.btn{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-image: url("./../img/images/brief-1.jpg");
-        // -webkit-linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
-        // background-image: url("./../img/images/brief.jpg"),
-        // -moz-linear-gradient(right, rgba(32, 36, 48, 1) rgba(67, 75, 97, 1));
-        // background-image: url("./../img/images/brief.jpg"),
-        // -o-linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
-        // background-image: url("./../img/images/brief.jpg"),
-        // linear-gradient(right, rgba(32, 36, 48, 1), rgba(67, 75, 97, 1));
+        
         background-blend-mode: overlay;
         .row{
             padding-top: 17px;
@@ -1557,6 +1549,7 @@ a.btn{
         .svg-brand{
             padding: 80px;
             display: flex;
+            width:100%;
             svg{height: 60px;}
             img{width:100%;}
         }
@@ -1584,13 +1577,13 @@ a.btn{
             padding-top: 100px;
         }
     }
-    .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
+    // .carousel-control-prev-icon {
+    //     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    // }
     
-    .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    }
+    // .carousel-control-next-icon {
+    //     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    // }
     .carousel-control-prev,
     .carousel-control-next {
         background-color: $black;
@@ -1794,7 +1787,10 @@ a.btn{
     .social-share-icon{
         position: absolute;
         bottom: 3%;
-        right: 2%;
+        right: 3%;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
     }
     .social-share-icon a.a{
         z-index: 123;
@@ -1819,34 +1815,40 @@ a.btn{
         line-height: inherit;
     }
     .social-share-icon a.a1{
-        transform: translateX(245px);
+        transform: translateX(30px);
         transition: all ease-in-out 200ms;
         opacity: 0;
+       
     }
     .social-share-icon a.a2{
-        transform: translateX(196px);
+        transform: translateX(20px);
         transition: all ease-in-out 300ms;
         opacity: 0;
+       
     }
     .social-share-icon a.a3{
-        transform: translateX(147px);
+        transform: translateX(10px);
         transition: all ease-in-out 400ms;
         opacity: 0;
+       
     }
     .social-share-icon:hover a.a1{
         transform: translateX(0);
         transition: all ease-in-out 600ms;
         opacity: 1;
+        
     }
     .social-share-icon:hover a.a2{
         transform: translateX(0);
         transition: all ease-in-out 500ms;
         opacity: 1;
+       
     }
     .social-share-icon:hover a.a3{
         transform: translateX(0);
         transition: all ease-in-out 400ms;
         opacity: 1;
+        
     }
     .inner-category-hero{
         h4{

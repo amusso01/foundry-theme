@@ -35,9 +35,9 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 				//Ajax filter scripts     
 				wp_register_script( 'filterCategory', get_stylesheet_directory_uri().'/js/filterCategory.js', array( 'jquery' ), '1.0.0', true );
 				wp_enqueue_script( 'filterCategory' );
-				wp_enqueue_script('lazy-jquery', get_stylesheet_directory_uri().'/js/jquery.unveil.js', array('jquery'), null, true);
-		}
-
+			}
+			
+			wp_enqueue_script('lazy-jquery', get_stylesheet_directory_uri().'/js/lozad.min.js', array('jquery'), null, true);
 		
 
 		// register script to load more post 

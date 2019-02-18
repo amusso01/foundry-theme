@@ -21,14 +21,13 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<header class="jumbo-video">
 		<div class="heigh-solving">
 			<div id="video_overlays"></div>
-			<video playsinline="playsinline" autoplay="autoplay" poster="<?php echo site_url('/video/poster.jp2');?>" loop="loop" muted="muted">
-				<source type="video/webm" src="<?php echo site_url('/video/foundry2016.webm');?>">
-				<source type="video/mp4" src="<?php echo site_url('/video/foundry2016.mp4');?>">
+			<video class="lozad" playsinline="playsinline" autoplay="autoplay" poster="<?php echo site_url('/video/poster.jp2');?>" loop="loop" muted="muted">
+				<source type="video/webm" dat-src="<?php echo site_url('/video/foundry2016.webm');?>">
+				<source type="video/mp4" data-src="<?php echo site_url('/video/foundry2016.mp4');?>">
 				<!--fallback image -->
-				<img alt="video foundry" src="<?php echo site_url('/video/2200x1460.jpg');?>" alt="fallback image" title="Your browser does not support the <video> tag" >
 			</video>
 		</div>
-		<img class="mobile-banner" src="<?php echo site_url('/video/780x1080.jpg');?>" alt="mobile banner image" >
+		<img class="mobile-banner lozad" data-src="<?php echo site_url('/video/780x1080.jpg');?>" alt="mobile banner image" >
 		<div class="container h-100">
 			<div class="d-flex h-100 align-items-center">
 			<div class="w-100">
