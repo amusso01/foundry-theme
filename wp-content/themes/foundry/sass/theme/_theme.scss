@@ -3393,6 +3393,79 @@ a.btn{
     }
 }
 
+
+
+
+// Menu submenu depth => 3
+.dropdown-menu{
+    #menu-item-39,
+    #menu-item-38,
+    #menu-item-37{
+        .dropdown-menu{
+            display: none;
+            width: 200px;
+            .menu-item{
+                padding: 0px!important;
+                &:first-of-type{
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                    padding-top: 10px;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 0; 
+                            height: 0; 
+                            left: 80px;
+                            border-left: 15px solid transparent;
+                            border-right: 15px solid transparent;
+                            border-top: 15px solid $white;
+                        }  
+                        .dropdown-item{
+                            padding-top: 10px;
+                        } 
+                }
+                &:last-of-type{
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                   
+                }
+                &:nth-child(2){
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        border-left: 0px solid transparent;
+                        border-right: 0px solid transparent;
+                        border-top: 0px solid $white;
+                    }   
+                }
+                .dropdown-item{
+                    padding: 0px;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $primary!important;
+                    }
+                }
+            }
+        }
+    }
+    #menu-item-39:hover{
+        .dropdown-menu{
+            display: block;
+            
+        }
+    }
+    #menu-item-38:hover{
+        .dropdown-menu{
+            display: block;
+        }
+    }
+    #menu-item-37:hover{
+        .dropdown-menu{
+            display: block;
+        }
+    }
+}
+
 // Homepage height fixing
 
 
