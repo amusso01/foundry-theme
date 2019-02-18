@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					
 					$categories = get_categories($args); ?>
 
-					<ul id="category-menu">
+					<ul id="category-menu" class="fadeInUp">
 						
 					<li class="cat-item selected"><a href="#all" class="category-all active" data-category="category-all">Featured</a></li>
 						<?php
@@ -65,7 +65,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a href="<?php echo get_permalink(); ?>" class="ajax-call  <?php echo $postCat->cat_name ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
 
 					<div class="hovereffect">
-						<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
+						<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>"  class="img-fluid lozad" />
+						<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid lozad" /></noscript>
 						<div class="overlay">
 							
 							<h2 class="work-title" ><?php the_title(); ?></h2>

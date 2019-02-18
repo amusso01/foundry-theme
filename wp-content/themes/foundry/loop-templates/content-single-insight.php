@@ -16,7 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="inner-category-hero"><h4>INSIGHTS</h4></div>
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header>
-	
+	<div class="social-share-icon">
+		<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo the_permalink() ?>" class="option a1 color-facebook waves-effect waves-light"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/home?status=<?php echo the_permalink() ?>" class="option a2 color-twitter waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=<?php the_permalink() ?>" class="option a3 color-google-plus waves-effect waves-light"><i class="fa fa-linkedin"></i></a>
+		<a href="javascript:;" class="option a color-facebook waves-effect waves-light"><i class="fa fa-share-alt"></i></a>
+	</div>
 </section><!-- insight-hero -->
 
 <main class="container insight-content">

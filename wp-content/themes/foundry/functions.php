@@ -112,53 +112,6 @@ function custom_upload_mimes( $existing_mimes = array() ) {
 /*-------------------------------------------------------------------------------*/
 
 
-// ============== ajax handler to load more works =====
-function my_loadmore_ajax_handler(){
- 
-	// prepare our arguments for the query
-	$args = json_decode( stripslashes( $_POST['query'] ), true );
-	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
-  $args['post_status'] = 'publish';
-  $args['post_type'] = 'works_post';
-  // $args['cat'] = ''
- 
-	// it is always better to use WP_Query but not here
-	$works = query_posts( $args );
- 
-	if( have_posts() ) :
- 
-		// run the loop
-    while( have_posts() ): the_post();
-
-        $cat = get_the_category(); // array of object of WP_Term
-        $postCat = $cat[0]; // object WP_Term for the current post
-        
-        $thumbnail_id  = get_post_thumbnail_id($works->ID);
-				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
-    ?>
-
-			
-    <a href="<?php echo get_permalink() ?>" class="ajax-call new-loaded <?php echo $postCat->cat_name ?> "><article class="work-box" <?php echo $postCat->slug ?>"  >
-
-    <div class="hovereffect">
-      <img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
-      <div class="overlay">
-        <h2 class="work-title" ><?php the_title(); ?></h2>
-        <p class="work-description info"><?php echo get_field('description')?></p>
-      </div>
-    </div>
-
-  </article></a><!-- article.work-box -->
- <?php
- 
-		endwhile;
- 
-	endif;
-	die; // here we exit the script and even no wp_reset_query() required!
-}
-add_action('wp_ajax_loadmore', 'my_loadmore_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_loadmore', 'my_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 
 // ============ Rename Post to Insight ============
@@ -191,4 +144,6 @@ function revcon_change_post_object() {
 
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
+
+
 

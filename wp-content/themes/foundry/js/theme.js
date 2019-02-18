@@ -6519,7 +6519,9 @@
     });
     projectType();
     projectCat();
-    callingHour()
+    callingHour();
+    var observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
 });
 
 jQuery(function($) {

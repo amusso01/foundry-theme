@@ -31,7 +31,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 			<article class="col-md-6 insight-grid">
 				<a href="<?php echo get_permalink() ?>">
-					<img src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
+					<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>"  class="img-fluid lozad" />
+					<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid lozad" /></noscript>
 				</a><!-- article.insight-box -->
 				<div class="insight-info">
 					<p class="insight-cat"><?php echo $postCat->slug ?></p>
