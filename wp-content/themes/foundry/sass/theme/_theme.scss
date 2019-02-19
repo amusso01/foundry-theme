@@ -2596,10 +2596,10 @@ a.btn{
                         background-color: rgba(26, 28, 34, .6);
                         transition: .3s;
                         .element-visible{
-                            -moz-transform: translateY(-160%);
-                            -webkit-transform: translateY(-160%);
-                            -ms-transform: translateY(-160%);
-                            transform: translateY(-160%);
+                            -moz-transform: translateY(-270%);
+                            -webkit-transform: translateY(-270%);
+                            -ms-transform: translateY(-270%);
+                            transform: translateY(-270%);
                             transition: .3s;
                         }
                         .element-hidden{
@@ -2634,11 +2634,11 @@ a.btn{
                     }
                     .nth-element{
                         font-size: 34px;
-                        padding-top: 35px;
+                        padding-top: 25px;
                         font-weight: bold;
                         @include media-breakpoint-up(lg){
                             font-size: 84px;
-                            padding-bottom: 30px;
+                            padding-bottom: 10px;
                         }
                     }
                     h3{
@@ -2658,7 +2658,7 @@ a.btn{
                         font-size: 14px;
                         font-weight: 300;
                         @include media-breakpoint-up(lg){
-                            font-size: 16px;
+                            font-size: 15px;
                             margin-right: 5px;
                         }
                     }
