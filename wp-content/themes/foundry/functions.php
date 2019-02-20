@@ -86,6 +86,7 @@ foreach ( $understrap_includes as $file ) {
                       'exclude_from_search' => false,
                       'publicly_queryable'  => true,
                       'capability_type'     => 'post',
+                      'rewrite' => array('slug' => 'works'),
                       );
         
         // Registering your Custom Post Type
