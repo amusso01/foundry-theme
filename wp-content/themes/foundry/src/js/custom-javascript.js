@@ -188,5 +188,38 @@ function callingHour(){
 }
 
 	
+// Dynamic typewrite menu
+$('#mega-create').mouseenter(function(){
+  $('#static').html('WE').fadeIn('slow');
+  if($('#dynamic').hasClass('build-menu')|| $('#dynamic').hasClass('promote-menu')){
+    $('#dynamic').removeClass();
+  }
   
+  $('#dynamic').html('CREATE').addClass('create-menu');
+ 
+});
+
+$('#mega-build').mouseenter(function(){
+  $('#static').html('WE').fadeIn('slow');
+  if($('#dynamic').hasClass('create-menu')|| $('#dynamic').hasClass('promote-menu')){
+    $('#dynamic').removeClass();
+  }
+ 
+  $('#dynamic').html('BUILD').addClass('build-menu');
+
+  
+});
+
+$('#mega-promote').mouseenter(function(){
+  $('#static').html('WE').fadeIn('slow');
+ 
+  if($('#dynamic').hasClass('build-menu')|| $('#dynamic').hasClass('create-menu')){
+    $('#dynamic').removeClass();
+  }
+  $('#dynamic').html('PROMOTE').addClass('promote-menu');
+
+
+});
+
+
 

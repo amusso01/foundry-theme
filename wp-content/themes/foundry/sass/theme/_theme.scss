@@ -159,6 +159,56 @@ input[type=text]:focus
 
 // Animation 
 
+/*Vertical Flip Animation*/
+
+@include keyframes (build){
+    0% { opacity: 0; transform: rotateX(180deg); }
+	5% { opacity: 1; transform: translateY(0px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	80% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@include keyframes (create){
+    0% { opacity: 0; transform: rotateX(180deg); }
+	5% { opacity: 1; transform: translateY(0px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	80% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@include keyframes (promote){
+    
+	0% { opacity: 0; transform: rotateX(180deg); }
+	5% { opacity: 1; transform: translateY(0px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	80% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+.build-menu{
+	animation: build 10s forwards ;
+	color: #0EAF7D;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.create-menu{
+	animation: create 10s forwards ;
+	color: $gradient-2;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.promote-menu{
+	animation: promote 10s forwards ;
+	color: $gradient-7;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
 @include keyframes(shadow-pulse){
     0% {
         box-shadow: 0 0 0 0px rgba(255, 255, 0, 0.2);
@@ -617,11 +667,11 @@ a.btn{
             .container-fluid{
               #main-menu{
                   li.menu-item{
-                        padding-right: 30px;
+                        padding-right: 28px;
                         &:last-child{padding-right: 0px;}
                         &:nth-child(2){
                             @include media-breakpoint-up(md){
-                                padding-left: 30px;
+                                padding-left: 28px;
                             }
                         }
                         &:first-child{
@@ -3421,4 +3471,98 @@ a.btn{
 
 .grecaptcha-badge{
     display: none;
+}
+
+
+// MEGAMENU this menu was developed at a later stage and it meant to override the wp-navwalker genearted through wordpress
+
+
+#navbarNavDropdown{
+    .megamenu-li {
+        position: static;
+    }
+    .megamenu {
+        @include media-breakpoint-down(sm){
+            // display: none;
+            position: relative;
+            height: 140px;
+            background-color: $white;
+            padding-top: 0px;
+        }
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: $light-grey;
+        padding-top: 25px;
+        height: 250px;
+        .container{
+            @include media-breakpoint-down(sm){
+                margin-left: 0px;
+            }
+        }
+        h5{
+            padding-bottom: 10px;
+            .category{
+                @include media-breakpoint-down(sm){
+                    color: $grey!important;
+                    font-weight: 400;
+                    font-size: 16px;
+                    &:hover{
+                        color: $dark-blue!important;
+                    }
+                }
+                color: $dark-blue!important;
+                font-size: 18px;
+                font-weight: 600;
+                &:hover{
+                    color: $primary!important;
+                }
+            }
+        }
+        .dropdown-item{
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+            padding-left: 0px;
+            line-height: 24px;
+            color: $dark-blue!important;
+            &:hover{
+                color: $primary!important;
+            }
+        }
+        .megamenu-section{
+            padding-left: 0px;
+            @include media-breakpoint-up(md){
+                padding-left: 40px;
+            }
+        }
+        .megamenu-dynamic{
+            display: none;
+            @include media-breakpoint-up(md){
+                display: block;
+                padding: 0px;
+                padding-top: 53px;
+            }
+            @include media-breakpoint-up(xl){
+                padding-top: 52px;
+            }
+            p{
+                @include media-breakpoint-up(md){
+                    font-size: 38px;
+                    font-weight: 600;
+                    line-height: 34px;
+                }
+                @include media-breakpoint-up(lg){
+                    font-size: 53px;
+                    line-height: 40px;
+                }
+                @include media-breakpoint-up(xl){
+                    font-size: 61px;
+                    line-height: 48px;
+                }
+            }
+        }
+
+    }
 }

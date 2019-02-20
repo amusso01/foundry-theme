@@ -95,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 			
-			<nav class="navbar navbar-expand-md bg-primary"> 
+			<nav class="navbar navbar-expand-md bg-primary rounded"> 
 			<?php if(!is_front_page()){
 		?>
 			<div class="line-gradient nav-gradient container-fluid"></div>
@@ -155,7 +155,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				
 
 				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
+				<!-- <?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
@@ -166,7 +166,72 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
-				); ?>
+				); ?> -->
+
+<div id="navbarNavDropdown" class="collapse navbar-collapse">
+     <ul class="navbar-nav ml-auto" id="main-menu">
+		<li itemscope="itemscope" class="menu-item nav-item">
+			<a href="<?php echo site_url( '/work/' ) ?>" class="nav-link">WORK</a>
+		</li>
+		<li itemscope="itemscope"  class="menu-item nav-item dropdown megamenu-li">
+			<a class="nav-link dropdown-toggle" href="<?php echo site_url( '/services/' ) ?>"  aria-haspopup="true" aria-expanded="false">SERVICES</a>
+			<div class="dropdown-menu megamenu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 megamenu-dynamic">
+							<p id="static"></p>
+							<p id="dynamic"></p>
+						</div>
+						<div id="mega-create" class="col-md-3 megamenu-section">
+							<h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Brand Identity</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotioanl Artwork</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX Design</a>
+						</div>
+						<div id="mega-build" class="col-md-3 megamenu-section">
+							<h5>
+								<a class="category" href="<?php echo site_url('/build/') ?>">BUILD</a>
+							</h5>
+							<a class="dropdown-item" href="<?php echo site_url( '/web-design/' ) ?>">Website Design and Build</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/ecommerce/' ) ?>">Ecommerce Website</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/mobile-development/' ) ?>">Mobile App Development</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/crm-saas/' ) ?>">SAAS & CRM</a>
+						</div>
+						<div id="mega-promote" class="col-md-3 megamenu-section">
+							<h5>
+								<a class="category" href="<?php echo site_url('/promote/') ?>">PROMOTE</a>
+							</h5>
+							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/strategy/' ) ?>">Strategy and Planning</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/marketing-activation/' ) ?>">Marketing Activation</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/data-analytics/' ) ?>">Data analytics</a>
+							<!-- <a class="dropdown-item" href="#">SAAS & CRM</a>  -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li itemscope="itemscope" class="menu-item nav-item">
+			<a href="<?php echo site_url( '/about/' ) ?>" class="nav-link">ABOUT</a>
+		</li>		
+		<li itemscope="itemscope" class="menu-item nav-item dropdown megamenu-li">
+			<a class="nav-link " href="<?php echo site_url( '/insights/' ) ?>">INSIGHTS</a>
+			<!-- <div class="dropdown-menu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
+				<div class="row">
+					<div class="col-md-4">
+						<h5>
+							<a class="category" href="<?php echo site_url('/agency-life/') ?>">AGENCY LIFE</a>
+						</h5>
+					</div>
+				</div>
+			</div> -->
+		</li>		
+		<li itemscope="itemscope" class="menu-item nav-item">
+			<a href="<?php echo site_url( '/contact/' ) ?>" class="nav-link">CONTACT</a>
+		</li>		
+     </ul>
+    </div>
+
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
