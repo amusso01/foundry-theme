@@ -174,7 +174,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a href="<?php echo site_url( '/work/' ) ?>" class="nav-link">WORK</a>
 		</li>
 		<li itemscope="itemscope"  class="menu-item nav-item dropdown megamenu-li">
-			<a class="nav-link dropdown-toggle" href="<?php echo site_url( '/services/' ) ?>"  aria-haspopup="true" aria-expanded="false">SERVICES</a>
+			<a class="nav-link dropdown-toggle" href="<?php echo site_url( '/service/' ) ?>"  aria-haspopup="true" aria-expanded="false">SERVICES</a>
 			<div class="dropdown-menu megamenu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
 				<div class="container">
 					<div class="row">
