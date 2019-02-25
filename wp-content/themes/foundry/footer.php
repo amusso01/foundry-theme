@@ -14,9 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+	
 
-<div class="wrapper" id="wrapper-footer">
+	
+	<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+	
+	<div class="wrapper" id="wrapper-footer">
+	<?php if (!is_404()) {	?>
 	<div class="container-fluid brief-footer lozad" data-background-image="<?php echo get_template_directory_uri() ?>/img/images/brief-1.jpg">
 		<div class="container">
 			<div class="row">
@@ -31,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</div>
-
+<?php } ?>
 	<footer class="footer-main">
 
 	<div class="container">
