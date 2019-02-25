@@ -35,6 +35,18 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 							<p class="error">Error code: 404</p>
 
+							<div class="container h-100">
+								<div class="d-flex h-100 align-items-center">
+								<div class="w-100">
+									<?php while ( have_posts() ) : the_post(); ?>
+											<?php the_content() ?>
+									<?php endwhile; // end of the loop. ?>
+									<a href="<?php echo site_url( '/work/');?>" class="btn work-btn">VIEW WORK</a>
+									<a href="<?php echo site_url( '/service/');?>" class="btn">VIEW SERVICES</a>
+								</div>
+								</div> 
+							</div>
+
 						</header><!-- .page-header -->
 
 					</section><!-- .error-404 -->
