@@ -110,7 +110,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div><!-- row.design -->
 		</div><!-- container -->
+<?php 	
+		$fullImage = get_field('full_image');
+		if($fullImage){
+?>
+<div class="container-fluid full-width-img" style="background-image: url(<?php echo $fullImage ?>); background-repeat:no-repeat;background-size:cover;background-position:center; min-height:500px;"></div>
+
 <?php
+		}
 		$images = get_field('mobile_images');
 		$size = 'large'; // (thumbnail, medium, large, full or custom size)
 		$i=1;
