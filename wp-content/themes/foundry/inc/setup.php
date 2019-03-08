@@ -137,8 +137,8 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 }
 
 // remove guttenberg css
-function remove_gutenberg_styles() {
-	wp_dequeue_style( 'wp-block-library' );
-}
+// function remove_gutenberg_styles() {
+// 	wp_dequeue_style( 'wp-block-library' );
+// }
 
-add_action( 'wp_enqueue_scripts', 'remove_gutenberg_styles', 100 );
+// add_action( 'wp_enqueue_scripts', 'remove_gutenberg_styles', 100 );
