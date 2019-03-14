@@ -979,6 +979,11 @@ a.btn{
         @include media-breakpoint-down(sm){
             height: 90vh;
         }
+        .heigh-solving{
+            min-width: calc(100vw - 15px);
+            display: flex;
+            justify-content: center;
+        }
         #video_overlays{
             opacity: .8;
             background-image: linear-gradient(to left , #5472C6, #202431 );
@@ -1001,10 +1006,13 @@ a.btn{
             }
         }
         video{
+            background-color: rgba($primary, .4);
             display: none;
             z-index: -10;
             max-width: 100%;
-            max-height: 100%;
+            max-height: 100%; 
+            width: 100%;        
+            align-self: flex-start;
             @include media-breakpoint-up(md){
                 display: block;
             }
@@ -1432,6 +1440,9 @@ a.btn{
         .hovereffect {
             overflow: hidden;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 230px;
             &:hover{
                 .overlay{
                     background-color: rgba($dark-blue, 0.8);
@@ -1530,6 +1541,7 @@ a.btn{
             img{
                 position: relative;
                 display: block;
+                margin:auto;
             }
             .overlay{
                 width: 100%;
@@ -1921,6 +1933,7 @@ a.btn{
             font-size: 28px;
             font-weight: 400;
             color: $white;
+            line-height: 35px;
             @include media-breakpoint-up(sm){
                 font-size: 32px;
             }
@@ -1944,6 +1957,11 @@ a.btn{
             font-size: 13px;
             color: $primary;
             font-weight: bold;
+        }
+    }
+    .entry-content{
+        h1{
+            line-height: 50px;
         }
     }
     p{

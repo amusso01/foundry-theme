@@ -205,7 +205,7 @@ $works = new WP_Query( array (
 		<a href="<?php echo get_permalink(); ?>" class="work-box-home">
 			<article class="<?php echo $postCat->slug; ?>">
 				<div class="hovereffect">
-					<img src="<?php the_field('home_image');?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
+					<img  src="<?php the_field('home_image');?>" alt="<?php echo $thumbnail_alt ?>" class="img-fluid" >
 					<div class="overlay">
 						<p class="work-cat"><?php echo $postCat->slug ?></p>
 						<h2 class="work-title" ><?php the_title(); ?></h2>

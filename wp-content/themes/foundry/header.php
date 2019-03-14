@@ -48,6 +48,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </script>
 
+
+
 	<?php wp_head(); ?>
 <?php if (is_front_page()) {
 	?>

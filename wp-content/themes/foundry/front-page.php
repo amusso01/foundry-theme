@@ -21,7 +21,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<header class="jumbo-video">
 		<div class="heigh-solving">
 			<div id="video_overlays"></div>
-			<video class="lozad" playsinline="playsinline" autoplay="autoplay" poster="<?php echo site_url('/video/poster.jp2');?>" loop="loop" muted="muted">
+			<video class="lozad" playsinline="playsinline" autoplay="autoplay" poster="<?php echo site_url('/video/poster.webp');?>" loop="loop" muted="muted">
 				<source type="video/webm" dat-src="<?php echo site_url('/video/foundry2016.webm');?>">
 				<source type="video/mp4" data-src="<?php echo site_url('/video/foundry2016.mp4');?>">
 				<!--fallback image -->
