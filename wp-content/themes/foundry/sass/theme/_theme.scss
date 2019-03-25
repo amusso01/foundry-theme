@@ -961,7 +961,7 @@ a.btn{
         min-height: 52vh;
     }
     @include media-breakpoint-up(lg){
-        min-height: 64vh;
+        min-height: 58vh;
     }
     @include media-breakpoint-up(xl){
         min-height: 77vh;
@@ -1101,6 +1101,7 @@ a.btn{
 
 #home-wrapper{
     padding-top: 80px;
+    margin-top: 120px;
     #main{
         .statment{
             h2{
@@ -3463,24 +3464,25 @@ a.btn{
 
 // Homepage height fixing
 
-@media screen and ( max-height: 800px ){
+
+
+@media screen and ( max-height: 850px ){
     #home-wrapper {
-        margin-top: 8%;
+        margin-top: 10rem;
+        
     }
 }
 
 @media screen and ( max-height: 750px ){
     #home-wrapper {
         margin-top: 13%;
+        padding-top: 80px;
     }
 }
 
 // ==== temp hide section =====
 
 #marketingPackages{
-    display: none;
-}
-.the-team{
     display: none;
 }
 

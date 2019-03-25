@@ -103,7 +103,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				while ( have_rows('the_team') ) : the_row();
 ?>
 				<div class="card-team hidden-animate">
-					<img class="img-fluid" src="<?php the_sub_field('picture') ?>" alt="Team member picture">
+					<img class="img-fluid lozad"  data-src="<?php the_sub_field('picture') ?>" alt="Team member picture">
 					<div class="overlay h-100 w-100">
 						<p class="name"><?php the_sub_field('name_and_surname')?></p>
 						<p class="role"><?php the_sub_field('member_role') ?></p>
@@ -140,12 +140,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="overlay darker h-100 w-100">
 						<p class="title">WORK WITH US</p>
 						<p class="description">If you are interested in a full time position, internship or work experience please get in touch at studio@foundrydigital.co.uk</p>
-						<button class="learn-more">
+						<a href="mailto:studio@foundrydigital.co.uk"><button class="learn-more">
 							<div class="circle">
 							<span class="icon arrow"></span>
 							</div>
 							<p class="button-text">Learn More</p>
-						</button>
+						</button></a>
 					</div><!-- overlay -->
 				</div>
 			</div>
