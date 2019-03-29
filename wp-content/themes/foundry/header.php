@@ -200,7 +200,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
 							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Brand Identity</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotioanl Artwork</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX Design</a>
 						</div>
 						<div id="mega-build" class="col-md-3 megamenu-section">
