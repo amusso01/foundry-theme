@@ -24,15 +24,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$cat = get_the_category(); // array of object of WP_Term
 				$postCat = $cat[0]; // object WP_Term for the current post
 
-				$thumbnail_id  = get_post_thumbnail_id($insight->ID);
-				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-				$image = wp_get_attachment_image_src( $thumbnail_id,'full' ); 
+				
+				if(!has_post_video( $post_id )){
+					$thumbnail_id  = get_post_thumbnail_id($insight->ID);
+					$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+					$image = wp_get_attachment_image_src( $thumbnail_id,'full' ); 	
+				}else{
+					
+					$video = get_the_post_video_url( $post_id );
+				}
 		?>
 		
 			<article class="col-md-6 insight-grid">
 				<a href="<?php echo get_permalink() ?>">
-					<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>"  class="img-fluid lozad" />
-					<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid lozad" /></noscript>
+
+				<?php 
+					if($image){
+						?>
+						<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>" alt="<?php echo $thumbnail_alt ?>"  class="img-fluid lozad" />
+						<noscript><img src="<?php echo $image[0]; ?>"  class="img-fluid lozad" /></noscript>
+						<?php	
+					}else{
+					?>
+						<video autoplay loop width="650">
+							<source src="<?php echo $video; ?>">
+							Sorry, your browser doesn't support embedded videos.
+						</video>
+<?php
+					}
+				
+				?>
 				</a><!-- article.insight-box -->
 				<div class="insight-info">
 					<p class="insight-cat"><?php echo $postCat->slug ?></p>
