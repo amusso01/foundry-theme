@@ -26,8 +26,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<source type="video/mp4" data-src="<?php echo site_url('/video/foundry2016.mp4');?>">
 				<!--fallback image -->
 			</video>
+			<!-- <img class="mobile-banner lozad" data-src="<?php echo site_url('/video/foundry2016.jpg');?>" alt="mobile banner image" > -->
 		</div>
-		<!-- <img class="mobile-banner lozad" data-src="<?php echo site_url('/video/foundry2016.jpg');?>" alt="mobile banner image" > -->
 		<div class="container video-text">
 			
 			<div class="video-text-content">

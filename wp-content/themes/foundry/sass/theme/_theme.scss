@@ -954,12 +954,16 @@ a.btn{
     top: -87px;
     position: relative;
     video{
-        max-width: 100%;
+        max-width: 190%;
+        @include media-breakpoint-up(sm){
+            max-width: 100%;
+        }
     }
 }
 .container-video{
     position: relative;
     max-height: calc(100% - 13px);
+    overflow: hidden;
 }
 #video_overlays{
     opacity: .8;
@@ -974,11 +978,13 @@ a.btn{
 .video-text{
     margin-top: 20px;
     margin-bottom: -100px;
+    position: absolute;
+    top: 32%;
+    z-index: 10;
     @include media-breakpoint-up(sm){
         margin-top: 0px;
-        position: absolute;
         top: 42%;
-        z-index: 10;
+        margin-bottom: -100px;
     }
     @include media-breakpoint-up(md){
         top: 35%;
@@ -997,14 +1003,12 @@ a.btn{
     }
     
     .video-text-content{
-        text-align: center;
-        @include media-breakpoint-up(sm){
-            text-align: left;
-        }
+        text-align: left;
         h1{
-            font-size: 30px;
+            font-size: 27px;
             margin: 0px;
-            line-height: 32px;
+            line-height: 30px;
+            color: $white;
             &:last-of-type{
                 margin-bottom: 10px;
                 @include media-breakpoint-up(md){
@@ -1034,9 +1038,7 @@ a.btn{
             }
         }
         p{
-            @include media-breakpoint-up(sm){
-                color: $white;
-            }
+            color: $white;
             @include media-breakpoint-up(md){
                 width: 80%;
             }
@@ -1071,6 +1073,7 @@ a.btn{
 }
 
 #home-wrapper{
+    margin-top: -60px;
     @include media-breakpoint-up(sm){
         margin-top: -80px;
     }
