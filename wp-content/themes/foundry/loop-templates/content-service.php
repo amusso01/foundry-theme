@@ -154,7 +154,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<a id="data" href="<?php echo site_url('/data-analytics/'); ?>">Data Analytics</a>
 							</li>
 							<li>
-								<a id="marketingPackages" href="<?php echo site_url('/marketing-pakages/'); ?>">Marketing Packages</a>
+								<a id="marketingPackages" href="<?php echo site_url('/marketing-pakage/'); ?>">Marketing Packages</a>
 							</li>
 						</ul>
 					</div><!-- card-link -->

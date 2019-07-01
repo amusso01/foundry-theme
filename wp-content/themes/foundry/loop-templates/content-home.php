@@ -156,7 +156,7 @@ $works = new WP_Query( array (
 					</div>
 					<div class="card-content">
 						<a href="<?php echo site_url('/promote/'); ?>"><h3>PROMOTE</h3></a>
-						<p>Once your business is online, it’s time to promote it so you can reach and engage your target audience effectively</p>
+						<p>Once your business is online, it’s time to promote it so you can reach and engage your target audience</p>
 						<a href="<?php echo site_url( '/promote/');?>"><p class="primary">OVERVIEW</p></a>
 					</div>
 					<div class="card-link">
@@ -171,7 +171,7 @@ $works = new WP_Query( array (
 								<a id="data" href="<?php echo site_url('/data-analytics/'); ?>">Data Analytics</a>
 							</li>
 							<li>
-								<a id="marketingPackages" href="<?php echo site_url('/marketing-pakages/'); ?>">Marketing Packages</a>
+								<a id="marketingPackages" href="<?php echo site_url('/marketing-pakage/'); ?>">Marketing Packages</a>
 							</li>
 						</ul>
 					</div><!-- card-link -->

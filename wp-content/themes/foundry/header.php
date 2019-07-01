@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- Hotjar Tracking Code for https://www.foundrydigital.co.uk -->
-	<script>
+	<!-- <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1228907,hjsv:6};
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
 
 	
 </head>

@@ -131,14 +131,13 @@ if(is_page('build')){
 						$class = array('#brand', '#graphic', '#promotional', '#design');
 						while ( have_rows('service_boxes') ) : the_row();
 							?>
-							<a href="<?php the_sub_field('box-link-to');?><?php echo $class[$i]; ?>">
+							<a href="<?php the_sub_field('box-link-to');?>"> <!-- use this code to output the anchor link after the box-link-to <?php echo $class[$i]; ?> -->
 								<div class="sevice-gird-element container hidden-animate">
 									<div class="box-wrapper">
 										<?php $svgImg = get_sub_field('icon');?>
 										<div class="icon row justify-content-center">
 										<div class="icon-service">
 											<!-- <?php echo file_get_contents($svgImg); ?> -->
-											
 											<img src="<?php echo $svgImg ?>" alt="services icon">
 										</div>
 
