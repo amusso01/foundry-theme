@@ -964,6 +964,18 @@ a.btn{
     position: relative;
     max-height: calc(100% - 13px);
     overflow: hidden;
+    .mobile-banner{
+        display:none;
+        @include media-breakpoint-down(xs){
+            display:block;
+            max-width: 225%;
+        }
+    }
+    video{
+        @include media-breakpoint-down(xs){
+            display: none;
+        }
+    }
 }
 #video_overlays{
     opacity: .8;
