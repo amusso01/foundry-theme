@@ -91,7 +91,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="container-fluid">
 			<header class="team-intro col-md-6 offset-md-3 text-center">
 				<h3>The Team</h3>
-				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our project managers who are on the spectrum somewhere between organised and OCD and our digital marketing experts, the latest addition of whom is a pure genius.</p>
+				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our excellent project managers ready to take on any project, and our digital marketing wizards, the latest addition of whom is a pure genius.</p>
 			</header>
 			<div class="grid-team">
 			<?php
