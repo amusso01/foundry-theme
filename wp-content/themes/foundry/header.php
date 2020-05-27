@@ -50,6 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<?php wp_head(); ?>
 <?php if (is_front_page()) {
 	?>

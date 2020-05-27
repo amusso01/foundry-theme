@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 	<div class="wrapper" id="wrapper-footer">
 	<?php if (!is_404()) {	?>
-	<div class="container-fluid brief-footer lozad" data-background-image="<?php echo get_template_directory_uri() ?>/img/images/brief-1.jpg">
+	<div class="container-fluid brief-footer footer__brief-bg" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 ">
@@ -206,7 +206,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

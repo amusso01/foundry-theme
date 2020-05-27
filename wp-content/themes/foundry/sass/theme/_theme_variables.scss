@@ -6,80 +6,107 @@
 // Font
 
 @font-face {
-    font-family:"proxima-nova";
-    font-display: auto;
-    src:url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-    font-style:normal;font-weight:700;
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
 }
-    
+
 @font-face {
-font-family:"proxima-nova";
-font-display: auto;
-src:url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-font-style:normal;font-weight:400;
+  font-family: "proxima-nova";
+  font-display: auto;
+  src: url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
-font-family:"proxima-nova";
-font-display: auto;
-src:url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
-font-style:italic;font-weight:400;
+  font-family: "proxima-nova";
+  font-display: auto;
+  src: url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-style: normal;
+  font-weight: 400;
 }
 
+@font-face {
+  font-family: "proxima-nova";
+  font-display: auto;
+  src: url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-style: italic;
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
 
-
-
-$primary: #5472C6; // Thats a sample how you could change a BootStrap variable.
+$primary: #5472c6; // Thats a sample how you could change a BootStrap variable.
 
 // Colours
 
-$grey:      #C6C6C6;
-$light-grey:#F8F8F8;
+$grey: #c6c6c6;
+$light-grey: #f8f8f8;
 $dark-blue: #202431;
-$p-black:   #212531;
-$h-black:   #1A1C22; 
+$p-black: #212531;
+$h-black: #1a1c22;
 
 // Gradients
-$gradient-1: #FF9500;
-$gradient-2: #FF7100;
-$gradient-3: #FF1700;
-$gradient-4: #FF0000;
+$gradient-1: #ff9500;
+$gradient-2: #ff7100;
+$gradient-3: #ff1700;
+$gradient-4: #ff0000;
 
-$orange-gradient:$gradient-1,$gradient-2,$gradient-3,$gradient-4;
+$orange-gradient: $gradient-1, $gradient-2, $gradient-3, $gradient-4;
 
-$gradient-5:  #D61E45;
-$gradient-6: #B22264;
-$gradient-7: #8C2786;
+$gradient-5: #d61e45;
+$gradient-6: #b22264;
+$gradient-7: #8c2786;
 
-$purple-gradient: $gradient-5,$gradient-6,$gradient-7;
+$purple-gradient: $gradient-5, $gradient-6, $gradient-7;
 
-$gradient-8: #31C4F3;  
-$gradient-9: #34C4EC;
-$gradient-10: #5FC192;
-$gradient-11: #70C06E;
+$gradient-8: #31c4f3;
+$gradient-9: #34c4ec;
+$gradient-10: #5fc192;
+$gradient-11: #70c06e;
 
-$green-gradient: $gradient-8, $gradient-9, $gradient-10,$gradient-11;
+$green-gradient: $gradient-8, $gradient-9, $gradient-10, $gradient-11;
 
-$line-gradient:$gradient-1, $gradient-2, $gradient-3,$gradient-4,$gradient-5,$gradient-6,$gradient-7,$gradient-8, $gradient-9, $gradient-10,$gradient-11;
+$line-gradient: $gradient-1, $gradient-2, $gradient-3, $gradient-4, $gradient-5,
+  $gradient-6, $gradient-7, $gradient-8, $gradient-9, $gradient-10, $gradient-11;
 
-
-
-    $font-family-sans-serif: "proxima-nova","Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "proxima-nova", "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, sans-serif;
 
 // carousel
 
-$carousel-transition: transform 1s ease;  
-
-
-
-
-
-
-
-
-
-
- 
-
-
+$carousel-transition: transform 1s ease;
