@@ -53,7 +53,9 @@ $promoteWorks = get_field('promote_works');
 				<p class="headline__pre" ><?php echo $preHead ?></p>
 				<h2 class="ultraWeight headline__head"><?php echo $head ?></h2>
 				<p><?php echo $subHead ?></p>
-				<a href="<?php echo $ctaHead['url'] ?>"><?php echo $ctaHead['title'] ?></a>
+				<!-- <a href="<?php echo $ctaHead['url'] ?>"><?php echo $ctaHead['title'] ?></a> -->
+				<a class="btn cta-btn" href="<?php echo site_url( '/work/');?>" >VIEW WORK</a>
+				<a class="btn cta-btn" href="<?php echo site_url( '/service/');?>" >VIEW SERVICES</a>
 			</div>
 		</article>
 	</div>
@@ -153,6 +155,9 @@ $promoteWorks = get_field('promote_works');
 				</a><!-- work-box-home -->
 
 			<?php endforeach; ?>
+			</div>
+			<div class="work-cta-home">
+				<a href="<?php echo site_url('/work') ?>">DISCOVER MORE</a>
 			</div>
 		</div>
 
@@ -254,6 +259,9 @@ $promoteWorks = get_field('promote_works');
 				</a><!-- work-box-home -->
 
 			<?php endforeach; ?>
+			</div>
+			<div class="work-cta-home">
+				<a href="<?php echo site_url('/work') ?>">DISCOVER MORE</a>
 			</div>
 		</div>
 
@@ -364,6 +372,9 @@ $promoteWorks = get_field('promote_works');
 				</a><!-- work-box-home -->
 
 			<?php endforeach; ?>
+			</div>
+			<div class="work-cta-home">
+				<a href="<?php echo site_url('/work') ?>">DISCOVER MORE</a>
 			</div>
 		</div>
 

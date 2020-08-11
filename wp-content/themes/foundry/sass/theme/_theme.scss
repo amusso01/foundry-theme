@@ -231,6 +231,18 @@ input[type="text"]:focus {
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .build-menu {
   animation: build 10s forwards;
   color: #0eaf7d;
@@ -378,7 +390,7 @@ a {
 
 a.btn {
   background-color: $primary;
-  border-radius: 21px;
+  border-radius: 1px;
   color: $white;
   cursor: pointer;
   display: flex;
@@ -923,11 +935,14 @@ a.btn {
             font-size: 15px;
             letter-spacing: 1px;
             line-height: 45px;
+            text-transform: uppercase;
           }
           &:nth-of-type(2) {
-            font-size: 45px;
-            line-height: 45px;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 50px;
             letter-spacing: 1px;
+            text-transform: uppercase;
             @include media-breakpoint-down(sm) {
               padding-bottom: 20px;
             }
@@ -936,7 +951,7 @@ a.btn {
             }
           }
           &:last-of-type {
-            font-size: 24px;
+            font-size: 21px;
             line-height: 45px;
             letter-spacing: 0.8px;
             @include media-breakpoint-down(sm) {
@@ -992,9 +1007,16 @@ a.btn {
   top: -87px;
   position: relative;
   video {
-    max-width: 190%;
+    max-width: 100%;
     @include media-breakpoint-up(sm) {
       max-width: 100%;
+    }
+  }
+  .video-banner {
+    display: none;
+    @include media-breakpoint-down(xs) {
+      display: block;
+      min-height: 455px;
     }
   }
 }
@@ -1004,12 +1026,15 @@ a.btn {
   overflow: hidden;
   .mobile-banner {
     display: none;
+    max-width: 190%;
+    min-height: 100%;
     @include media-breakpoint-down(xs) {
       display: block;
-      max-width: 225%;
+      max-width: 100%;
     }
   }
-  video {
+
+  #iframe {
     @include media-breakpoint-down(xs) {
       display: none;
     }
@@ -1017,11 +1042,15 @@ a.btn {
 }
 #video_overlays {
   opacity: 0.8;
-  background-image: linear-gradient(to left, #26272944, #202431);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8379726890756303) 0%,
+    rgba(0, 0, 0, 0.20211834733893552) 50%,
+    rgba(0, 0, 0, 0.3533788515406162) 100%
+  );
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -5px;
   left: 0;
   z-index: 1;
 }
@@ -1029,27 +1058,27 @@ a.btn {
   margin-top: 20px;
   margin-bottom: -100px;
   position: absolute;
-  top: 32%;
+  top: 67%;
   z-index: 10;
   @include media-breakpoint-up(sm) {
     margin-top: 0px;
-    top: 42%;
+    top: 70%;
     margin-bottom: -100px;
   }
   @include media-breakpoint-up(md) {
-    top: 35%;
+    top: 75%;
     padding-left: 25px;
   }
   @include media-breakpoint-up(lg) {
-    top: 38%;
+    top: 70%;
     padding-left: 35px;
   }
   @include media-breakpoint-up(xl) {
-    top: 43%;
+    top: 70%;
     padding-left: 35px;
   }
   @include media-breakpoint-up(xxl) {
-    top: 48%;
+    top: 70%;
   }
 
   .video-text-content {
@@ -1059,6 +1088,7 @@ a.btn {
       margin: 0px;
       line-height: 30px;
       font-weight: 900;
+      letter-spacing: 1px;
       color: $white;
       &:last-of-type {
         margin-bottom: 10px;
@@ -1080,11 +1110,11 @@ a.btn {
         line-height: 52px;
       }
       @include media-breakpoint-up(xl) {
-        font-size: 52px;
+        font-size: 48px;
         line-height: 56px;
       }
       @include media-breakpoint-up(xxl) {
-        font-size: 58px;
+        font-size: 48x;
         line-height: 65px;
       }
     }
@@ -1588,6 +1618,7 @@ a.btn {
         margin-bottom: 0px;
         padding-bottom: 0px;
         bottom: 108px;
+        text-transform: uppercase;
       }
       img {
         position: relative;
@@ -1840,6 +1871,22 @@ a.btn {
 .insight-grid {
   padding-bottom: 15px;
   padding-top: 15px;
+  overflow: hidden;
+  > a {
+    overflow: hidden;
+  }
+  &:hover {
+    img {
+      -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.36);
+      -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.36);
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.36);
+    }
+    .insight-title {
+      h4 {
+        text-decoration: underline;
+      }
+    }
+  }
   .grey-line {
     border-width: 1px;
     margin-bottom: 13px;
@@ -1853,6 +1900,9 @@ a.btn {
       padding-bottom: 13px;
       color: $primary;
     }
+  }
+  img {
+    transition: 0.4s ease-out;
   }
 }
 .insight-pagination {
@@ -2280,9 +2330,10 @@ a.btn {
       text-align: center;
       h3 {
         font-size: 36px;
-        font-weight: bold;
+        font-weight: 900;
         padding-top: 50px;
         padding-bottom: 36px;
+        letter-spacing: 1px;
         transition: 0.3s;
         &:hover {
           color: $primary;
@@ -2368,13 +2419,17 @@ a.btn {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 80px;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
   @include media-breakpoint-up(xxl) {
     background-size: cover;
   }
   h1 {
     color: $white;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 0px;
     text-align: center;
     margin-left: -60px;
     font-weight: 900;
@@ -2383,129 +2438,93 @@ a.btn {
       font-size: 3rem;
     }
     @include media-breakpoint-up(lg) {
-      padding-top: 108px;
+      padding-top: 10px;
       margin-left: 0px;
       text-align: left;
+      padding-bottom: 15px;
     }
-    span {
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    svg {
-      position: relative;
-      top: -5px;
-      padding-right: 30px;
-      height: 50px;
-      @include media-breakpoint-down(md) {
-        padding-right: 3px;
-        height: 60px;
-      }
-      @include media-breakpoint-up(lg) {
-        height: 67px;
-      }
-      .cls-1 {
-        fill: $white;
-      }
-      .cls-2 {
-        fill: $white;
-      }
-      .cls-3 {
-        fill: $white;
-      }
-    }
-    // #build{
-    //     .cls-1 {
-    //         fill: url(#linear-gradient-3) $gradient-8;
-    //         }
-
-    //         .cls-2 {
-    //         fill: url(#linear-gradient-4) $gradient-8;
-    //         }
-    // }
-    // #create{
-    //     .cls-1 {
-    //         fill: url(#linear-gradient) $gradient-1;
-    //     }
-
-    //     .cls-2 {
-    //         fill: url(#linear-gradient-2) $gradient-1;
-    //     }
-    // }
-    // #promote{
-    //     .cls-1 {
-    //         fill: url(#linear-gradient-5)$gradient-10;
-    //       }
-
-    //       .cls-2 {
-    //         fill: url(#linear-gradient-6) $gradient-10;
-    //       }
-
-    //       .cls-3 {
-    //         fill: url(#linear-gradient-7) $gradient-10;
-    //       }
-    // }
   }
-  .row.second-row {
-    padding-bottom: 50px;
+  svg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 30px;
+    height: 50px;
+    @include media-breakpoint-down(md) {
+      padding-right: 3px;
+      height: 80px;
+      display: none;
+    }
     @include media-breakpoint-up(lg) {
-      padding-top: 70px;
-      padding-bottom: 50px;
+      height: 97px;
     }
-    h2 {
-      color: $white;
-      font-size: 24px;
-      text-align: center;
-      padding-bottom: 40px;
-      @include media-breakpoint-up(lg) {
-        text-align: left;
-        font-size: 26px;
-        padding-left: 114px;
-        width: 80%;
-      }
+    .cls-1 {
+      fill: $white;
     }
-    p {
-      color: $white;
-      width: 80%;
-      text-align: center;
-      margin: auto;
-      @include media-breakpoint-up(lg) {
-        font-size: 16px;
-        text-align: left;
-        margin: 0px;
-        width: 70%;
-      }
+    .cls-2 {
+      fill: $white;
+    }
+    .cls-3 {
+      fill: $white;
     }
   }
-  .row.third-row {
-    padding-bottom: 60px;
+  .service-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    animation: gradient 15s ease infinite;
+    opacity: 0.7;
+  }
+  h2 {
+    color: $white;
+    font-size: 18px;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
     @include media-breakpoint-up(lg) {
-      padding-bottom: 108px;
+      text-align: left;
+      font-size: 21px;
     }
-    .btn {
+  }
+  p {
+    color: $white;
+    text-align: center;
+    margin: auto;
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      text-align: left;
+      margin: 0px;
+      width: 80%;
+    }
+  }
+  .btn {
+    background-color: transparent;
+    border-color: $white;
+    margin-top: 30px;
+    @include media-breakpoint-down(md) {
       margin-left: auto;
       margin-right: auto;
-      background-color: transparent;
-      border-color: $white;
+    }
+    &:hover {
+      box-shadow: none;
+      background-color: $white;
+    }
+    &.btn-build {
       &:hover {
-        box-shadow: none;
-        background-color: $white;
+        color: #0e9f9c;
       }
-      &.btn-build {
-        &:hover {
-          color: #0e9f9c;
-        }
+    }
+    &.btn-create {
+      &:hover {
+        color: #d8351b;
       }
-      &.btn-create {
-        &:hover {
-          color: #d8351b;
-        }
-      }
-      &.btn-promote {
-        &:hover {
-          color: #73244b;
-        }
+    }
+    &.btn-promote {
+      &:hover {
+        color: #73244b;
       }
     }
   }
@@ -2971,6 +2990,9 @@ a.btn {
 
 // ========== About ===========
 
+.embed-responsive {
+  margin-top: 50px;
+}
 .about {
   margin-bottom: 100px;
   .approach-about {
@@ -2981,8 +3003,11 @@ a.btn {
     }
     h3 {
       font-size: 26px;
-      font-weight: bold;
+      font-weight: 900;
       padding-bottom: 10px;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     p {
       @include media-breakpoint-up(md) {
@@ -3044,7 +3069,8 @@ a.btn {
       h2 {
         font-size: 38px;
         font-weight: bold;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
+        font-weight: 900;
         @include media-breakpoint-up(md) {
           font-size: 48px;
           padding-bottom: 35px;
@@ -3582,6 +3608,9 @@ a.btn {
     background-color: $light-grey;
     padding-top: 25px;
     height: 250px;
+    @include media-breakpoint-up(md) {
+      top: 74px;
+    }
     .container {
       @include media-breakpoint-down(sm) {
         margin-left: 0px;
@@ -3589,6 +3618,7 @@ a.btn {
     }
     h5 {
       padding-bottom: 10px;
+      font-weight: 900;
       .category {
         @include media-breakpoint-down(sm) {
           color: $grey !important;
@@ -3599,8 +3629,8 @@ a.btn {
           }
         }
         color: $dark-blue !important;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 900;
         &:hover {
           color: $primary !important;
         }
@@ -3722,8 +3752,9 @@ img.aligncenter {
 }
 
 .headline {
-  margin-bottom: 100px;
-  padding-bottom: 40px;
+  margin-bottom: 55px;
+  padding-bottom: 60px;
+  padding-top: 50px;
   border-bottom: 1px solid #f4f4f4;
   @include media-breakpoint-down(lg) {
     margin-bottom: 100px;
@@ -3743,7 +3774,7 @@ img.aligncenter {
     letter-spacing: 1px;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 70px;
+    line-height: 60px;
     color: $black;
     @include media-breakpoint-down(md) {
       font-size: 45px;
@@ -3760,6 +3791,14 @@ img.aligncenter {
     &:hover {
       text-decoration: underline;
     }
+    &:first-of-type {
+      margin-right: 10px;
+    }
+  }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: $white;
   }
 }
 
@@ -3934,6 +3973,19 @@ img.aligncenter {
     text-decoration: underline !important;
     font-weight: 400 !important;
     font-size: 15px !important;
+  }
+  .work-cta-home {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    > a {
+      color: #5472c6;
+      text-decoration: none;
+      font-weight: 700;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 // restructure navigation menu for mobile

@@ -54,7 +54,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<div class="col-lg-5 offset-lg-1">
 						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way.</br> </br> Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
-						<a href="<?php echo site_url( '/agency-life/' ) ?>" class="btn">AGENCY LIFE</a>
 					</div>
 				</div>
 			</div>
