@@ -199,19 +199,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div id="mega-create" class="col-md-3 megamenu-section">
 							<h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Brand Identity</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Branding & Visual Identity</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX/UI and Motion Design</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX Design</a>
 						</div>
 						<div id="mega-build" class="col-md-3 megamenu-section">
 							<h5>
 								<a class="category" href="<?php echo site_url('/build/') ?>">BUILD</a>
 							</h5>
-							<a class="dropdown-item" href="<?php echo site_url( '/web-design/' ) ?>">Website Design and Build</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/web-design/' ) ?>">Website Build</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/ecommerce/' ) ?>">Ecommerce Website</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/mobile-development/' ) ?>">Mobile App Development</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/crm-saas/' ) ?>">SAAS & CRM</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/mobile-development/' ) ?>">Mobile & Web Apps</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/crm-saas/' ) ?>">SAAS / CRM / CMS</a>
 						</div>
 						<div id="mega-promote" class="col-md-3 megamenu-section">
 							<h5>
@@ -219,7 +219,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</h5>
 							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/strategy/' ) ?>">Strategy and Planning</a>
 							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/marketing-activation/' ) ?>">Marketing Activation</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/data-analytics/' ) ?>">Data analytics</a>
+							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/data-analytics/' ) ?>">Data Analytics</a>
 							<!-- <a class="dropdown-item" href="#">SAAS & CRM</a>  -->
 						</div>
 					</div>
