@@ -111,13 +111,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			
 			<nav class="navbar navbar-expand-md bg-primary rounded"> 
-			<?php if(!is_front_page()){
+			<!-- <?php if(!is_front_page()){
 		?>
 			<div class="line-gradient nav-gradient container-fluid"></div>
 
 			<?php
 			}
-			?>
+			?> -->
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container-fluid" >
@@ -245,7 +245,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a href="<?php echo site_url( '/contact/' ) ?>" class="nav-link">CONTACT</a>
 		</li>		
      </ul>
+
     </div>
+
+
 
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
@@ -254,10 +257,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 	<?php if(is_front_page()){
 		?>
-	<div class="line-gradient"></div>
+	<!-- <div class="line-gradient"></div> -->
 	<?php
 	}
 ?>
 
+
+
 </header><!-- #wrapper-navbar end -->
+
+
 	<div class="site" id="page">
+
+<div class="line-gradient"></div>
