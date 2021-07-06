@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row footer-info">
 
-			<div class="col-md-4 text-center text-md-left contact">
+			<div class="col-md-4 text-left contact">
 				<div class="social social-footer">
 					<ul>
 						<li>
@@ -100,7 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<p><a href="tel:+44 (0)20 7736 7959">+44 (0)20 7736 7959</a></p>
 			</div><!-- contact -->
 			
-			<div class="col-md-4 col-lg-2 text-center text-md-left footer-push-down">
+			<div class="col-md-4 col-lg-2 text-left footer-push-down">
 				<h2>CREATE</h2>
 				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Brand Identity</a>
 				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">Creative Design</a>
@@ -108,7 +108,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo site_url('/service/create/creative-services/'); ?>">UX Design</a>
 			</div><!-- col-md-2 footer-push-down -->
 
-			<div class="col-md-4 col-lg-2 text-center text-md-left footer-push-down">
+			<div class="col-md-4 col-lg-2 text-left footer-push-down">
 				<h2>BUILD</h2>
 				<a href="<?php echo site_url('/service/build/web-design/'); ?>">Website Design & Build</a>
 				<a href="<?php echo site_url('/service/build/ecommerce/'); ?>">Ecommerce Website</a>
@@ -118,7 +118,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-4 show-md footer-push-down"></div>
 
-			<div class="col-md-4 col-lg-2 text-center text-md-left footer-push-down">
+			<div class="col-md-4 col-lg-2 text-left footer-push-down">
 				<h2>PROMOTE</h2>
 				<a href="<?php echo site_url('/service/promote/strategy/'); ?>">Strategy & Planning</a>
 				<a href="<?php echo site_url('/service/promote/marketing-activation/'); ?>">Marketing Activation</a>
@@ -126,7 +126,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<!-- <a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a> -->
 			</div><!-- col-md-2  footer-push-down -->
 
-			<div class="col-md-4 col-lg-2 text-center text-md-left footer-push-down">
+			<div class="col-md-4 col-lg-2 text-left footer-push-down">
 				<h2>COMPANY</h2>
 				<a href="<?php echo site_url(); ?>">Home</a>
 				<a href="<?php echo site_url('/work/'); ?>">Work</a>

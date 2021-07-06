@@ -632,10 +632,25 @@ a.btn {
   &.navbar-home {
     background: transparent;
     #main-logo {
-      .cls-1 {
+      .st0 {
         fill: $white;
       }
     }
+    // .navbar-toggler{
+    //   .toggle-btn {
+    //     background-color: $white;
+    //     &::after, &::before{
+    //       box-shadow: 0 10px 0 0 $white;
+    //     }
+    //   }
+    //   &.active{
+    //     .toggle-btn{
+    //       &::after, &::before{
+    //         box-shadow: 0 10px 0 0 $h-black;
+    //       }
+    //     }
+    //   }
+    // }
     .navbar.bg-primary {
       border-bottom: 2px solid transparent;
       background: transparent !important;
@@ -705,8 +720,8 @@ a.btn {
     height: 62px;
     width: 150px;
     transition: 0.8s;
-    .cls-1 {
-      fill: #1a1a1a;
+    .st0 {
+      fill: #1a1c22;
     }
   }
   .navbar.bg-primary {
@@ -762,6 +777,9 @@ a.btn {
       transition: 0.8s;
       width: 120px;
       height: 50px;
+      .st0 {
+        fill: #1a1c22;
+      }
     }
   }
 }
@@ -773,11 +791,11 @@ a.btn {
   padding-bottom: 0px;
   p {
     color: $grey;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 0px;
   }
   a {
-    font-size: 13px;
+    font-size: 16px;
     color: $white;
     &:hover {
       color: $grey;
@@ -815,7 +833,7 @@ a.btn {
       color: $white;
     }
     h2 {
-      font-size: 14px;
+      font-size: 16px;
       color: $primary;
     }
     .contact {
@@ -1004,8 +1022,11 @@ a.btn {
 //============== Home ===============
 
 .jumbo-video {
-  top: -87px;
+  top: -135px;
   position: relative;
+  @include media-breakpoint-up(sm) {
+    top: -87px;
+  }
   video {
     max-width: 100%;
     @include media-breakpoint-up(sm) {
@@ -1117,6 +1138,10 @@ a.btn {
         font-size: 48x;
         line-height: 65px;
       }
+    }
+    h2{
+      font-weight: 900;
+      letter-spacing: 1px;
     }
     p {
       color: $white;
@@ -1364,8 +1389,8 @@ a.btn {
             padding-right: 120px;
           }
           h1 {
-            font-size: 38px;
-            line-height: 32px;
+            font-size: 55px;
+            line-height: 55px;
             padding-bottom: 0px;
             font-weight: 900;
             @include media-breakpoint-up(md) {
@@ -2118,6 +2143,24 @@ a.btn {
   padding-left: 0px;
   padding-right: 0px;
   position: relative;
+  .first_home_section{
+    padding-top: 120px;
+    .btn{
+      background-color: #212531;
+      border-color: #212531;
+      &:hover{
+        background-color: $primary;
+        border-color: $primary;
+        text-decoration: none;
+      }
+    }
+    .headline__head{
+      line-height: 45px;
+      @include media-breakpoint-up(sm) {
+        line-height: 60px;
+      }
+    }
+  }
 }
 
 .service-draw,
@@ -3919,7 +3962,7 @@ img.aligncenter {
     }
     .homeService__title {
       h4 {
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 700;
         margin-bottom: 4px;
       }
