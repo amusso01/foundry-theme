@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="card-link">
 						<ul>
 							<li>
-								<a id="brand" href="<?php echo site_url('/creative-services/'); ?>#brand">Brand Identity</a>
+								<a id="brand" href="<?php echo site_url('/creative-services/'); ?>#brand">Branding & Visual Identity</a>
 							</li>
 							<li>
 								<a id="graphic" href="<?php echo site_url('/creative-services/'); ?>#graphic">Graphic Design</a>
@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<a  id="promotional" href="<?php echo site_url('/creative-services/'); ?>#promotional">Promotional Artwork</a>
 							</li>
 							<li>
-								<a id="ux" href="<?php echo site_url('/creative-services/'); ?>#design">UX design</a>
+								<a id="ux" href="<?php echo site_url('/creative-services/'); ?>#design">UX/UI and Motion Design</a>
 							</li>
 						</ul>
 					</div><!-- card-link -->
@@ -90,16 +90,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="card-link">
 						<ul>
 							<li>
-								<a id="web" href="<?php echo site_url('/web-design/'); ?>">Website Design and Build</a>
+								<a id="web" href="<?php echo site_url('/web-design/'); ?>">Website Build</a>
 							</li>
 							<li>
 								<a id="ecommerce" href="<?php echo site_url('/ecommerce/'); ?>">Ecommerce Websites</a>
 							</li>
 							<li>
-								<a  id="mobile" href="<?php echo site_url('/mobile-development/'); ?>">Mobile App Development</a>
+								<a  id="mobile" href="<?php echo site_url('/mobile-development/'); ?>">Mobile & Web Apps</a>
 							</li>
 							<li>
-								<a id="saas" href="<?php echo site_url('/crm-saas/'); ?>">SAAS & CRM</a>
+								<a id="saas" href="<?php echo site_url('/crm-saas/'); ?>">SAAS / CRM / CMS</a>
 							</li>
 						</ul>
 					</div><!-- card-link -->

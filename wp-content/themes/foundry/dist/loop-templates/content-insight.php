@@ -25,14 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$postCat = $cat[0]; // object WP_Term for the current post
 
 				
-				if(!has_post_video( $post_id )){
+				
 					$thumbnail_id  = get_post_thumbnail_id($insight->ID);
 					$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 					$image = wp_get_attachment_image_src( $thumbnail_id,'full' ); 	
-				}else{
-					
-					$video = get_the_post_video_url( $post_id );
-				}
+				
 		?>
 		
 			<article class="col-md-6 insight-grid">

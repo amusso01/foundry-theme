@@ -54,7 +54,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<div class="col-lg-5 offset-lg-1">
 						<p>Fancy a cup of coffee or a quick bite to eat? We want to chat with you about your business so we can understand what it is you’re looking to achieve. Once we’ve nailed this, we pass on the particulars to our team of experts who make the magic happen, keeping you in the loop all the way.</br> </br> Our extensive experience in building interactive digital products has taught us that each project is different to the next, but whatever the unique requirements we tackle the challenge using our three-staged approach: Create, Build, Promote.</p>
-						<a href="<?php echo site_url( '/agency-life/' ) ?>" class="btn">AGENCY LIFE</a>
 					</div>
 				</div>
 			</div>
@@ -72,26 +71,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="counter-value" data-count="7">0</p>
+						<p class="counter-value" data-count="9">0</p>
 						<p class="info-inner">Years delivering creative technology solutions</p>
 						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICES</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="counter-value" data-count="3">0</p>
-						<p class="info-inner">We have offices in the UK and Argentina</p>
-						<a href="<?php echo site_url('/contact/') ?>">GET IN TOUCH</a>
+						<p class="counter-value" data-count="8">0</p>
+						<p class="info-inner">Hardworking indivudals pushing Foundry to its highest potential</p>
+						<a href="#theTeam">VIEW THE TEAM</a>
 					</div>
 				</div>
 			</div> <!-- grid-about -->
 		</div> <!-- container -->
 	</aside><!-- info-box-about -->
-	<article class="the-team ">
+	<article class="the-team " id="theTeam">
 		<div class="container-fluid">
 			<header class="team-intro col-md-6 offset-md-3 text-center">
 				<h3>The Team</h3>
-				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our project managers who are on the spectrum somewhere between organised and OCD and our digital marketing experts, the latest addition of whom is a pure genius.</p>
+				<p>We’re a creative and production agency so as a team we’re anything but plain. Our designers radiate creativity, and our developers eat, sleep and breathe code. Not forgetting our excellent project managers ready to take on any project, and our digital marketing wizards, the latest addition of whom is a pure genius.</p>
 			</header>
 			<div class="grid-team">
 			<?php

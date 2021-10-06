@@ -118,6 +118,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <?php
 		}
+
+	if(!get_field('do_you_want_a_video')){
+
 		$images = get_field('mobile_images');
 		$size = 'large'; // (thumbnail, medium, large, full or custom size)
 		$i=1;
@@ -139,7 +142,31 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div><!-- container-fluid -->
 	<?php
 		}
-?>		
+
+	}else{
+		$video_image = get_field('image_and_video');
+		$mobileImage = $video_image['mobile_image'];
+		$mobileVideo = $video_image['mobile_video'];
+
+		if($video_image):	
+	?>
+		<div class="container-fluid">
+			<div class="row mobile">
+			
+			<div class="col-md-6 p-0 mobile-background-1">
+				<img src="<?php echo $mobileImage['url'] ?>" alt="<?php echo $mobileImage['alt'] ?>">
+			</div>
+			<div class="col-md-6 p-0 mobile-background-2">
+				<video autoplay="true" muted="true" loop="true" style="max-width: 100%">
+					<source src="<?php echo $mobileVideo['url'] ?>" type="video/webm">
+				</video>
+			</div>
+			
+			</div>
+		</div>
+		<?php endif; ?>
+	<?php } ?>
+		
 	</section><!-- products -->
 
 	<div class="container final-box-work">

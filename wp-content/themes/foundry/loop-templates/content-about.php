@@ -64,29 +64,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="grid-about">
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="number"><span class="counter-value" data-count="600">0</span>+</p>
+						<p class="number"><span class="counter-value" data-count="650">0</span>+</p>
 						<p class="info-inner">Projects designed, built and promoted</p>
 						<a href="<?php echo site_url('/work/') ?>">VIEW PORTFOLIO</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="counter-value" data-count="7">0</p>
+						<p class="counter-value" data-count="9">0</p>
 						<p class="info-inner">Years delivering creative technology solutions</p>
 						<a href="<?php echo site_url('/service/') ?>">VIEW SERVICES</a>
 					</div>
 				</div>
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="counter-value" data-count="3">0</p>
-						<p class="info-inner">We have offices in the UK and Argentina</p>
-						<a href="<?php echo site_url('/contact/') ?>">GET IN TOUCH</a>
+						<p class="counter-value" data-count="8">0</p>
+						<p class="info-inner">Hardworking indivudals pushing Foundry to its highest potential</p>
+						<a href="#theTeam">VIEW THE TEAM</a>
 					</div>
 				</div>
 			</div> <!-- grid-about -->
 		</div> <!-- container -->
 	</aside><!-- info-box-about -->
-	<article class="the-team ">
+	<article class="the-team " id="theTeam">
 		<div class="container-fluid">
 			<header class="team-intro col-md-6 offset-md-3 text-center">
 				<h3>The Team</h3>

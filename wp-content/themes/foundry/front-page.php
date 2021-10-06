@@ -15,22 +15,34 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
+<script src="path/to/jquery.fitvids.js"></script>
+<script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $("#thing-with-videos").fitVids();
+  });
+</script>
 
 <section id="full-screen-video">
 
-	<header class="jumbo-video" style="min-height:100vh; background-color:#5472C6; display:flex;justify-content: center;
-    align-items: center;">
-		<!-- <div class="container-video">
+	<header class="jumbo-video" style="">
+		<div class="container-video">
 			<div id="video_overlays"></div>
-		
-			<div id="iframe" style="padding:56.25% 0 0 0;position:relative;">
+			<!-- <div id="iframe" style="padding:56.25% 0 0 0;position:relative;">
 				<iframe src="https://player.vimeo.com/video/424760744?amp;loop=1&amp;muted=1&amp;autoplay=1&amp;title=0&byline=0&portrait=0&sidedock=0"  style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; webkitallowfullscreen mozallowfullscreen fullscreen" allowfullscreen="" frameborder="0">
 				</iframe>
+				
+			</div>
+			<script src="https://player.vimeo.com/api/player.js"></script> -->
+
+			<div id="iframe" style="padding:56.25% 0 0 0;position:relative; top: 87px;">
+				<iframe src="https://player.vimeo.com/video/571712192?amp;loop=1&amp;muted=1&amp;autoplay=1&amp;title=0&byline=0&portrait=0&sidedock=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<script src="https://player.vimeo.com/api/player.js"></script>
-			<img class="mobile-banner lozad" data-src="<?php echo site_url('/video/FD-still.jpg');?>" alt="mobile banner image" >
-		</div> -->
-		<div class="container video-text" style="position:static;">
+		
+			<img class="mobile-banner lozad" data-src="<?php echo site_url('/video/mobile-still.jpg');?>" alt="Showcase of Projects" >
+		</div>
+		<!-- <div class="container video-text" style="position:static;">
 			
 			<div data-aos="fade-up"  data-aos-easing="ease-out-cubic"  data-aos-duration="4000" class="video-text-content">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -38,14 +50,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; // end of the loop. ?>
 			</div>
 			
-		</div>
+		</div> -->
 	</header>
-
-<div id="iframe" style="padding:56.25% 0 0 0;position:relative;">
-				<iframe src="https://player.vimeo.com/video/424760744?amp;loop=1&amp;autoplay=0&amp;title=0&byline=0&portrait=0&sidedock=0"  style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; webkitallowfullscreen mozallowfullscreen fullscreen" allowfullscreen="" frameborder="0">
-				</iframe>
-			</div>
-			<script src="https://player.vimeo.com/api/player.js"></script>
 
 
 

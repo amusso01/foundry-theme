@@ -27,8 +27,13 @@ input[type="text"]:focus {
   box-shadow: none;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 .body {
   color: #0e9f9c !important;
+  scroll-behavior:smooth;
 }
 
 // ================= Loader ================
@@ -630,9 +635,9 @@ a.btn {
   width: 100%;
   // -------  navbar homepage  -------
   &.navbar-home {
-    background: transparent;
+    background: #ffffff;
     #main-logo {
-      .st0 {
+      .cls-1{
         fill: $white;
       }
     }
@@ -653,7 +658,7 @@ a.btn {
     // }
     .navbar.bg-primary {
       border-bottom: 2px solid transparent;
-      background: transparent !important;
+      background: #ffffff !important;
       &.navwhite {
         background: $white !important;
         border-bottom: 1px solid #f4f4f4;
@@ -690,7 +695,7 @@ a.btn {
           li.menu-item {
             .nav-link {
               @include media-breakpoint-up(md) {
-                color: $white;
+                color: #1a1c22;
               }
             }
           }
@@ -720,7 +725,7 @@ a.btn {
     height: 62px;
     width: 150px;
     transition: 0.8s;
-    .st0 {
+    .cls-1 {
       fill: #1a1c22;
     }
   }
@@ -777,9 +782,9 @@ a.btn {
       transition: 0.8s;
       width: 120px;
       height: 50px;
-      .st0 {
-        fill: #1a1c22;
-      }
+      // .st0 {
+      //   fill: #1a1c22;
+      // }
     }
   }
 }
@@ -1022,7 +1027,7 @@ a.btn {
 //============== Home ===============
 
 .jumbo-video {
-  top: -135px;
+  top: -87px;
   position: relative;
   @include media-breakpoint-up(sm) {
     top: -87px;
@@ -1044,7 +1049,9 @@ a.btn {
 .container-video {
   position: relative;
   max-height: calc(100% - 13px);
-  overflow: hidden;
+  // @include media-breakpoint-up(sm) {
+  //   overflow: hidden;
+  // }
   .mobile-banner {
     display: none;
     max-width: 190%;
@@ -1052,6 +1059,8 @@ a.btn {
     @include media-breakpoint-down(xs) {
       display: block;
       max-width: 100%;
+      position: relative;
+      top:87px;
     }
   }
 
@@ -1062,7 +1071,7 @@ a.btn {
   }
 }
 #video_overlays {
-  opacity: 0.8;
+  opacity: 0;
   background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.8379726890756303) 0%,
@@ -1644,6 +1653,7 @@ a.btn {
         padding-bottom: 0px;
         bottom: 108px;
         text-transform: uppercase;
+        width: 27rem;
       }
       img {
         position: relative;
@@ -2148,6 +2158,10 @@ a.btn {
     .btn{
       background-color: #212531;
       border-color: #212531;
+      &:first-of-type{
+        background-color: $primary;
+        border-color: $primary;
+      }
       &:hover{
         background-color: $primary;
         border-color: $primary;

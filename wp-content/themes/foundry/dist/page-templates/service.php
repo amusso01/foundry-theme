@@ -36,7 +36,8 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-build';
-	$backgroundGradient = 'background: linear-gradient(rgba(0, 202, 255, .5),rgba(0, 240, 167, .5),rgba(0, 255, 131, .5))';
+	$backgroundImage = 'background: linear-gradient(rgba(0, 202, 255, .5),rgba(0, 240, 167, .5),rgba(0, 255, 131, .5))';
+	$backgroundGradient = 'background: linear-gradient(297deg, #00caff, #00ff83);';
 }elseif (is_page('create')) {
 	$page = 'create';
 	$mainSvg = '<svg id="create" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 59.967">
@@ -59,7 +60,8 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-create';
-	$backgroundGradient = 'background: linear-gradient(rgba(255, 149, 0, .5),rgba(255, 113, 0, .5),rgba(255, 23, 0, .5),rgba(255, 0, 0, .5))';
+	$backgroundImage = "background: linear-gradient(rgba(255, 149, 0, .5),rgba(255, 113, 0, .5),rgba(255, 23, 0, .5),rgba(255, 0, 0, .5))";
+	$backgroundGradient = 'background:linear-gradient(297deg, #ff9d00, #ff0000);';
 }elseif (is_page('promote')) {
 	$page = 'promote';
 	$mainSvg = '<svg id="promote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 55.824">
@@ -91,35 +93,33 @@ if(is_page('build')){
 					</g>
 				</svg>';
 	$btnClass = 'btn-promote';
-	$backgroundGradient = 'background: linear-gradient(rgba(215, 0, 66, .5),rgba(180, 0, 102, .5),rgba(145, 0, 138, .5))';
+	$backgroundGradient = ' background: linear-gradient(297deg, #d70042, #91008a);';
+	$backgroundImage="background: linear-gradient(rgba(215, 0, 66, .5),rgba(180, 0, 102, .5),rgba(145, 0, 138, .5))";
 }
 
 ?>
 
 <main class="service-inside">
-	<div style="background-image: url(<?php echo the_field('jumbo_image');?>)" class="jumbotrone" >
+	<div style="background-image: url(<?php echo the_field('jumbo_image');?>); " class="jumbotrone" >
 		<div class="container">
-			<div class="col-lg-6 offset-lg-1">
-				<?php the_title('<h1><span>'.$mainSvg.'</span>','</h1>') ?>
+		<div class="row">
+			<div class="col-lg-6 offset-lg-1"  style="z-index:10">
+				<h2><?php the_field('subtitle-tag')?> </h2>
+				<h1><?php the_title() ?></h1>
+				<?php 
+					global $post;
+					$content = $post->post_content;
+					echo '<p>'.$content.'</p>';
+				?>
+				<a href="<?php echo site_url( '/contact/');?>" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
+
 			</div>
-			<div class="row second-row">
-				<div class="col-lg-4 offset-lg-1">
-					<h2><?php the_field('subtitle-tag')?> </h2>
-				</div>
-				<div class="col-lg-6 offset-lg-1">
-					<?php 
-						global $post;
-						$content = $post->post_content;
-						echo '<p>'.$content.'</p>';
-					?>
-				</div>
-			</div>
-			<div class="row third-row">
-				<div class="col-lg-6 offset-lg-6">
-					<a href="<?php echo site_url( '/contact/');?>" class="btn <?php echo $btnClass ?>">GET IN TOUCH</a>
-				</div>
+			<div class="col-lg-4 offset-lg-1" style="z-index:10">
+				<?php echo $mainSvg ?>
 			</div>
 		</div>
+		</div>
+		<div class="service-overlay" style=" <?php echo $backgroundGradient ?>;background-size: 400% 400%;"></div>
 	</div>
 	<div class="container grid-section">
 		<div class="row no-gutters">
@@ -178,7 +178,7 @@ if(is_page('build')){
 					<p><?php the_field('process_description') ?></p>
 				</div>
 			</div><!-- description -->
-			<div class="row image-service justify-content-center" style="<?php echo $backgroundGradient; ?>, url('<?php the_field('our_process_image') ?>') no-repeat;">
+			<div class="row image-service justify-content-center" style="<?php echo $backgroundImage; ?>, url('<?php the_field('our_process_image') ?>') no-repeat;">
 				
 			<?php
 
