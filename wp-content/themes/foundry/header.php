@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> style="scroll-behavior:smooth;">
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -126,40 +126,62 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<!-- Your site title as branding in the menu -->
 				
 				<a class="navbar-brand custom-logo-link" rel="home" itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<svg id="main-logo" data-name="Group 536" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 39.276">
-					<defs>
-						<style>
-						.cls-1 {
-							fill: #1a1a1a;
-						}
-						</style>
-					</defs>
-					<g id="Group_1" data-name="Group 1" transform="translate(0 3.834)">
-						<path id="Path_1" data-name="Path 1" class="cls-1" d="M0,26.181V4.9H11.345V7.56H3.051v6.024h8.293v2.66H3.051V26.1H0Z" transform="translate(0 -4.9)"/>
-						<path id="Path_2" data-name="Path 2" class="cls-1" d="M75.408,18.066a7.566,7.566,0,0,1-2.5,5.868,9.61,9.61,0,0,1-6.65,2.191,9.745,9.745,0,0,1-6.65-2.191,7.566,7.566,0,0,1-2.5-5.868V5h3.051V17.518A5.723,5.723,0,0,0,61.794,21.9a5.984,5.984,0,0,0,4.46,1.565,6.315,6.315,0,0,0,4.46-1.565,5.841,5.841,0,0,0,1.643-4.381V5H75.33V18.066Z" transform="translate(-12.425 -4.922)"/>
-						<path id="Path_3" data-name="Path 3" class="cls-1" d="M89,26.2V5h2.582l14.161,15.961V5h2.895V26.125h-2.347l-14.4-16.2V26.2" transform="translate(-19.367 -4.922)"/>
-						<path id="Path_4" data-name="Path 4" class="cls-1" d="M123.3,5h8.293a11.379,11.379,0,0,1,8.059,2.973,9.972,9.972,0,0,1,3.13,7.667A9.667,9.667,0,0,1,139.5,23.23a12.437,12.437,0,0,1-8.528,2.973H123.3V5Zm3.051,18.386h4.616a9.12,9.12,0,0,0,6.337-2.112,7.263,7.263,0,0,0,2.347-5.711,7.677,7.677,0,0,0-2.112-5.711,7.931,7.931,0,0,0-5.868-2.112h-5.32Z" transform="translate(-26.831 -4.922)"/>
-						<path id="Path_5" data-name="Path 5" class="cls-1" d="M156.3,5h5.4a7.364,7.364,0,0,1,5.007,1.487,5.322,5.322,0,0,1,1.8,4.225,5.322,5.322,0,0,1-1.8,4.225,5.651,5.651,0,0,1-2.034,1.1l.469.313a11.109,11.109,0,0,1,3.208,3.364l4.225,6.416h-3.443l-3.521-5.477a11.247,11.247,0,0,0-2.5-2.973,4.567,4.567,0,0,0-2.738-.861h-1.017v9.311h-2.973V5Zm3.051,9.076h2.425a3.95,3.95,0,0,0,2.738-.782,2.952,2.952,0,0,0,.939-2.347,2.746,2.746,0,0,0-.939-2.347,3.95,3.95,0,0,0-2.738-.782h-2.425Z" transform="translate(-34.011 -4.922)"/>
-						<path id="Path_6" data-name="Path 6" class="cls-1" d="M188.4,15.249,180.5,5h4.068l5.4,7.511h0L195.366,5h3.912l-7.9,10.171V26.125H188.4Z" transform="translate(-39.278 -4.922)"/>
-					</g>
-					<g id="Group_2" data-name="Group 2" transform="translate(16.509)">
-						<rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="3.208" height="3.13" transform="translate(9.076)"/>
-						<path id="Path_7" data-name="Path 7" class="cls-1" d="M35.418,5V8.208a9.018,9.018,0,0,1,2.034,1.487,7.667,7.667,0,0,1,2.269,5.633,7.925,7.925,0,0,1-2.269,5.633A7.615,7.615,0,0,1,31.9,23.23a7.344,7.344,0,0,1-5.32-2.269,7.492,7.492,0,0,1-2.347-5.711A7.615,7.615,0,0,1,26.5,9.694a7.855,7.855,0,0,1,1.565-1.252V5.156a9.908,9.908,0,0,0-3.756,2.5A10.058,10.058,0,0,0,21.1,15.249a10.266,10.266,0,0,0,3.521,8.137,11.081,11.081,0,0,0,15.1-.313,10.4,10.4,0,0,0,3.208-7.667,10.523,10.523,0,0,0-3.208-7.667A11.168,11.168,0,0,0,35.418,5Z" transform="translate(-21.1 -1.088)"/>
-					</g>
-					<g id="Group_3" data-name="Group 3" transform="translate(69.633 31.687)">
-						<path id="Path_8" data-name="Path 8" class="cls-1" d="M89,40.5h2.5a6.2,6.2,0,0,1,1.33.156,2.425,2.425,0,0,1,1.017.469,1.535,1.535,0,0,1,.7.7c.156.235.313.548.469.782.078.235.156.548.235.782a2.414,2.414,0,0,1,.078.7,3.654,3.654,0,0,1-.235,1.33A2.82,2.82,0,0,1,94.32,46.6a3.407,3.407,0,0,1-1.252.782,3.98,3.98,0,0,1-1.721.313H89Zm1.017,6.337h1.252a6.039,6.039,0,0,0,1.174-.156,2.636,2.636,0,0,0,.939-.469,2.388,2.388,0,0,0,.939-2.034,2.935,2.935,0,0,0-.078-.782,2.892,2.892,0,0,0-.391-.861,1.913,1.913,0,0,0-.861-.7,3.737,3.737,0,0,0-1.408-.313H90.1v5.32Z" transform="translate(-89 -40.5)"/>
-						<path id="Path_9" data-name="Path 9" class="cls-1" d="M108.6,40.5h1.017v7.276H108.6Z" transform="translate(-93.265 -40.5)"/>
-						<path id="Path_10" data-name="Path 10" class="cls-1" d="M127.95,43.708v3.6a4.648,4.648,0,0,1-.626.313l-.7.235c-.235.078-.469.078-.7.156-.235,0-.469.078-.7.078a3.629,3.629,0,0,1-1.643-.313,4.472,4.472,0,0,1-1.252-.861,6.132,6.132,0,0,1-.782-1.174,4.555,4.555,0,0,1-.235-1.487,3.175,3.175,0,0,1,.313-1.487,3.6,3.6,0,0,1,1.956-1.956,4.575,4.575,0,0,1,1.487-.313,4.873,4.873,0,0,1,1.643.235,3.281,3.281,0,0,1,1.1.7l-.7.782a3.273,3.273,0,0,0-.939-.626,4.579,4.579,0,0,0-1.017-.156,2.5,2.5,0,0,0-1.1.235,3.474,3.474,0,0,0-.861.626,2.705,2.705,0,0,0-.548.939,2.487,2.487,0,0,0-.156,1.1,3.139,3.139,0,0,0,.235,1.174,3.273,3.273,0,0,0,.626.939,3.474,3.474,0,0,0,.861.626,2.5,2.5,0,0,0,1.1.235,4.461,4.461,0,0,0,1.017-.078,2.343,2.343,0,0,0,.782-.313V44.881h-1.643v-.939h2.5Z" transform="translate(-96.029 -40.5)"/>
-						<path id="Path_11" data-name="Path 11" class="cls-1" d="M141.7,40.5h1.017v7.276H141.7Z" transform="translate(-100.468 -40.5)"/>
-						<path id="Path_12" data-name="Path 12" class="cls-1" d="M156.347,41.439H154V40.5h5.633v.939h-2.347v6.337h-.939Z" transform="translate(-103.144 -40.5)"/>
-						<path id="Path_13" data-name="Path 13" class="cls-1" d="M173.008,40.5h.861L177,47.776h-1.174l-.7-1.8h-3.443l-.7,1.8H169.8Zm1.721,4.616L173.4,41.83h0l-1.408,3.286Z" transform="translate(-106.582 -40.5)"/>
-						<path id="Path_14" data-name="Path 14" class="cls-1" d="M189.9,40.5h1.017v6.337h2.5v.939h-3.443V40.5Z" transform="translate(-110.956 -40.5)"/>
-					</g>
-				</svg>
+
+
+
+<svg id="main-logo" data-name="Group 536" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 39.276">
+
+<defs>
+<style>
+.cls-1 {fill: #1a1a1a;}
+</style>
+</defs>
+
+<g id="Group_2140" transform="translate(1.279 338.408)">
+	<path id="Path_6677" class="st0" d="M-1.3-314.2H3v-8.7h8.3v-3.4H3v-4.8h8.3v-3.4H-1.3V-314.2z"/>
+	<path id="Path_6678" class="st0" d="M53.5-323c0,1-0.1,2.1-0.6,3c-0.4,0.7-1,1.3-1.7,1.7c-0.9,0.4-1.9,0.7-2.9,0.6
+		c-1,0-1.9-0.2-2.7-0.7c-0.7-0.4-1.3-1-1.7-1.7c-0.4-0.9-0.6-1.8-0.5-2.8v-11.8h-4.3v12.2c0,1.6,0.3,3.1,1.1,4.5
+		c0.7,1.3,1.9,2.3,3.2,2.9c1.5,0.7,3.2,1,4.9,1c2.5,0.2,5-0.6,7-2.2c1.7-1.6,2.6-4,2.5-6.3v-12.1h-4.3L53.5-323z"/>
+	<path id="Path_6679" class="st0" d="M76.9-320.9l-11.6-13.6h-3.7v20.4h4.2V-328l11.6,13.8l0.1,0.1H81v-20.4h-4.2L76.9-320.9z"/>
+	<path id="Path_6680" class="st0" d="M99.2-333.2c-1.7-0.9-3.7-1.3-5.6-1.3H85v20.4h8.3c2,0,4-0.4,5.8-1.3c1.6-0.8,3-2,3.9-3.6
+		c0.9-1.6,1.4-3.4,1.4-5.3c0-1.8-0.4-3.7-1.4-5.3C102.2-331.2,100.8-332.4,99.2-333.2z M98.2-319.5c-1.3,1.3-3.1,1.9-5,1.9h-3.9
+		v-13.5h3.8c1.9-0.1,3.7,0.6,5.1,1.8c1.3,1.3,2,3.1,1.9,5C100.2-322.5,99.5-320.8,98.2-319.5L98.2-319.5z"/>
+	<path id="Path_6681" class="st0" d="M121.7-319.5c-0.5-1.1-1.1-2.1-1.9-3c-0.4-0.5-0.9-0.9-1.4-1.3c0.9-0.4,1.7-1.1,2.3-1.9
+		c0.6-0.9,0.9-2,0.9-3.1c0-1.6-0.6-3.2-1.8-4.2c-1.3-1.1-3-1.7-4.7-1.6h-7.4v20.4h4.3v-8.4h1.2c0.5,0,1.1,0.1,1.5,0.4
+		c0.6,0.4,1.1,0.9,1.4,1.5c0.9,1.4,1.7,2.8,2.4,4.3c0.5,1,0.9,1.7,1.2,2.1l0.1,0.1h4.8l-0.2-0.3
+		C123.8-315.4,122.9-317.1,121.7-319.5z M116.4-326.7c-0.6,0.5-1.4,0.8-2.2,0.7h-2.3v-5.2h2.2c0.8-0.1,1.6,0.2,2.3,0.6
+		c0.6,0.5,0.8,1.2,0.8,1.9C117.3-327.9,117-327.2,116.4-326.7z"/>
+	<path id="Path_6682" class="st0" d="M137.2-334.5l-4.8,6.5l-4.7-6.5h-5.2l7.8,10.3v10.1h4.3v-10l7.7-10.3H137.2z"/>
+	<path id="Path_6683" class="st0" d="M64.1-309.5c-0.7-0.3-1.4-0.4-2.2-0.4h-2.3v6.8h2.1c0.4,0,0.8,0,1.2-0.1c0.2,0,0.5-0.1,0.7-0.2
+		c0.4-0.2,0.8-0.4,1.2-0.7c0.3-0.3,0.6-0.7,0.7-1.1c0.2-0.4,0.3-0.9,0.3-1.3c0-0.6-0.2-1.2-0.5-1.8C65-308.8,64.6-309.2,64.1-309.5z
+		 M64.1-304.7c-0.1,0.1-0.3,0.3-0.5,0.4c-0.2,0.1-0.4,0.2-0.7,0.3c-0.4,0.1-0.8,0.1-1.1,0.1h-1.2v-5h1.2c0.3,0,0.7,0,1,0.1
+		c0.2,0,0.5,0.1,0.7,0.2c0.2,0.1,0.4,0.2,0.6,0.4c0.5,0.5,0.8,1.1,0.7,1.8C64.8-305.8,64.6-305.2,64.1-304.7z"/>
+	<rect id="Rectangle_2494" x="73.6" y="-309.9" class="st0" width="1" height="6.8"/>
+	<path id="Path_6684" class="st0" d="M86.3-305.6h1.3v1.4l-0.1,0c-0.4,0.2-0.9,0.3-1.4,0.3c-0.7,0-1.4-0.2-2-0.7
+		c-0.5-0.5-0.8-1.2-0.8-1.9c0-0.7,0.3-1.4,0.8-1.9c0.5-0.5,1.2-0.8,1.9-0.8c0.9,0,1.7,0.3,2.4,0.7v-1c-0.4-0.2-0.9-0.3-1.3-0.5
+		c-0.4-0.1-0.7-0.1-1.1-0.1c-1,0-1.9,0.3-2.6,1c-0.7,0.7-1.1,1.6-1,2.5c0,0.9,0.3,1.8,1,2.4c0.7,0.7,1.7,1,2.7,1
+		c0.9,0,1.7-0.2,2.5-0.5v-2.9h-2.3L86.3-305.6z"/>
+	<rect id="Rectangle_2495" x="96.6" y="-309.9" class="st0" width="1" height="6.8"/>
+	<path id="Path_6685" class="st0" d="M105.1-309h2.3v5.9h1v-5.9h2.4v-0.9h-5.7L105.1-309z"/>
+	<path id="Path_6686" class="st0" d="M119.4-309.9l-2.9,6.8h1l0.8-2h2.9l0.9,2h1l-3-6.8H119.4z M118.7-306l1-2.5l1.1,2.5H118.7z"/>
+	<path id="Path_6687" class="st0" d="M131.4-309.9h-1v6.8h4v-0.9h-3.1L131.4-309.9z"/>
+	<rect id="Rectangle_2496" x="22.9" y="-338.4" class="st0" width="4" height="3.9"/>
+	<path id="Path_6688" class="st0" d="M28.4-334.7l-0.7-0.2v4l0.3,0.1c0.7,0.3,1.3,0.8,1.8,1.3c1.3,1.3,2,3.1,2,4.9
+		c0,1.8-0.7,3.6-2,4.9c-1.3,1.3-3,2-4.9,2c-1.8,0-3.4-0.7-4.6-2c-1.4-1.3-2.1-3.1-2.1-5c0-1.8,0.7-3.6,2-4.9
+		c0.4-0.4,0.9-0.8,1.4-1.1l0.2-0.1v-4.1l-0.7,0.2c-1.4,0.5-2.7,1.4-3.7,2.4c-2.1,1.9-3.2,4.6-3.2,7.5c-0.1,3.1,1.2,6,3.5,8
+		c2,1.8,4.6,2.8,7.2,2.8c2.8,0,5.6-1.1,7.6-3.1c2.1-2,3.2-4.7,3.2-7.5c0-2.8-1.1-5.6-3.2-7.5C31.5-333.2,30-334.2,28.4-334.7z"/>
+</g>
+</svg>
 
 				</a>
 				
 				<!-- end custom logo -->
+
+
+
+
+
+
 
 				<!-- custom toggle hamburger -->
 				<button class=" burger" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
@@ -183,69 +205,82 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?> -->
 
-<div id="navbarNavDropdown" class="collapse navbar-collapse">
-     <ul class="navbar-nav ml-auto" id="main-menu">
-		<li itemscope="itemscope" class="menu-item nav-item">
-			<a href="<?php echo site_url( '/work/' ) ?>" class="nav-link">WORK</a>
-		</li>
-		<li itemscope="itemscope"  class="menu-item nav-item dropdown megamenu-li">
-			<a class="nav-link dropdown-toggle" href="<?php echo site_url( '/service/' ) ?>"  aria-haspopup="true" aria-expanded="false">SERVICES</a>
-			<div class="dropdown-menu megamenu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 megamenu-dynamic">
-							<p id="static"></p>
-							<p id="dynamic"></p>
-						</div>
-						<div id="mega-create" class="col-md-3 megamenu-section">
-							<h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Branding & Visual Identity</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX/UI and Motion Design</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
-						</div>
-						<div id="mega-build" class="col-md-3 megamenu-section">
-							<h5>
-								<a class="category" href="<?php echo site_url('/build/') ?>">BUILD</a>
-							</h5>
-							<a class="dropdown-item" href="<?php echo site_url( '/web-design/' ) ?>">Website Build</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/ecommerce/' ) ?>">Ecommerce Website</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/mobile-development/' ) ?>">Mobile & Web Apps</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/crm-saas/' ) ?>">SAAS / CRM / CMS</a>
-						</div>
-						<div id="mega-promote" class="col-md-3 megamenu-section">
-							<h5>
-								<a class="category" href="<?php echo site_url('/promote/') ?>">PROMOTE</a>
-							</h5>
-							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/strategy/' ) ?>">Strategy and Planning</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/marketing-activation/' ) ?>">Marketing Activation</a>
-							<a class="dropdown-item" href="<?php echo site_url( '/service/promote/data-analytics/' ) ?>">Data Analytics</a>
-							<!-- <a class="dropdown-item" href="#">SAAS & CRM</a>  -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li itemscope="itemscope" class="menu-item nav-item">
-			<a href="<?php echo site_url( '/about/' ) ?>" class="nav-link">ABOUT</a>
-		</li>		
-		<li itemscope="itemscope" class="menu-item nav-item dropdown megamenu-li">
-			<a class="nav-link " href="<?php echo site_url( '/insights/' ) ?>">INSIGHTS</a>
-			<!-- <div class="dropdown-menu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
-				<div class="row">
-					<div class="col-md-4">
-						<h5>
-							<a class="category" href="<?php echo site_url('/agency-life/') ?>">AGENCY LIFE</a>
-						</h5>
-					</div>
-				</div>
-			</div> -->
-		</li>		
-		<li itemscope="itemscope" class="menu-item nav-item">
-			<a href="<?php echo site_url( '/contact/' ) ?>" class="nav-link">CONTACT</a>
-		</li>		
-     </ul>
+        <style>
+          #navbarNavDropdown #main-menu .menu-item__btn .btn:hover{
+            background-color:#364F95;
+            border-color:#364F95;
+          }
+          #navbarNavDropdown #main-menu li.menu-item > .nav-link {
+            font-weight: bold!important;
+          }
+        </style>
 
+    <div id="navbarNavDropdown" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto" id="main-menu">
+            <li itemscope="itemscope" class="menu-item nav-item">
+                <a href="<?php echo site_url( '/work/' ) ?>" class="nav-link">WORK</a>
+            </li>
+            <li itemscope="itemscope"  class="menu-item nav-item dropdown megamenu-li">
+              <a class="nav-link dropdown-toggle" href="<?php echo site_url( '/service/' ) ?>"  aria-haspopup="true" aria-expanded="false">SERVICES</a>
+              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 megamenu-dynamic">
+                      <p id="static"></p>
+                      <p id="dynamic"></p>
+                    </div>
+                    <div id="mega-create" class="col-md-3 megamenu-section">
+                      <h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
+                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Branding & Visual Identity</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX/UI and Motion Design</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
+                    </div>
+                    <div id="mega-build" class="col-md-3 megamenu-section">
+                      <h5>
+                        <a class="category" href="<?php echo site_url('/build/') ?>">BUILD</a>
+                      </h5>
+                      <a class="dropdown-item" href="<?php echo site_url( '/web-design/' ) ?>">Website Build</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/ecommerce/' ) ?>">Ecommerce Website</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/mobile-development/' ) ?>">Mobile & Web Apps</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/crm-saas/' ) ?>">SAAS / CRM / CMS</a>
+                    </div>
+                    <div id="mega-promote" class="col-md-3 megamenu-section">
+                      <h5>
+                        <a class="category" href="<?php echo site_url('/promote/') ?>">PROMOTE</a>
+                      </h5>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/promote/strategy/' ) ?>">Strategy and Planning</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/promote/marketing-activation/' ) ?>">Marketing Activation</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/promote/data-analytics/' ) ?>">Data Analytics</a>
+                      <!-- <a class="dropdown-item" href="#">SAAS & CRM</a>  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li itemscope="itemscope" class="menu-item nav-item">
+              <a href="<?php echo site_url( '/about/' ) ?>" class="nav-link">ABOUT</a>
+            </li>		
+            <li itemscope="itemscope" class="menu-item nav-item dropdown megamenu-li">
+              <a class="nav-link " href="<?php echo site_url( '/insights/' ) ?>">INSIGHTS</a>
+              <!-- <div class="dropdown-menu" aria-labelledby="dropdown01" data-dropdown-out="fadeOut" role="menu">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5>
+                      <a class="category" href="<?php echo site_url('/agency-life/') ?>">AGENCY LIFE</a>
+                    </h5>
+                  </div>
+                </div>
+              </div> -->
+            </li>		
+            <li itemscope="itemscope" class="menu-item nav-item">
+              <a href="<?php echo site_url( '/contact/' ) ?>" class="nav-link">CONTACT</a>
+            </li>	
+            <li itemscope="itemscope" class="menu-item menu-item__btn nav-item " style="    display: flex;
+            align-items: center;">
+              <a style="color:#fff" href="<?php echo site_url('/brief-1');  ?>" class="btn">SEND A BRIEF</a>
+            </li>
+        </ul>
     </div>
 
 
