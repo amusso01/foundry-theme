@@ -38,7 +38,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php } ?>
 	<footer class="footer-main">
 
+
 	<div class="container">
+
+<div align="center"><a href="https://www.unicef.org.uk/donate/donate-now-to-protect-children-in-ukraine/" target="blank"><img src="https://www.fdry.com/we-stand-with-ukraine--FDRY.png" /></a></div>
 
 		<div class="row footer-info">
 
@@ -46,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="social social-footer">
 					<ul>
 						<li>
-							<a href="https://twitter.com/Foundry_Studio" target="_blank" rel="noreferrer">
+							<a href="https://twitter.com/FDRY_digital" target="_blank" rel="noreferrer">
 								<svg class="social-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.598 27.599">
 									<defs>
 										<style>
@@ -61,7 +64,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/foundry.digital/?hl=en" target="_blank" rel="noreferrer">
+							<a href="https://www.instagram.com/FDRY__digital/" target="_blank" rel="noreferrer">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -79,7 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/company/foundry-digital-limited/" target="_blank" rel="noreferrer">
+							<a href="https://www.linkedin.com/company/fdry" target="_blank" rel="noreferrer">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -95,9 +98,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</li>
 					</ul>
 				</div>
-				<h2>NEW BUSINESS</h2>
+				<h2>NEW PROJECT BRIEFS</h2>
 				<p><a href="mailto:studio@foundrydigital.co.uk">studio@foundrydigital.co.uk</a></p>
-				<p><a href="tel:+44 (0)20 7736 7959">+44 (0)20 7736 7959</a></p>
+				<p><a href="tel:+44 (0)20 8123 4669">+44 (0) 20 8123 4669</a></p>
 			</div><!-- contact -->
 			
 			<div class="col-md-4 col-lg-2 text-left footer-push-down">
@@ -120,7 +123,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-4 col-lg-2 text-left footer-push-down">
 				<h2>PROMOTE</h2>
-				<a href="<?php echo site_url('/service/promote/strategy/'); ?>">Strategy & Planning</a>
+				<a href="<?php echo site_url('/service/promote/content-strategy/'); ?>">Strategy & Planning</a>
 				<a href="<?php echo site_url('/service/promote/marketing-activation/'); ?>">Marketing Activation</a>
 				<a href="<?php echo site_url('/service/promote/data-analytics/'); ?>">Data Analytics</a>
 				<!-- <a href="<?php echo site_url('/service/promote/marketing-packages/'); ?>">Marketing Packages </a> -->
@@ -152,8 +155,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-6 my-auto">
 
-						<p>COPYRIGHT <?php echo date("Y");?> FDRY</p>
-            <p>FDRY is a trading name of Foundry Digital Limited. Company name 07918842, </br>  Registered office: 88 Peterborough Road, London, SW6 3HH</p>
+						<p>COPYRIGHT <?php echo date("Y");?> FOUNDRY DIGITAL</p>
+<p>FDRY is a trading name of Foundry Digital Limited. Company Registration No. 07918842</p>
+
 				
 			</div><!--col end -->
 
@@ -161,7 +165,35 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="footer-logo">
 						<a href="<?php echo site_url() ?>">
-						<svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 262 79"><path d="M54.6 24.3V11.9H10.1v50.2h5.6V64h-5.6v4.6h16.1V49.2h25V36.8h-25V24.3zm119.9 26.5c3.6-1.7 6.3-4.1 8.2-7.2 1.9-3.1 2.9-6.6 2.9-10.7 0-4.3-1-8-3.1-11.1-2.1-3.2-5-5.6-8.8-7.3-3.8-1.7-8.2-2.6-13.4-2.6h-1.2v12.6h.2c3.3 0 5.8.7 7.5 2.2 1.7 1.5 2.5 3.5 2.5 6.2 0 2.6-.8 4.7-2.5 6.1-1.7 1.4-4.2 2.1-7.5 2.1h-8.9V24.6h6.9V11.9h-22.9v56.7h16v-15h8.8l10.3 15.1h17.2l-12.2-17.9zM81.4 24.7h10.1c2.7 0 5.2.4 7.3 1.3l8.9-11.1c-4.6-2-9.8-3.1-15.6-3.1H65.4v55.5l16-19.8V24.7zm38.5.6c-2.5-4-6-7.2-10.4-9.5l-8.9 11.1c1 .6 1.9 1.2 2.7 2 2.9 2.8 4.4 6.6 4.4 11.4 0 4.9-1.5 8.7-4.4 11.4-2.9 2.8-6.8 4.1-11.7 4.1H81.4v-5.3L66.8 68.6h25.4c6.2 0 11.7-1.2 16.5-3.5 4.8-2.3 8.5-5.6 11.2-9.9 2.6-4.3 4-9.3 4-15 0-5.7-1.3-10.6-4-14.9zm115.7-13.4l-13.5 22.5-13.4-22.5h-16.9l11.5 19.4 28.9 12.3L255 11.9zm-22.2 36.2v20.5h16V48.3l1.9-3.1-26.4-11.3z" fill="#fff"/><image width="176" height="136" xlink:href="1D29735BF6639870.png" transform="translate(760 -254.5)" overflow="visible"/></svg>
+							<svg id="footer-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 262 79" style="enable-background:new 0 0 262 79;" xml:space="preserve">
+								<style type="text/css">
+									.st00{fill:#FFFFFF;}
+								</style>
+								<g>
+									<polygon class="st00" points="54.6,24.3 54.6,11.9 10.1,11.9 10.1,62.1 15.7,62.1 15.7,64 10.1,64 10.1,68.6 26.2,68.6 26.2,49.2 
+										51.2,49.2 51.2,36.8 26.2,36.8 26.2,24.3 	"/>
+									<g>
+										<path class="st00" d="M174.5,50.8c3.6-1.7,6.3-4.1,8.2-7.2c1.9-3.1,2.9-6.6,2.9-10.7c0-4.3-1-8-3.1-11.1c-2.1-3.2-5-5.6-8.8-7.3
+											c-3.8-1.7-8.2-2.6-13.4-2.6h-1.2v12.6h0.2c3.3,0,5.8,0.7,7.5,2.2c1.7,1.5,2.5,3.5,2.5,6.2c0,2.6-0.8,4.7-2.5,6.1
+											c-1.7,1.4-4.2,2.1-7.5,2.1h-8.9V24.6h6.9V11.9h-22.9v56.7h16V53.6h8.8l10.3,15.1h17.2L174.5,50.8z"/>
+									</g>
+									<g>
+										<path class="st00" d="M81.4,24.7h10.1c2.7,0,5.2,0.4,7.3,1.3l8.9-11.1c-4.6-2-9.8-3.1-15.6-3.1H65.4v55.5l16-19.8V24.7z"/>
+										<path class="st00" d="M119.9,25.3c-2.5-4-6-7.2-10.4-9.5l-8.9,11.1c1,0.6,1.9,1.2,2.7,2c2.9,2.8,4.4,6.6,4.4,11.4
+											c0,4.9-1.5,8.7-4.4,11.4c-2.9,2.8-6.8,4.1-11.7,4.1H81.4v-5.3L66.8,68.6h25.4c6.2,0,11.7-1.2,16.5-3.5c4.8-2.3,8.5-5.6,11.2-9.9
+											c2.6-4.3,4-9.3,4-15C123.9,34.5,122.6,29.6,119.9,25.3z"/>
+									</g>
+									<g>
+										<polygon class="st00" points="235.6,11.9 222.1,34.4 208.7,11.9 191.8,11.9 203.3,31.3 232.2,43.6 255,11.9 		"/>
+										<polygon class="st00" points="213.4,48.1 213.4,68.6 229.4,68.6 229.4,48.3 231.3,45.2 204.9,33.9 		"/>
+									</g>
+								</g>
+								<g id="_x38_QNoX7_00000145044510982535038690000008263449638764630204_">
+									
+										<image style="overflow:visible;" width="176" height="136" id="_x38_QNoX7_00000037672235037512614540000015217409004719685511_" xlink:href="1D29735BF6639870.png"  transform="matrix(1 0 0 1 760 -254.5)">
+									</image>
+								</g>
+								</svg>
 						</a>
 					</div>
 
@@ -182,6 +214,9 @@ $container = get_theme_mod( 'understrap_container_type' );
   <script>
     AOS.init();
   </script>
+
+
+
 </body>
 
 </html>
