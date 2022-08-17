@@ -25,6 +25,20 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <section id="full-screen-video">
 
+	<!-- <div id="loading-animation"  style="min-height: 100%!important; height: 100%!important;">
+		<div id="loader">
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="lading"></div>
+		</div>						
+	</div> -->
+
 	<header class="jumbo-video" style="">
 		<div class="container-video">
 			<div id="video_overlays"></div>

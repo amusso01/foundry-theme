@@ -64,7 +64,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="grid-about">
 				<div class="grid-item-about">
 					<div class="inner-box">
-						<p class="number"><span class="counter-value" data-count="600">0</span>+</p>
+						<p class="number"><span class="counter-value" data-count="650">0</span>+</p>
 						<p class="info-inner">Projects designed, built and promoted</p>
 						<a href="<?php echo site_url('/work/') ?>">VIEW PORTFOLIO</a>
 					</div>

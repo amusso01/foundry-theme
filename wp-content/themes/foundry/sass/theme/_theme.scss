@@ -993,10 +993,14 @@ a.btn {
 //========= Parent page template =========
 #parent {
   .parent-title {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 86px;
+    font-weight: 900;
     padding-top: 20px;
     margin-bottom: 0px;
+    line-height: 90px;
+    @include media-breakpoint-down(sm) {
+      font-size: 56px;
+    }
   }
   .line-gradient {
     margin-bottom: 30px;
@@ -1363,7 +1367,7 @@ a.btn {
     }
     .brief {
       margin-top: 118px;
-      margin-bottom: 190px;
+
       @include media-breakpoint-down(sm) {
         margin-top: 50px;
       }
@@ -1398,7 +1402,7 @@ a.btn {
             padding-right: 120px;
           }
           h1 {
-            font-size: 55px;
+            font-size: 45px;
             line-height: 55px;
             padding-bottom: 0px;
             font-weight: 900;
@@ -1681,11 +1685,12 @@ a.btn {
     font-size: 14px;
   }
   .parent-title {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 52px;
+    font-weight: 900;
     padding-top: 20px;
     text-transform: uppercase;
     margin-bottom: 0px;
+    line-height: 62px;
   }
   .line-gradient {
     margin-bottom: 30px;
@@ -1929,7 +1934,7 @@ a.btn {
   .insight-title {
     padding-bottom: 55px;
     h4 {
-      @include font-size(15px, 16px);
+      font-size: 24;
       font-weight: bold;
       margin-bottom: 0px;
       padding-bottom: 13px;
@@ -2065,7 +2070,7 @@ a.btn {
       padding: 10px;
     }
     h1 {
-      font-size: 28px;
+      font-size: 36px;
       font-weight: 400;
       color: $white;
       line-height: 35px;
@@ -2073,7 +2078,8 @@ a.btn {
         font-size: 32px;
       }
       @include media-breakpoint-up(md) {
-        font-size: 36px;
+        font-size: 56px;
+        line-height: 65px;
       }
     }
   }
@@ -2170,8 +2176,10 @@ a.btn {
     }
     .headline__head{
       line-height: 45px;
+      font-size: 40px;
       @include media-breakpoint-up(sm) {
         line-height: 60px;
+        font-size: 45px;
       }
     }
   }
@@ -2884,14 +2892,14 @@ a.btn {
     color: $white;
   }
   h1 {
-    font-size: 23px;
+    font-size: 53px;
     padding-top: 45px;
-    line-height: 16px;
+    line-height: 58px;
     padding-bottom: 20px;
     font-weight: 900;
     text-transform: uppercase;
     @include media-breakpoint-down(sm) {
-      font-size: 15px;
+      font-size: 36px;
     }
   }
   h2 {
@@ -3242,7 +3250,7 @@ a.btn {
         display: grid;
         grid-template-columns: 1fr;
         @include media-breakpoint-up(sm) {
-          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-columns: 1fr 2fr;
           grid-column-gap: 7px;
         }
         .info-card {
@@ -3666,11 +3674,13 @@ a.btn {
     right: 0;
     background-color: $light-grey;
     padding-top: 60px;
-    min-height: 250px;
+    min-height:auto;
     padding-bottom: 60px;
     @include media-breakpoint-up(md) {
       top: 74px;
+      min-height: 250px;
     }
+  
 
     .container {
       @include media-breakpoint-down(sm) {
@@ -4097,4 +4107,12 @@ img.aligncenter {
       }
     }
   }
+}
+
+.insight-content .entry-content p a{
+  color: #5472C6;
+}
+.insight-content .entry-content h2 a{
+  font-size: inherit!important;
+  color: #5472C6;
 }

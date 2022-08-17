@@ -122,7 +122,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div><!-- grid-team -->
 			<div class="grid-info hidden-animate">
 				<div class="info-card">
-						<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/640x1080.jpeg" alt="Our Team">
+						<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/img/images/fdry-about-life.png" alt="Our Team">
 						<div class="overlay h-100 w-100">
 							<p class="title">AGENCY LIFE</p>
 							<p class="description">Alongside working on exciting projects we make sure we let off some steam</p>

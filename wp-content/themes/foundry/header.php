@@ -219,11 +219,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                       <p id="dynamic"></p>
                     </div>
                     <div id="mega-create" class="col-md-3 megamenu-section">
-                      <h5><a class="category" href="<?php echo site_url('/create/') ?>">CREATE</a></h5>
-                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#brand/' ) ?>">Branding & Visual Identity</a>
-                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#graphic/' ) ?>">Graphic Design</a>
-                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#design/' ) ?>">UX/UI and Motion Design</a>
-                      <a class="dropdown-item" href="<?php echo site_url( '/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
+                      <h5><a class="category" href="<?php echo site_url('/service/create/') ?>">CREATE</a></h5>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/create/creative-services/#brand/' ) ?>">Branding & Visual Identity</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/create/creative-services/#graphic/' ) ?>">Graphic Design</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/create/creative-services/#design/' ) ?>">UX/UI and Motion Design</a>
+                      <a class="dropdown-item" href="<?php echo site_url( '/service/create/creative-services/#promotional/' ) ?>">Promotional Artwork</a>
                     </div>
                     <div id="mega-build" class="col-md-3 megamenu-section">
                       <h5>

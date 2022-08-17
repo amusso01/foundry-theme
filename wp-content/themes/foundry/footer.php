@@ -18,6 +18,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	
 	<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+
+	<div class="footerbanner" style="padding: 60px 0; border-bottom: 1px solid #C6C6C6">
+		<div class="container">
+			<center>
+				<a href="https://www.fdry.com/service/build/woocommerce-agency/"><img style="display: inline-block;max-width: 210px;height: 85px;object-fit: contain;margin: 0 15px;" src="<?php echo get_template_directory_uri(); ?>/img/images/fdry-woo.jpg" /></a>
+				<a href="https://www.fdry.com/service/build/bigcommerce-agency/"><img style="display: inline-block;max-width: 210px;height: 85px;object-fit: contain;margin: 0 15px;" src="<?php echo get_template_directory_uri(); ?>/img/images/fdry-big.jpg" /></a>
+				<a href="https://www.fdry.com/service/build/shopify-agency/"><img style="display: inline-block;max-width: 170px;height: 85px;object-fit: contain;margin: 0 15px;" src="<?php echo get_template_directory_uri(); ?>/img/images/fdry-shop.jpg" /></a>
+			</center>
+		</div>
+	</div>
+
+	<div class="partners-banner" style="padding: 60px 0; border-bottom: 1px solid #C6C6C6">
+
+		<div class="container">
+
+			<div class="partner-grid">
+
+				<center>
+				<img style="display: inline-block;max-width: 110px;height: 85px;object-fit: contain;margin: 10px 20px;" src="<?php echo get_template_directory_uri(); ?>/img/images/google-partner.jpg" />
+				<img style="display: inline-block;max-width: 110px;height: 85px;object-fit: contain;margin: 10px 20px;" src="<?php echo get_template_directory_uri(); ?>/img/images/meta-partner.jpg" />
+				<img style="display: inline-block;max-width: 110px;height: 85px;object-fit: contain;margin: 10px 20px;" src="<?php echo get_template_directory_uri(); ?>/img/images/tiktok-partner.jpg" />
+				<img style="display: inline-block;max-width: 110px;height: 85px;object-fit: contain;margin: 10px 20px;" src="<?php echo get_template_directory_uri(); ?>/img/images/klaviyo-partner.jpg" />
+				<img style="display: inline-block;max-width: 110px;height: 85px;object-fit: contain;margin: 10px 20px;" src="<?php echo get_template_directory_uri(); ?>/img/images/square-partner.jpg" />
+
+
+				</center>
+
+			</div>
+
+		</div>
+
+	</div>
 	
 	<div class="wrapper" id="wrapper-footer">
 	<?php if (!is_404()) {	?>
@@ -41,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="container">
 
-<div align="center"><a href="https://www.unicef.org.uk/donate/donate-now-to-protect-children-in-ukraine/" target="blank"><img src="https://www.fdry.com/we-stand-with-ukraine--FDRY.png" /></a></div>
+<!--<div align="center"><a href="https://www.unicef.org.uk/donate/donate-now-to-protect-children-in-ukraine/" target="blank"><img src="https://www.fdry.com/we-stand-with-ukraine--FDRY.png" /></a></div>-->
 
 		<div class="row footer-info">
 
@@ -64,7 +96,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/FDRY__digital/" target="_blank" rel="noreferrer">
+							<a href="https://www.instagram.com/FDRY_digital/" target="_blank" rel="noreferrer">
 								<svg class="social-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.599 27.599">
 									<defs>
 										<style>
@@ -99,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 				</div>
 				<h2>NEW PROJECT BRIEFS</h2>
-				<p><a href="mailto:studio@foundrydigital.co.uk">studio@foundrydigital.co.uk</a></p>
+				<p><a href="mailto:studio@fdry.com">studio@fdry.com</a></p>
 				<p><a href="tel:+44 (0)20 8123 4669">+44 (0) 20 8123 4669</a></p>
 			</div><!-- contact -->
 			
@@ -115,8 +147,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>BUILD</h2>
 				<a href="<?php echo site_url('/service/build/web-design/'); ?>">Website Design & Build</a>
 				<a href="<?php echo site_url('/service/build/ecommerce/'); ?>">Ecommerce Website</a>
-				<a href="<?php echo site_url('/service/build/mobile-development/'); ?>">Mobile App Development</a>
-				<a href="<?php echo site_url('/service/build/crm-saas/'); ?>">SAAS & CRM </a>
+				<a href="<?php echo site_url('/service/build/shopify-agency/'); ?>">Shopify Agency London</a>
+				<a href="<?php echo site_url('/service/build/woocommerce-agency/'); ?>">WooCommerce Agency London </a>
 			</div><!-- col-md-2 footer-push-down -->
 
 			<div class="col-md-4 show-md footer-push-down"></div>
@@ -155,7 +187,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-6 my-auto">
 
-						<p>COPYRIGHT <?php echo date("Y");?> FOUNDRY DIGITAL</p>
+						<p>COPYRIGHT <?php echo date("Y");?> FDRY - Shopify, WordPress and WooCommerce Agency. Website Designers in London.</p>
 <p>FDRY is a trading name of Foundry Digital Limited. Company Registration No. 07918842</p>
 
 				
@@ -214,6 +246,26 @@ $container = get_theme_mod( 'understrap_container_type' );
   <script>
     AOS.init();
   </script>
+
+
+<script>
+  window.addEventListener('load', function() {
+    if (window.location.href.indexOf('/brief-1/?send=yes') != -1) {
+      gtag('event', 'conversion', {'send_to': 'AW-790752334/7ukxCJapns4DEM7Yh_kC'});
+    }
+    
+      if (window.location.href.indexOf('/brief-1/') != -1) {
+        gtag('event', 'conversion', {'send_to': 'AW-790752334/Y89mCOSpns4DEM7Yh_kC'});
+    }
+    
+       jQuery('body').on('mousedown', '[href*="mailto:"]', function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-790752334/N-DvCOepns4DEM7Yh_kC'
+      });
+    })
+  });
+
+</script>
 
 
 
