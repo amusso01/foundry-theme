@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php 
 
 					$args= array( 
-						'exclude_tree'=> 7,
+						// 'exclude_tree'=> 7,
 						'exclude'=> 1
 					);
 					
@@ -57,12 +57,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$works->the_post(); 
 
 				$cat = get_the_category(); // array of object of WP_Term
-				$postCat = $cat[0]; // object WP_Term for the current post
+				$postCat = []; // object WP_Term for the current post
+
+				foreach($cat as $category){
+					$postCat[] = $category->cat_name;
+				}
+				// var_dump($postCat);
+
 				$thumbnail_id  = get_post_thumbnail_id($works->ID);
 				$thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 				$image = wp_get_attachment_image_src( $thumbnail_id,'large' ); 
 		?>
-				<a href="<?php echo get_permalink(); ?>" class="ajax-call  <?php echo $postCat->cat_name ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
+				<a href="<?php echo get_permalink(); ?>" class="ajax-call  <?php foreach($postCat as $name){ echo $name.' '; }   ?>"><article class="work-box " <?php echo $postCat->slug; ?>"  >
 
 					<div class="hovereffect">
 						<img src="<?php echo get_template_directory_uri()?>/img/Spinner.gif" data-src="<?php echo $image[0]; ?>"  class="img-fluid lozad" />

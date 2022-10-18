@@ -167,6 +167,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo site_url('/work/'); ?>">Work</a>
 				<a href="<?php echo site_url('/service/'); ?>">Services</a>
 				<a href="<?php echo site_url('/about'); ?>">About</a>
+				<a href="<?php echo site_url('/careers'); ?>">Careers</a>
 				<a href="<?php echo site_url('/insights/'); ?>">Insights</a>
 				<a href="<?php echo site_url('/contact/'); ?>">Contact</a>
 				<a href="<?php echo site_url('/privacy-policy/'); ?>">Privacy Policy</a>

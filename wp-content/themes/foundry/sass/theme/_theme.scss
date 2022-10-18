@@ -4116,3 +4116,23 @@ img.aligncenter {
   font-size: inherit!important;
   color: #5472C6;
 }
+
+#career{
+
+  .career-main{
+    max-width:980px;
+    margin: auto;
+
+    .entry-title{
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .wpcf7-response-output{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: bisque;
+  }
+}
